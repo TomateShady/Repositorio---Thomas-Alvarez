@@ -7,8 +7,8 @@
 .contenido-gral {
    
      display: grid;
-    
      background-image:url(../img/Background\ image.jpg);
+
      grid-template-columns: repeat(4, 1fr);
      grid-template-rows: repeat(4, auto);
      grid-template-areas: "encabezado encabezado encabezado encabezado"
@@ -23,10 +23,12 @@
     grid-area: section;
     width: auto;
     padding: 1px;
-    margin: 1px 1px; 
-   
+    margin: 1px 10px; 
+    grid-column:4;
+    grid-row: 3/4;
         
 }
+
 .contenido-gral .encabezado {
        background: #00000000;
        grid-area: encabezado;
@@ -35,25 +37,24 @@
 }
 
 .contenido-gral .main {
-  /* background: grey; */
+  
     grid-area: main;
     padding: 1px;
     border-radius: 20px;
     margin: 1px auto;
-   /*opacity: 0.9;*/ 
-   width: 760px;
-   text-align: center;
-   grid-column: 2/4;
-   grid-row: 2/4
+   
+    width: 760px;
+    text-align: center;
+    grid-column: 2/4;
+    grid-row: 2/4
   
 }
 .contenido-gral .footer{
     background: #000000;
     grid-area: footer;
     padding: 5px;
-    border-radius: 4px;
-    margin-bottom: 0px;
     opacity: 0.9;
+    
 }
 
 .contenido-gral .main .valentina {
@@ -66,11 +67,6 @@
 }
 /*FINAL DE GRIDS-AREA EN PAGINA PRINCIPAL*/
 
-.fondito {
-    grid-area: main;
-    grid-row-start: 2
-    
-}
 
 /*INICIO DE MEDIA QUERIES EN LA PAGINA PRINCIPAL*/
 @media screen and (max-width: 768px){
@@ -89,6 +85,7 @@
         grid-area: encabezado;
         margin: 2px auto;
         align-content: center;
+      
     }
     .contenido-gral .encabezado h1 {
         font-size: 27px;
@@ -104,12 +101,9 @@
     }
 
     .contenido-gral .encabezado .menu {
-        line-height: 1,6;
         margin: 5px auto;
         padding: 1px;
        
-      
-
     }
     .contenido-gral .encabezado .menu ul li a {
         font-size: 18px;
@@ -134,37 +128,36 @@
     .contenido-gral .main .valentina img:hover {
              transform: scale(1.10);
             }
-
-     .contenido-gral .section {
-            
+/*
+     .contenido-gral .section i {
+             width: 100%;
              grid-area: section;
-             width: auto;
              padding: 1px;
              margin: 1px auto; 
+            
+             grid-column: 2, 3;
+             grid-row: 3, 4 ;
                     
             }
-    .contenido-gral .section .spotify {
-        width: 280 x 100;
-        
-        margin: 2px auto;
-       
-    }
+            */
+  
    
 
     .contenido-gral .footer {
         font-size: 15px;
         grid-area: footer;
-        margin: 2px auto;
+        margin: 2px 1px;
         grid-area: footer;
+       
     }
-    .contenido-gral .footer .contacto {
+     .contenido-gral .footer .contacto {
         text-align: center;
         font-size: 15px;
     }
    
 
-
 }
+
 /*FIN DE MEDIA QUERIES EN LA PAGINA PRINCIPAL*/
 
 /*Inicio de encabezado de PAGINA PRINCIPAL*/
@@ -238,42 +231,20 @@ h1 {
 }
 /* Fin de INFO sobre la pagina principal*/
 /*Spotify*/
-.contenido-gral .section .spotify p {
-    color: #ffff16;
-    text-align: center;
-    padding: 2px;
-    margin: 2px auto;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 35px;
-    height: 20px;
-    
-}
-
-
-.contenido-gral .section .spotify {
-    
-    display: grid;
-    margin: 10px 20px;
-    padding: 10px;
+.contenido-gral .section i {
+    width: 100%;
     grid-area: section;
-    width: 300px;
-    grid-column:4;
-    grid-row: 3/4;
-    
-
-}
-
-
-
-
-
-
-
-
+    padding: 1px;
+    margin: 1px auto; 
+   
+    grid-column: 2, 3;
+    grid-row: 3, 4 ;
+           
+   }
 
 /*Fin Spotify*/
 
-/*Inicio imagen de VALENTINA*/
+/*Inicio imagenes de VALENTINA e HIJO DISCOLO*/
 .valentina{
     text-align: center;
     line-height: 1,6;
@@ -297,22 +268,18 @@ h1 {
     color: #ff0000dc;
     
 }
-/*
+
 .valentina img:hover {
       transform: scale(1.05);
       opacity: 0.9;
       padding: 10px;
    
-}*/
-
-/*Fin de imagen de VALENTINA*/
-
-/*Inicio imagen de HIJO DISCOLO*/
+}
 
 .valentina .errados {
     color: #ff0000d7;
 }
-/* Fin imagen de HIJO DISCOLO*/
+/* Fin imagenes de VALENTINA E HIJO DISCOLO*/
 
 /*Inicio de links de INSTAGRAM Y YOUTUBE*/
 
@@ -361,55 +328,85 @@ h1 {
 /*INICIO DE GRIDS-AREA EN PAGINA DE VIDEOCLIPS*/
 
 .contenido-gral-videos {
-    width: 100%;
-    margin: 5px auto;
+   
     display: grid;
-    gap: 2px;
-    
+    gap: 1px;
+    background-image:url(../img/Background\ image.jpg);
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, auto);
     grid-template-areas: "encabezado encabezado encabezado encabezado"
                          "main main main main"
+                         "section section section section"
                          "footer footer footer footer";
                       
  }
 
 .contenido-gral-videos .encabezado {
-     background: #000000;
+     background: #00000000;
      grid-area: encabezado;
 
 }
 .contenido-gral-videos .main {
-    background: #000000;
+    background: rgba(255, 255, 255, 0.753); 
     grid-area: main;
+    width: 760px;
+    opacity: 0.9;
+    grid-column: 2/4;
+    grid-row: 2/4;
+    border-radius: 18px;
+    padding: 10px;
+    font-size: 25px;
+    margin: 1px auto;
    
 }
+.contenido-gral-videos .main h2 {
+    color: black;
 
+}
+.contenido-gral-videos .section {
+    display: grid;
+    grid-area: section;
+    width: auto;
+    padding: 1px;
+    margin: 1px 10px; 
+    grid-column:4;
+    grid-row: 3/4;
+        
+}
 .contenido-gral-videos .footer {
-    background: #000000;
+    background: black;
     grid-area: footer;
+    opacity: 0.9;
+    width: auto;
 }
 /*FIN DE GRIDS-AREA EN PAGINA DE VIDEOCLIPS*/
 
  /*INICIO DE MEDIA QUERIES EN PAGINA DE VIDEOCLIPS*/
 @media screen and (max-width: 768px){
+  
     .contenido-gral-videos{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, auto);
         grid-template-areas: "encabezado encabezado encabezado encabezado"
         "main main main main"
+        "section section section section"
         "footer footer footer footer";
 
     }
 
     .contenido-gral-videos .encabezado h1 {
-       font-size: 30px;
-
+       font-size: 50px;
+    
     }
 
     .contenido-gral-videos .encabezado .menu {
         line-height: 1,6;
-        margin: 5px auto;
+        margin: 1px auto;
         padding: 1px;
         font-size: 18px;
+        display: block;
+        width: 398px;
       
 
     }
@@ -431,10 +428,16 @@ h1 {
     .contenido-gral-videos .musicales h2 {
         font-size: 25px;
     }
-    
+    .contenido-gral-videos .main{
+        width: 398px;
+        text-align: center;
+        margin: 1px auto;
+        grid-column: 1, 4;
+        grid-row: 2, 3;
+    }
     .contenido-gral-videos .main .hijo h2 {
       font-size: 18px;
-      margin: 2px 15px;
+      margin: 2px auto;
 
     }
     .contenido-gral-videos .main .hijo .hijod {
@@ -443,13 +446,13 @@ h1 {
 
     .contenido-gral-videos .main .nunka h2 {
         font-size: 18px;
-        margin: 2px 15px;
+        margin: 2px auto;
     }
 
 
     .contenido-gral-videos .main .nunka .nunkad {
         width: 350px;
-        margin: 2px 15px;
+        margin: 2px auto;
     }
 
     .contenido-gral-videos .main .tkn h2 {
@@ -461,9 +464,21 @@ h1 {
         width: 350px;
         margin: 2px 15px;
     }
-    
-    .contenido-gral-videos .footer {
-        font-size: 15px;
+ /*   .contenido-gral-videos .section  {
+        width: 100%;
+        grid-area: section;
+        padding: 1px;
+        margin: 1px auto; 
+        grid-column: 2, 3;
+        grid-row: 3, 4 ;
+               
+       }*/
+    .contenido-gral-videos .footer p {
+        font-size: 18px;
+        
+    }
+    .contenido-gral-videos .footer .codbarra {
+        font-size: 18px;
     }
 
 
@@ -499,14 +514,13 @@ h1 {
     font-family:'Chakra Petch', sans-serif;
     margin: 1px 1px;
     padding: 1px;
+    text-align: center;
     
     
 }
 .hijo h2 {
      margin-left: 11px;
-     
-
-
+    
 }
 
 .hijod {
@@ -537,6 +551,7 @@ h1 {
     line-height: 1,6;
     margin: 5px 10px;
     padding: 1px;
+    text-align: center;
 }
 .nunka .chakra {
       color: #DC143C;
@@ -555,6 +570,7 @@ h1 {
     line-height: 1,6;
     margin: 5px 2px;
     padding: 1px;
+    text-align: center;
 }
 .tkn .val {
     color: #DC143C;
@@ -619,10 +635,10 @@ h1 {
      padding: 5px 10px 12px 5px;
 }
 /*Fin de PUKA*/
+ /* INICIO DE MEDIA QUERYS EN PAGINA DE PUBLICIDADES*/
 
 
-
-
+/*FIN DE MEDIA QUERYS EN PAGINA DE PUBLICIDADES*/
 /* PAGINA DE DOCUMENTALES*/
 
 /*Inicio de menu de navegacion de DOCUMENTALES*/
@@ -703,11 +719,9 @@ h1 {
 h1 {
     color: white;
     text-align: left;
-    margin-left: none;
     font-weight: bold;
     font-family:'Chakra Petch', sans-serif;
     font-size: 50px;
-    line-height: 1,6;
     margin: 5px 10px;
     padding: 5px 10px 12px 5px;
     display: flex;
