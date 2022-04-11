@@ -1,0 +1,759 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+/*INICIO GRIDS-AREA DE LA PAGINA PRINCIPAL*/
+.contenido-gral {
+     width: 100%;
+     margin: 1px auto;
+     display: grid;
+    
+     background-image:url(../img/Background\ image.jpg);
+     grid-template-columns: repeat(4, 1fr);
+     grid-template-rows: repeat(4, auto);
+     grid-template-areas: "encabezado encabezado encabezado encabezado"
+                          "main main main section"
+                          "main main main section"
+                          "footer footer footer footer";
+                       
+}
+
+.contenido-gral .section {
+    display: grid;
+    grid-area: section;
+    width: auto;
+    padding: 1px;
+    margin: 1px 1px; 
+   
+        
+}
+.contenido-gral .encabezado {
+       background: #00000000;
+       grid-area: encabezado;
+       padding: 10px;
+       border-radius: 1px;
+}
+
+.contenido-gral .main {
+  /* background: grey; */
+    grid-area: main;
+    padding: 1px;
+    border-radius: 20px;
+    margin: 1px auto;
+   /*opacity: 0.9;*/ 
+   width: 760px;
+   text-align: center;
+   grid-column: 2/4;
+   grid-row: 2/4
+  
+}
+.contenido-gral .footer{
+    background: #000000;
+    grid-area: footer;
+    padding: 5px;
+    border-radius: 4px;
+    margin-bottom: 0px;
+    opacity: 0.9;
+}
+
+.contenido-gral .main .valentina {
+    background: rgba(255, 255, 255, 0.616);
+    grid-area: main;
+    padding: 1px;
+    border-radius: 18px;
+    opacity: 1;
+  
+}
+/*FINAL DE GRIDS-AREA EN PAGINA PRINCIPAL*/
+.fondito {
+    grid-area: main;
+    grid-row-start: 2
+    
+}
+/*INICIO DE MEDIA QUERIES EN LA PAGINA PRINCIPAL*/
+@media screen and (max-width: 768px){
+    .contenido-gral{
+        grid-template-areas: "encabezado encabezado encabezado encabezado"
+        "main main main main"
+        "footer footer footer footer";
+    }
+
+    .contenido-gral .encabezado h1 {
+        font-size: 27px;
+    }
+    
+    .contenido-gral .encabezado .info {
+        font-size: 18px;
+        margin: 5px 10px;
+    }
+
+    .contenido-gral .encabezado .menu {
+        line-height: 1,6;
+        margin: 5px auto;
+        padding: 1px;
+      
+
+    }
+    .contenido-gral .encabezado .menu ul li a {
+        font-size: 18px;
+        display: inline-block;
+    }
+
+    .contenido-gral .main .valentina h2 {
+        font-size: 18px;
+    }
+
+    .contenido-gral .main .valentina img {
+        width:350px;
+
+    }
+    
+    .contenido-gral .main .valentina img:hover {
+                transform: scale(1.10);
+            }
+
+    .contenido-gral .footer {
+        font-size: 15px;
+    }
+
+}
+/*FIN DE MEDIA QUERIES EN LA PAGINA PRINCIPAL*/
+
+/*Inicio de encabezado de PAGINA PRINCIPAL*/
+body {
+    background-color: #000000;
+
+}
+h1 {
+     color: #ffffff;
+     text-align: left;
+     margin: 5px 10px 12px 10px ;
+     font-weight: bold;
+     font-family:'Chakra Petch', sans-serif;
+     font-size: 50px;
+     padding: 30px;
+     
+     
+}
+/*Fin de encabezado de PAGINA PRINCIPAL*/
+/* Incio de Menu de Navegacion de PAGINA PRINCIPAL*/
+ .menu {
+     background-color:#000000;
+     line-height: 1,6;
+     margin: 5px 10px;
+     padding: 10px;
+     border: 5px;
+     border-style:double;
+     border-color:silver;
+     text-align: center;
+     padding: 20px;
+     
+
+ }
+
+.menu ul li{
+    display: inline;
+    font-size: 25px;
+    color: #ffffff;
+    font-style: bold;
+    font-family:'Chakra Petch', sans-serif;
+    font-weight: bold;
+    padding: 2px;
+    
+    
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #DC143C;
+    font-size: 23px;
+    transition: height 2s;
+}
+
+.menu ul li a:hover  {
+       color: yellowgreen;
+       height: 30px;
+}
+
+
+/*Fin de Menu de Navegacion de PAGINA PRINCIPAL*/
+/* Inicio de INFO sobre la pagina principal*/
+
+.info {
+    font-size: 18px;
+    color: #ffffff;
+    font-family: 'Chakra Petch', sans-serif;
+    text-align: left;
+    line-height: 1,6;
+    margin: 5px 10px;
+    padding: 5px 10px 12px 5px;
+}
+/* Fin de INFO sobre la pagina principal*/
+/*Spotify*/
+.contenido-gral .section .spotify p {
+    color: #ffff16;
+    text-align: center;
+    padding: 2px;
+    margin: 2px auto;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 35px;
+    height: 20px;
+    
+}
+
+
+.contenido-gral .section .spotify {
+    
+    display: grid;
+    margin: 10px 20px;
+    padding: 10px;
+    grid-area: section;
+    width: 300px;
+    grid-column:4;
+    grid-row: 3/4;
+    justify-content: center;
+
+}
+
+.contenido-gral .section .lorem {
+    grid-area: section;
+    grid-column: 4;
+    grid-row: 1/2;
+    color: rgb(5, 199, 5);
+    margin: 20px 10px;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+
+
+
+
+
+
+
+/*Fin Spotify*/
+
+/*Inicio imagen de VALENTINA*/
+.valentina{
+    text-align: center;
+    line-height: 1,6;
+    margin: 5px 10px;
+    padding: 5px 10px 12px 5px;
+    opacity: 1;
+
+}
+
+.valentina h2 {
+    color: black;
+    text-align: center;
+    font-family:'Chakra Petch', sans-serif;
+    padding: 20px;
+    font-size: 46px;
+   
+   
+}
+
+.valentina .val {
+    color: #ff0000dc;
+    
+}
+/*
+.valentina img:hover {
+      transform: scale(1.05);
+      opacity: 0.9;
+      padding: 10px;
+   
+}*/
+
+/*Fin de imagen de VALENTINA*/
+
+/*Inicio imagen de HIJO DISCOLO*/
+
+.valentina .errados {
+    color: #ff0000d7;
+}
+/* Fin imagen de HIJO DISCOLO*/
+
+/*Inicio de links de INSTAGRAM Y YOUTUBE*/
+
+
+.redes-ig a {
+    text-decoration:none;
+    color: red;
+    line-height: 1,6;
+    margin: 10px;
+    padding: 2px;
+    font-size: 18px;
+    text-align: center;
+}
+.redes-ig a:hover {
+    color: greenyellow;
+}
+
+
+
+
+
+/* Fin de links de INSTAGRAM, YOUTUBE y FACEBOOK*/
+
+/*Inicio de info de contacto*/
+.contacto {
+    text-align: center;
+    color: #ffffff;
+    line-height: 1,6;
+    margin: 5px;
+    padding: 30px;
+    font-size: 18px;
+
+}
+.contacto .codbarra {
+    font-size: 38px;
+    font-family:'Libre Barcode 39 Text', cursive;
+    padding: 5px;
+}
+/*Fin de info de contactos*/
+
+/*FIN DE PAGINA PRINCIPAL*/
+
+/* PAGINA DE VIDEOCLIPS*/
+
+/*INICIO DE GRIDS-AREA EN PAGINA DE VIDEOCLIPS*/
+
+.contenido-gral-videos {
+    width: 100%;
+    margin: 5px auto;
+    display: grid;
+    gap: 2px;
+    
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "encabezado encabezado encabezado encabezado"
+                         "main main main main"
+                         "footer footer footer footer";
+                      
+ }
+
+.contenido-gral-videos .encabezado {
+     background: #000000;
+     grid-area: encabezado;
+
+}
+.contenido-gral-videos .main {
+    background: #000000;
+    grid-area: main;
+   
+}
+
+.contenido-gral-videos .footer {
+    background: #000000;
+    grid-area: footer;
+}
+/*FIN DE GRIDS-AREA EN PAGINA DE VIDEOCLIPS*/
+
+ /*INICIO DE MEDIA QUERIES EN PAGINA DE VIDEOCLIPS*/
+@media screen and (max-width: 768px){
+    .contenido-gral-videos{
+        grid-template-areas: "encabezado encabezado encabezado encabezado"
+        "main main main main"
+        "footer footer footer footer";
+
+    }
+
+    .contenido-gral-videos .encabezado h1 {
+       font-size: 30px;
+
+    }
+
+    .contenido-gral-videos .encabezado .menu {
+        line-height: 1,6;
+        margin: 5px auto;
+        padding: 1px;
+        font-size: 18px;
+      
+
+    }
+    .contenido-gral-videos .encabezado .menu ul li a {
+        font-size: 18px;
+
+    }
+   
+    .contenido-gral-videos .encabezado h1{
+        font-size: 27px;
+
+    }
+    .contenido-gral-videos .encabezado .data {
+        font-size: 18px;
+        margin: 5px 10px;
+
+    }
+    
+    .contenido-gral-videos .musicales h2 {
+        font-size: 25px;
+    }
+    
+    .contenido-gral-videos .main .hijo h2 {
+      font-size: 18px;
+      margin: 2px 15px;
+
+    }
+    .contenido-gral-videos .main .hijo .hijod {
+        width: 350px;
+    }
+
+    .contenido-gral-videos .main .nunka h2 {
+        font-size: 18px;
+        margin: 2px 15px;
+    }
+
+
+    .contenido-gral-videos .main .nunka .nunkad {
+        width: 350px;
+        margin: 2px 15px;
+    }
+
+    .contenido-gral-videos .main .tkn h2 {
+       font-size: 18px;
+       margin: 2px 15px;
+
+    }
+    .contenido-gral-videos .main .tkn .tknd {
+        width: 350px;
+        margin: 2px 15px;
+    }
+    
+    .contenido-gral-videos .footer {
+        font-size: 15px;
+    }
+
+
+    }
+/*FINAL DE MEDIA QUERIES EN PAGINA DE VIDEOCLIPS*/
+
+/*Inicio de menu de navegacion de VIDEOCLIPS*/
+.musicales h2 {
+    color: #ffffff;
+     text-align: left;
+     margin-left: none;
+     font-weight: bold;
+     font-family:'Chakra Petch', sans-serif;
+     font-size: 50px;
+     line-height: 1,6;
+     margin: 5px 10px;
+     padding: 5px 10px 12px 5px;
+}
+
+.data {
+    color: #ffffff;
+    font-family: 'Cormorant Garamond', serif;
+    line-height: 1,6;
+    margin: 5px 10px;
+    padding: 5px 10px 12px 5px;
+}
+/*Fin de menu de navegacion de VIDEOCLIPS*/
+
+/* Inicio de hijo discolo*/
+
+.hijo {
+    color: #ffffff;
+    font-family:'Chakra Petch', sans-serif;
+    margin: 1px 1px;
+    padding: 1px;
+    
+    
+}
+.hijo h2 {
+     margin-left: 11px;
+     
+
+
+}
+
+.hijod {
+    margin: 1px 8px;
+    padding: 2px;
+    font-family:'Chakra Petch', sans-serif;
+    line-height: 1,6;
+    text-align: center;
+
+}
+
+
+.hijo .errados{
+    color: #DC143C;
+    line-height: 1,6;
+      margin: 1px 2px;
+      padding: 5px;
+    
+} 
+
+
+/*Fin de Hijo discolo*/
+
+/*Inicio de chakra x ard*/
+ .nunka {
+    color: #ffffff;
+    font-family:'Chakra Petch', sans-serif;
+    line-height: 1,6;
+    margin: 5px 10px;
+    padding: 1px;
+}
+.nunka .chakra {
+      color: #DC143C;
+      line-height: 1,6;
+      margin: 5px 2px;
+      padding: 1px;
+
+}
+/*Fin de chakra x ard*/
+
+/*Inicio de tkn x valentina*/
+
+.tkn {
+    color: #ffffff;
+    font-family:'Chakra Petch', sans-serif;
+    line-height: 1,6;
+    margin: 5px 2px;
+    padding: 1px;
+}
+.tkn .val {
+    color: #DC143C;
+    line-height: 1,6;
+    margin: 5px 2px;
+    padding: 1px;
+}
+/*Fin de tkn x valentina*/
+
+
+
+
+
+/*PAGINA DE PUBLICIDADES*/
+/*Inicio de menu de navegacion de PUBLICIDADES*/
+.publicidades h1 {  
+    color: #ffffff;
+    text-align: left;
+    margin-left: none;
+    font-weight: bold;
+    font-family:'Chakra Petch', sans-serif;
+    font-size: 50px;
+    line-height: 1,6;
+    margin: 5px 10px;
+    padding: 5px 10px 12px 5px;
+    
+}
+
+.infoPubli {
+     color: #ffffff;
+
+}
+/*Fin de menu de navegacion de PUBLICIDADES*/
+
+/*Inicio de INSTA BURGER*/
+.instaburger h2 {
+     color: #DC143C;
+     font-family:'Chakra Petch', sans-serif;
+     line-height: 1,6;
+     margin: 5px 10px;
+     padding: 5px 10px 12px 5px;
+
+}
+/*Fin de INSTA BURGER*/
+
+/*Inicio de LA RECETA DE VICENTE*/
+.publ h2 {
+     color: #DC143C;
+     font-family:'Chakra Petch', sans-serif;
+     line-height: 1,6;
+     margin: 5px 10px;
+     padding: 5px 10px 12px 5px;
+}
+/*FIN de la RECETA DE VICENTE*/
+
+/*Inicio de PUKA*/
+.pub h2 {
+     color: #DC143C;
+     font-family:'Chakra Petch', sans-serif;
+     line-height: 1,6;
+     margin: 5px 10px;
+     padding: 5px 10px 12px 5px;
+}
+/*Fin de PUKA*/
+
+
+
+
+/* PAGINA DE DOCUMENTALES*/
+
+/*Inicio de menu de navegacion de DOCUMENTALES*/
+.docu {
+    color: #ffffff;
+    line-height: 1,6;
+    margin: 5px 10px;
+    padding: 5px 10px 12px 5px;
+     
+}
+ .docu-info {
+     color: #ffffff;
+     font-family:'Cormorant Garamond', serif;
+     line-height: 1,6;
+     margin: 5px 10px;
+     padding: 5px 10px 12px 5px;
+
+ }
+ /*Fin de menu de navegacion de DOCUMENTALES*/
+
+ /*Inicio de video de PATIOS*/
+ .patios {
+   color: #DC143C;
+   font-family: 'Chakra Petch', sans-serif;
+   line-height: 1,6;
+   margin: 5px 10px;
+   padding: 5px 10px 12px 5px;
+ }
+/*Fin de video de PATIOS*/
+
+
+
+ /* PAGINA DE TRABAJACONNOSOTROS*/
+
+ /*Inicio de Formulario*/
+ .trabajaconnos {
+      color: #ffffff;
+      font-family: 'Chakra Petch', sans-serif;
+      line-height: 1,6;
+      margin: 5px 10px;
+      padding: 5px 10px 12px 5px;
+ }
+ 
+ .infodeform {
+      color: #ffffff;
+      font-family: 'Chakra Petch', sans-serif;
+      line-height: 1,6;
+      margin: 5px 10px;
+      padding: 5px 10px 12px 5px;
+ }
+
+ .datita {
+     color: #ffffff;
+     font-family: 'Chakra Petch', sans-serif;
+     line-height: 1,6;
+     margin: 5px 10px;
+     padding: 5px 10px 12px 5px;
+ }
+ .datita-titulos {
+    color: #DC143C;
+    font-family: 'Chakra Petch', sans-serif;
+    line-height: 1,6;
+    margin: 5px 10px;
+    padding: 5px 10px 12px 5px;
+ }
+
+ .campos {
+     color: #ffffff;
+     line-height: 1,6;
+     margin: 5px 10px;
+     padding: 5px 10px 12px 5px;
+ }
+ /*Fin de formulario*/
+
+ /* PAGINA DE MERCH*/
+
+/*Inicio de Menu de navegacion*/
+h1 {
+    color: white;
+    text-align: left;
+    margin-left: none;
+    font-weight: bold;
+    font-family:'Chakra Petch', sans-serif;
+    font-size: 50px;
+    line-height: 1,6;
+    margin: 5px 10px;
+    padding: 5px 10px 12px 5px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.info {
+     color: white;
+     margin: 1px 3px 10px 2px;
+
+}
+/*Aca finaliza el estilo de menu de navegacion*/
+
+.merchand {
+    color: #ffffff;
+    text-align: left;
+    margin-left: none;
+    font-weight: bold;
+    font-family:'Chakra Petch', sans-serif;
+    font-size: 20px;
+    line-height: 1,6;
+    margin: 10px 5px;
+    padding: 5px 10px 12px 5px;
+
+}
+
+
+
+/*Inicio del  merchandising*/
+.detalles {
+
+    background-color:#DC143C;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(6, 1fr);
+   
+
+}
+.titular {
+  
+    color: white;
+    font-weight: bold;
+    font-family:'Chakra Petch', sans-serif;
+    font-size: 18px;
+    margin: 10px 5px;
+}
+
+.productos {
+   background-color: #493d3d;
+   color: black;
+   font-size: 18px;
+   font-weight: bold;
+   font-family:'Chakra Petch', sans-serif;
+   display: grid;
+   grid-template-columns: repeat(6, 1fr);
+   grid-template-rows: repeat(3, 230px);
+   gap: 2px;
+   margin: 2px 1px;
+
+}
+
+.items {
+    background: #f7e9e9;
+}    
+
+.items img {
+    width: 100%;
+    height: auto;
+}
+ /*Fin del merchandising*/
+
+/*Inicio de estilo de info de contacto*/
+
+.contacto {
+    color: white;
+    line-height: 1,6;
+    margin: 1px 5px;
+    padding: 50px;
+    text-align: center;
+    
+
+
+}
+
+
+
+
+
+
