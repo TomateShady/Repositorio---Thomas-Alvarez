@@ -5,8 +5,7 @@
 }
 /*INICIO GRIDS-AREA DE LA PAGINA PRINCIPAL*/
 .contenido-gral {
-     width: 100%;
-     margin: 1px auto;
+   
      display: grid;
     
      background-image:url(../img/Background\ image.jpg);
@@ -71,27 +70,43 @@
     grid-row-start: 2
     
 }
+
 /*INICIO DE MEDIA QUERIES EN LA PAGINA PRINCIPAL*/
 @media screen and (max-width: 768px){
+
     .contenido-gral{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, auto);
         grid-template-areas: "encabezado encabezado encabezado encabezado"
         "main main main main"
+        "section section section section"
         "footer footer footer footer";
     }
 
+    .contenido-gral .encabezado {
+        grid-area: encabezado;
+        margin: 2px auto;
+        align-content: center;
+    }
     .contenido-gral .encabezado h1 {
         font-size: 27px;
+        margin: 5px auto;
+       
     }
     
     .contenido-gral .encabezado .info {
         font-size: 18px;
-        margin: 5px 10px;
+        margin: 5px auto;
+      
+
     }
 
     .contenido-gral .encabezado .menu {
         line-height: 1,6;
         margin: 5px auto;
         padding: 1px;
+       
       
 
     }
@@ -100,22 +115,53 @@
         display: inline-block;
     }
 
+    .contenido-gral .main {
+        grid-area: main;
+        margin: 2px auto;
+        width: 400px;
+    }
     .contenido-gral .main .valentina h2 {
-        font-size: 18px;
+        font-size: 28px;
     }
 
     .contenido-gral .main .valentina img {
         width:350px;
+        margin: 1px auto;
 
     }
     
     .contenido-gral .main .valentina img:hover {
-                transform: scale(1.10);
+             transform: scale(1.10);
             }
+
+     .contenido-gral .section {
+            
+             grid-area: section;
+             width: auto;
+             padding: 1px;
+             margin: 1px auto; 
+                    
+            }
+    .contenido-gral .section .spotify {
+        width: 280 x 100;
+        
+        margin: 2px auto;
+       
+    }
+   
 
     .contenido-gral .footer {
         font-size: 15px;
+        grid-area: footer;
+        margin: 2px auto;
+        grid-area: footer;
     }
+    .contenido-gral .footer .contacto {
+        text-align: center;
+        font-size: 15px;
+    }
+   
+
 
 }
 /*FIN DE MEDIA QUERIES EN LA PAGINA PRINCIPAL*/
@@ -212,18 +258,10 @@ h1 {
     width: 300px;
     grid-column:4;
     grid-row: 3/4;
-    justify-content: center;
+    
 
 }
 
-.contenido-gral .section .lorem {
-    grid-area: section;
-    grid-column: 4;
-    grid-row: 1/2;
-    color: rgb(5, 199, 5);
-    margin: 20px 10px;
-    font-family: 'Chakra Petch', sans-serif;
-}
 
 
 
@@ -305,6 +343,7 @@ h1 {
     margin: 5px;
     padding: 30px;
     font-size: 18px;
+    grid-area: footer;
 
 }
 .contacto .codbarra {
