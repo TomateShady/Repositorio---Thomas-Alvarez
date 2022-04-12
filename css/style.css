@@ -8,7 +8,7 @@
    
      display: grid;
      background-image:url(../img/Background\ image.jpg);
-
+     width: 100%;
      grid-template-columns: repeat(4, 1fr);
      grid-template-rows: repeat(4, auto);
      grid-template-areas: "encabezado encabezado encabezado encabezado"
@@ -177,7 +177,7 @@ h1 {
      
 }
 /*Fin de encabezado de PAGINA PRINCIPAL*/
-/* Incio de Menu de Navegacion de PAGINA PRINCIPAL*/
+/* Inicio de Menu de Navegacion de PAGINA PRINCIPAL*/
  .menu {
      background-color:#000000;
      line-height: 1,6;
@@ -230,7 +230,7 @@ h1 {
     padding: 5px 10px 12px 5px;
 }
 /* Fin de INFO sobre la pagina principal*/
-/*Spotify*/
+/*Spotify
 .contenido-gral .section i {
     width: 100%;
     grid-area: section;
@@ -241,7 +241,7 @@ h1 {
     grid-row: 3, 4 ;
            
    }
-
+*/
 /*Fin Spotify*/
 
 /*Inicio imagenes de VALENTINA e HIJO DISCOLO*/
@@ -330,7 +330,7 @@ h1 {
 .contenido-gral-videos {
    
     display: grid;
-    gap: 1px;
+    width: 100%;
     background-image:url(../img/Background\ image.jpg);
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, auto);
@@ -347,7 +347,7 @@ h1 {
 
 }
 .contenido-gral-videos .main {
-    background: rgba(255, 255, 255, 0.753); 
+    background: #ffffffc0; 
     grid-area: main;
     width: 760px;
     opacity: 0.9;
@@ -368,7 +368,7 @@ h1 {
     grid-area: section;
     width: auto;
     padding: 1px;
-    margin: 1px 10px; 
+    margin: 1px auto; 
     grid-column:4;
     grid-row: 3/4;
         
@@ -386,6 +386,7 @@ h1 {
   
     .contenido-gral-videos{
         display: grid;
+        width: 100%;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(4, auto);
         grid-template-areas: "encabezado encabezado encabezado encabezado"
@@ -406,7 +407,7 @@ h1 {
         padding: 1px;
         font-size: 18px;
         display: block;
-        width: 398px;
+        width: auto;
       
 
     }
@@ -457,12 +458,12 @@ h1 {
 
     .contenido-gral-videos .main .tkn h2 {
        font-size: 18px;
-       margin: 2px 15px;
+       margin: 2px auto;
 
     }
     .contenido-gral-videos .main .tkn .tknd {
         width: 350px;
-        margin: 2px 15px;
+        margin: 2px auto;
     }
  /*   .contenido-gral-videos .section  {
         width: 100%;
@@ -485,25 +486,17 @@ h1 {
     }
 /*FINAL DE MEDIA QUERIES EN PAGINA DE VIDEOCLIPS*/
 
-/*Inicio de menu de navegacion de VIDEOCLIPS*/
+ /*Inicio de menu de navegacion de VIDEOCLIPS */
 .musicales h2 {
     color: #ffffff;
      text-align: left;
      margin-left: none;
      font-weight: bold;
      font-family:'Chakra Petch', sans-serif;
-     font-size: 50px;
+     font-size: 35px;
      line-height: 1,6;
-     margin: 5px 10px;
-     padding: 5px 10px 12px 5px;
-}
-
-.data {
-    color: #ffffff;
-    font-family: 'Cormorant Garamond', serif;
-    line-height: 1,6;
-    margin: 5px 10px;
-    padding: 5px 10px 12px 5px;
+     margin: 5px auto;
+     padding: 5px ;
 }
 /*Fin de menu de navegacion de VIDEOCLIPS*/
 
@@ -580,42 +573,97 @@ h1 {
 }
 /*Fin de tkn x valentina*/
 
-
+/*FIN DE PAGINA DE VIDEOCLIPS*/
 
 /*PAGINA DE PUBLICIDADES*/
-/*Inicio de menu de navegacion de PUBLICIDADES*/
-.publicidades h1 {  
+
+/*Inicio de menu de navegacion de PUBLICIDADES*/ 
+.contenidogral-publi {
+   
+    display: grid;
+    width: 100%;
+    background-image:url(../img/Background\ image.jpg);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "encabezado encabezado encabezado encabezado"
+                         "main main main main"
+                         "section section section section"
+                         "footer footer footer footer";
+                      
+ }
+ .contenidogral-publi .header {
+     grid-area: encabezado;
+ }
+ .contenidogral-publi .header .publicidades {
     color: #ffffff;
-    text-align: left;
-    margin-left: none;
-    font-weight: bold;
-    font-family:'Chakra Petch', sans-serif;
-    font-size: 50px;
+    font-family: 'Chakra Petch', sans-serif; 
     line-height: 1,6;
     margin: 5px 10px;
-    padding: 5px 10px 12px 5px;
-    
+    padding: 5px;
+    font-size: 18px;
+}
+.contenidogral-publi .publicidades h2 {
+    font-size: 35px;
 }
 
 .infoPubli {
      color: #ffffff;
 
 }
+.contenidogral-publi .section {
+    grid-area: main;
+    width: 760px;
+    grid-column:2/4;
+    grid-row:2/4;
+    background: #ffffffc0; 
+    width: 760px;
+    opacity: 0.9;
+    border-radius: 15px;
+    margin: 1px auto;
+  
+
+}
+.contenidogral-publi .section .instaburger {
+     margin: 1px auto;
+     text-align: center;
+     font-size: 25px;
+}
+
+.contenidogral-publi .section .receta {
+    margin: 1px auto;
+    text-align: center;
+    font-size: 25px;
+}
+.contenidogral-publi .section .puka {
+    margin: 1px auto;
+    text-align: center;
+    font-size: 25px;
+}
+
+.contenidogral-publi .footer {
+    grid-area: footer;
+    background: #000;
+}
+
+
+
 /*Fin de menu de navegacion de PUBLICIDADES*/
+
+/*INICIO DE MAIN DE PAGINA DE PUBLICIDADES*/
 
 /*Inicio de INSTA BURGER*/
 .instaburger h2 {
      color: #DC143C;
      font-family:'Chakra Petch', sans-serif;
      line-height: 1,6;
-     margin: 5px 10px;
-     padding: 5px 10px 12px 5px;
+     margin: 5px;
+     padding: 5px;
 
 }
 /*Fin de INSTA BURGER*/
 
 /*Inicio de LA RECETA DE VICENTE*/
-.publ h2 {
+.receta h2 {
      color: #DC143C;
      font-family:'Chakra Petch', sans-serif;
      line-height: 1,6;
@@ -625,7 +673,7 @@ h1 {
 /*FIN de la RECETA DE VICENTE*/
 
 /*Inicio de PUKA*/
-.pub h2 {
+.puka h2 {
      color: #DC143C;
      font-family:'Chakra Petch', sans-serif;
      line-height: 1,6;
@@ -638,20 +686,60 @@ h1 {
 
  @media screen and (max-width: 768px) {
     
-    .contenido-gral-publi {
-        display: flex ;
+    .contenidogral-publi{
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas: "encabezado encabezado encabezado encabezado"
+                             "section section section section"
+                             "footer footer footer footer";
 
-     }    
+    }
 
-     .contenido-gral-publi .main .publicidades h2  {
-         font-size: 55px;
-         color: white;
-         padding: 20px;
+         .contenidogral-publi .header {
+         grid-area: encabezado;
+         
      }
-     
-     
+        .contenidogral-publi .header h1 {
+            font-size: 35px;
+        }
+        .contenidogral-publi .header .menu {
+            padding: 4px;
+            
+        }
+        .contenidogral-publi .header .menu ul li a {
+            font-size: 18px;
+    
+        }
 
-
+     .contenidogral-publi .header .publicidades {
+         color: white;
+         margin: 5px auto;
+         padding: 4px;
+         font-family:'Chakra Petch', sans-serif; 
+         font-size: 15px;
+     }
+     .contenidogral-publi .section {
+         grid-area: section;
+         margin: 2px 1px;
+         padding: 4px;
+         width: 398px;
+     }
+     .contenidogral-publi .section .instaburger iframe {
+         width: 350px;
+        
+     }
+     .contenidogral-publi .section .receta iframe {
+         width: 350px;
+     }
+     .contenidogral-publi .section .puka iframe {
+         width: 350px;
+     }
+    
+     .contenidogral-publi .footer {
+         grid-area: footer;
+     }
 
 
 
@@ -679,6 +767,10 @@ h1 {
  }
 
 /*FIN DE MEDIA QUERYS EN PAGINA DE PUBLICIDADES*/
+
+
+
+
 /* PAGINA DE DOCUMENTALES*/
 
 /*Inicio de menu de navegacion de DOCUMENTALES*/
