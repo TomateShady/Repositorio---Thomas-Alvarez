@@ -582,8 +582,6 @@ h1 {
 
 
 
-
-
 /*PAGINA DE PUBLICIDADES*/
 /*Inicio de menu de navegacion de PUBLICIDADES*/
 .publicidades h1 {  
@@ -635,8 +633,50 @@ h1 {
      padding: 5px 10px 12px 5px;
 }
 /*Fin de PUKA*/
+
  /* INICIO DE MEDIA QUERYS EN PAGINA DE PUBLICIDADES*/
 
+ @media screen and (max-width: 768px) {
+    
+    .contenido-gral-publi {
+        display: flex ;
+
+     }    
+
+     .contenido-gral-publi .main .publicidades h2  {
+         font-size: 55px;
+         color: white;
+         padding: 20px;
+     }
+     
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ }
 
 /*FIN DE MEDIA QUERYS EN PAGINA DE PUBLICIDADES*/
 /* PAGINA DE DOCUMENTALES*/
