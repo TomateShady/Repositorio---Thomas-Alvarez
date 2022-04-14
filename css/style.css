@@ -52,7 +52,7 @@
 .contenido-gral .footer{
     background: #000000;
     grid-area: footer;
-    padding: 5px;
+    padding: 1px;
     opacity: 0.9;
     
 }
@@ -66,7 +66,6 @@
   
 }
 /*FINAL DE GRIDS-AREA EN PAGINA PRINCIPAL*/
-
 
 /*INICIO DE MEDIA QUERIES EN LA PAGINA PRINCIPAL*/
 @media screen and (max-width: 768px){
@@ -94,20 +93,24 @@
     }
     
     .contenido-gral .encabezado .info {
-        font-size: 18px;
+        font-size: 14px;
         margin: 5px auto;
       
 
     }
 
     .contenido-gral .encabezado .menu {
-        margin: 5px auto;
+        margin: 1px auto;
         padding: 1px;
+        line-height: 1.2;
+        text-align: center;
+        width: auto;
+        
        
     }
-    .contenido-gral .encabezado .menu ul li a {
-        font-size: 18px;
-        display: inline-block;
+    .contenido-gral-videos .encabezado .menu ul li {
+        font-size: 16px;
+        line-height: 1,2;
     }
 
     .contenido-gral .main {
@@ -115,46 +118,43 @@
         margin: 2px auto;
         width: 400px;
     }
-    .contenido-gral .main .valentina h2 {
-        font-size: 28px;
-    }
-
-    .contenido-gral .main .valentina img {
-        width:350px;
-        margin: 1px auto;
-
-    }
     
-    .contenido-gral .main .valentina img:hover {
-             transform: scale(1.10);
-            }
-/*
-     .contenido-gral .section i {
-             width: 100%;
-             grid-area: section;
-             padding: 1px;
-             margin: 1px auto; 
-            
-             grid-column: 2, 3;
-             grid-row: 3, 4 ;
-                    
-            }
-            */
-  
-   
-
+#carouselExampleDark {
+    margin: 1px 1px;
+}
+#carouselExampleDark .contdestacado p {
+    margin: 1px 1px;
+    font-size: 32px;
+}
+#carouselExampleDark .contdestacadosub p {
+    font-size: 14px;
+    color: white;
+    margin: 1px auto;
+}
     .contenido-gral .footer {
         font-size: 15px;
         grid-area: footer;
         margin: 2px 1px;
         grid-area: footer;
+        
        
     }
      .contenido-gral .footer .contacto {
         text-align: center;
         font-size: 15px;
+        padding: 10px;
     }
-   
+    .contenido-gral .footer .contacto p {
+        margin: 1px auto
+    }
+    .redes-ig a {
+        text-decoration:none;
+        color: red;
+        margin: 2px auto;
+        padding: 2px;
+        font-size: 14px;
+        text-align: center;
+    }
 
 }
 
@@ -168,11 +168,11 @@ body {
 h1 {
      color: #ffffff;
      text-align: left;
-     margin: 5px 10px 12px 10px ;
+     margin: 10px 5px ;
      font-weight: bold;
      font-family:'Chakra Petch', sans-serif;
      font-size: 50px;
-     padding: 30px;
+     padding: 40px;
      
      
 }
@@ -187,11 +187,13 @@ h1 {
      border-style:double;
      border-color:silver;
      text-align: center;
-     padding: 20px;
+     padding: 5px;
      
 
  }
-
+.menu ul {
+    margin: 4px auto;
+}
 .menu ul li{
     display: inline;
     font-size: 25px;
@@ -200,6 +202,8 @@ h1 {
     font-family:'Chakra Petch', sans-serif;
     font-weight: bold;
     padding: 2px;
+    margin: 1px 5px;
+    justify-content: center;
     
     
 }
@@ -225,26 +229,47 @@ h1 {
     color: #ffffff;
     font-family: 'Chakra Petch', sans-serif;
     text-align: left;
-    line-height: 1,6;
-    margin: 5px 10px;
-    padding: 5px 10px 12px 5px;
+    margin: 1px 10px;
+    padding: 1px;
 }
 /* Fin de INFO sobre la pagina principal*/
-/*Spotify
-.contenido-gral .section i {
-    width: 100%;
-    grid-area: section;
-    padding: 1px;
-    margin: 1px auto; 
-   
-    grid-column: 2, 3;
-    grid-row: 3, 4 ;
-           
-   }
-*/
-/*Fin Spotify*/
 
-/*Inicio imagenes de VALENTINA e HIJO DISCOLO*/
+/*Inicio carousel imagenes de VALENTINA e HIJO DISCOLO*/
+
+#carouselExampleDark .carousel-inner {
+    width: auto;
+    display: flex;
+    margin: 10px auto;
+    
+}
+#carouselExampleDark .contdestacado {
+    font-size: 60px;
+    color:rgb(167, 252, 39);
+    font-family:'Creepster', cursive;
+    margin: 1px auto;
+    padding: 1px;
+}
+#carouselExampleDark .contdestacadosub {
+    font-size: 20px;
+    color: white;
+    margin: 1px auto;
+}
+#carouselExampleDark .carousel-inner .carousel-item h5 {
+   color: greenyellow;
+   font-size: 42px;
+   font-family:'Creepster', cursive;
+   
+   
+
+}
+#carouselExampleDark .carousel-inner .carousel-item p {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 1px auto;
+ 
+ }
+ /*
 .valentina{
     text-align: center;
     line-height: 1,6;
@@ -278,25 +303,21 @@ h1 {
 
 .valentina .errados {
     color: #ff0000d7;
-}
+}*/
 /* Fin imagenes de VALENTINA E HIJO DISCOLO*/
 
 /*Inicio de links de INSTAGRAM Y YOUTUBE*/
 
 
-.redes-ig a {
-    text-decoration:none;
-    color: red;
-    line-height: 1,6;
-    margin: 10px;
-    padding: 2px;
-    font-size: 18px;
-    text-align: center;
+.footer .redes-ig {
+    font-size: 33px;
+    padding: 4px;
 }
-.redes-ig a:hover {
-    color: greenyellow;
+.footer .redes-ig i {
+    margin: 1px 4px;
+    color: #ff0000;
+    opacity: 1;
 }
-
 
 
 
@@ -308,16 +329,25 @@ h1 {
     text-align: center;
     color: #ffffff;
     line-height: 1,6;
-    margin: 5px;
-    padding: 30px;
+    margin: 1px auto;
+    padding: 10px;
     font-size: 18px;
     grid-area: footer;
 
 }
+.contacto a {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+}
+.contacto p {
+    margin: 1px auto;
+    font-family: 'Chakra Petch', sans-serif;
+}
 .contacto .codbarra {
-    font-size: 38px;
+    font-size: 42px;
     font-family:'Libre Barcode 39 Text', cursive;
-    padding: 5px;
+    padding: 1px;
 }
 /*Fin de info de contactos*/
 
@@ -426,18 +456,18 @@ h1 {
     }
 
     .contenido-gral-videos .encabezado .menu {
-        line-height: 1,6;
+      
         margin: 1px auto;
         padding: 1px;
         font-size: 18px;
         display: block;
-        width: auto;
+         width: auto;
       
 
     }
-    .contenido-gral-videos .encabezado .menu ul li a {
-        font-size: 18px;
-
+    .contenido-gral-videos .encabezado .menu ul li {
+        font-size: 16px;
+        line-height: 1,2;
     }
    
     .contenido-gral-videos .encabezado h1{
@@ -463,11 +493,12 @@ h1 {
     .contenido-gral-videos .main .hijo h2 {
       font-size: 18px;
       margin: 2px auto;
-
+      
     }
-    .contenido-gral-videos .main .hijo .hijod {
+     .contenido-gral-videos .main iframe {
         width: 350px;
-    }
+        
+    } 
 
     .contenido-gral-videos .main .nunka h2 {
         font-size: 18px;
@@ -475,35 +506,20 @@ h1 {
     }
 
 
-    .contenido-gral-videos .main .nunka .nunkad {
-        width: 350px;
-        margin: 2px auto;
-    }
-
+   
     .contenido-gral-videos .main .tkn h2 {
        font-size: 18px;
        margin: 2px auto;
 
     }
-    .contenido-gral-videos .main .tkn .tknd {
-        width: 350px;
-        margin: 2px auto;
-    }
- /*   .contenido-gral-videos .section  {
-        width: 100%;
-        grid-area: section;
-        padding: 1px;
-        margin: 1px auto; 
-        grid-column: 2, 3;
-        grid-row: 3, 4 ;
-               
-       }*/
+    
+
     .contenido-gral-videos .footer p {
         font-size: 18px;
         
     }
     .contenido-gral-videos .footer .codbarra {
-        font-size: 18px;
+        font-size: 32px;
     }
 
 
