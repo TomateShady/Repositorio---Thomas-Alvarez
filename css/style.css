@@ -7,33 +7,34 @@
 .contenido-gral {
    
      display: grid;
-     background-image:url(../img/Background\ image.jpg);
+     background-image:url(../img/Background\ image.jpg); 
      width: 100%;
      grid-template-columns: repeat(4, 1fr);
      grid-template-rows: repeat(4, auto);
      grid-template-areas: "encabezado encabezado encabezado encabezado"
-                          "main main main section"
-                          "main main main section"
+                          "main main main main"
+                          "main main main main"
                           "footer footer footer footer";
                        
 }
 
-.contenido-gral .section {
+/* .contenido-gral .section {
     display: grid;
     grid-area: section;
     width: auto;
     padding: 1px;
     margin: 1px 10px; 
     grid-column:4;
-    grid-row: 3/4;
+    grid-row: 2/3;
         
-}
+} */
 
 .contenido-gral .encabezado {
        background: #00000000;
        grid-area: encabezado;
        padding: 10px;
        border-radius: 1px;
+       
 }
 
 .contenido-gral .main {
@@ -49,12 +50,22 @@
     grid-row: 2/4
   
 }
+/* .contenido-gral .section {
+    margin: 2px 4px ;
+    padding: 4px;
+
+} */
 .contenido-gral .footer{
     background: #000000;
     grid-area: footer;
     padding: 1px;
     opacity: 0.9;
+    grid-column: 1/5;
+    grid-row: 4/5;
     
+}
+.contenido-gral .footer:hover {
+    opacity: 1;
 }
 
 .contenido-gral .main .valentina {
@@ -106,12 +117,16 @@
         text-align: center;
         width: auto;
         
-       
     }
-    .contenido-gral-videos .encabezado .menu ul li {
-        font-size: 16px;
+
+    .contenido-gral-videos .encabezado .menu ul {
+        font-size: 26px;
         line-height: 1,2;
     }
+    /* .contenido-gral-videos .encabezado .menu ul li a{
+        font-size: 45px;
+        line-height: 1,2;
+    } */
 
     .contenido-gral .main {
         grid-area: main;
@@ -119,19 +134,19 @@
         width: 400px;
     }
     
-#carouselExampleDark {
+.contenido-gral #carouselExampleDark {
     margin: 1px 1px;
 }
-#carouselExampleDark .contdestacado p {
+.contenido-gral #carouselExampleDark .contdestacado p {
     margin: 1px 1px;
-    font-size: 32px;
+    font-size: 45px;
 }
-#carouselExampleDark .contdestacadosub p {
-    font-size: 14px;
+.contenido-gral #carouselExampleDark .infocontenidodest p {
+    font-size: 15px;
     color: white;
     margin: 1px auto;
 }
-    .contenido-gral .footer {
+.contenido-gral .footer {
         font-size: 15px;
         grid-area: footer;
         margin: 2px 1px;
@@ -139,20 +154,20 @@
         
        
     }
-     .contenido-gral .footer .contacto {
+.contenido-gral .footer .contacto {
         text-align: center;
         font-size: 15px;
         padding: 10px;
     }
-    .contenido-gral .footer .contacto p {
+.contenido-gral .footer .contacto p {
         margin: 1px auto
     }
-    .redes-ig a {
+.contenido-gral .footer .redes-ig i {
         text-decoration:none;
         color: red;
         margin: 2px auto;
         padding: 2px;
-        font-size: 14px;
+        font-size: 30px;
         text-align: center;
     }
 
@@ -165,14 +180,14 @@ body {
     background-color: #000000;
 
 }
-h1 {
+.contenido-gral h1 {
      color: #ffffff;
      text-align: left;
-     margin: 10px 5px ;
+     margin: 2px ;
      font-weight: bold;
      font-family:'Chakra Petch', sans-serif;
-     font-size: 50px;
-     padding: 40px;
+     font-size: 55px;
+     padding: 10px;
      
      
 }
@@ -224,7 +239,7 @@ h1 {
 /*Fin de Menu de Navegacion de PAGINA PRINCIPAL*/
 /* Inicio de INFO sobre la pagina principal*/
 
-.info {
+.contenido-gral .info {
     font-size: 18px;
     color: #ffffff;
     font-family: 'Chakra Petch', sans-serif;
@@ -238,22 +253,27 @@ h1 {
 
 #carouselExampleDark .carousel-inner {
     width: auto;
-    display: flex;
+    display: grid;
     margin: 10px auto;
+    grid-area: main;
     
 }
-#carouselExampleDark .contdestacado {
-    font-size: 60px;
-    color:rgb(167, 252, 39);
+.encabezado .contdestacado p {
+    font-size: 80px;
+    color:greenyellow;
     font-family:'Creepster', cursive;
     margin: 1px auto;
     padding: 1px;
+    text-align: center;
 }
-#carouselExampleDark .contdestacadosub {
-    font-size: 20px;
+.encabezado .infocontenidodest {
     color: white;
-    margin: 1px auto;
+    margin: 2px auto;
+    font-size: 25px;
+    font-family:'Chakra Petch', sans-serif; 
+    text-align: center;
 }
+
 #carouselExampleDark .carousel-inner .carousel-item h5 {
    color: greenyellow;
    font-size: 42px;
@@ -304,19 +324,99 @@ h1 {
 .valentina .errados {
     color: #ff0000d7;
 }*/
-/* Fin imagenes de VALENTINA E HIJO DISCOLO*/
+/* Fin imagenes de VALENTINA*/ 
+/*Inicio de imagenes de ARDILES*/
+#carouselExampleDark2 .carousel-inner {
+    width: auto;
+    display: grid;
+    margin: 10px auto;
+    grid-area: main;
+    
+}
+#carouselExampleDark2 .contdestacado {
+    font-size: 80px;
+    color:greenyellow;
+    font-family:'Creepster', cursive;
+    margin: 1px auto;
+    padding: 1px;
+}
+
+#carouselExampleDark2 .carousel-inner .carousel-item h5 {
+   color: greenyellow;
+   font-size: 42px;
+   font-family:'Creepster', cursive;
+   
+   
+
+}
+#carouselExampleDark2 .carousel-inner .carousel-item p {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 1px auto;
+ 
+ }
+/*Fin de imagenes de ARDILES*/
+/*Inicio de imagenes de PUKA*/
+#carouselExampleDark3 .carousel-inner {
+    width: auto;
+    display: grid;
+    margin: 10px auto;
+    grid-area: main;
+    
+}
+#carouselExampleDark3 .contdestacado {
+    font-size: 80px;
+    color:greenyellow;
+    font-family:'Creepster', cursive;
+    margin: 1px auto;
+    padding: 1px;
+}
+
+#carouselExampleDark3 .carousel-inner .carousel-item h5 {
+   color: greenyellow;
+   font-size: 42px;
+   font-family:'Creepster', cursive;
+   
+   
+
+}
+#carouselExampleDark3 .carousel-inner .carousel-item p {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 1px auto;
+ 
+ }
+/*Fin de imagenes de PUKA*/
+
+.contenido-gral .section h2 {
+    color: fuchsia;
+    text-align: center;
+    font-family:'Chakra Petch', sans-serif;
+    font-weight: bold;
+
+}
+.contenido-gral .section iframe {
+    margin: 2px auto;
+}
 
 /*Inicio de links de INSTAGRAM Y YOUTUBE*/
 
 
-.footer .redes-ig {
+.contenido-gral .footer .redes-ig {
     font-size: 33px;
     padding: 4px;
 }
-.footer .redes-ig i {
+.contenido-gral .footer .contacto .redes-ig a{
     margin: 1px 4px;
-    color: #ff0000;
-    opacity: 1;
+    font-size: 35px;
+    color: red;
+    
+}
+
+.contenido-gral .footer .contacto .redes-ig a i:hover {
+     color: greenyellow;
 }
 
 
@@ -378,19 +478,21 @@ h1 {
 }
  
 .contenido-gral-videos .encabezado .musicales h2 {
-    color: #ffffff;
-     text-align: left;
-     font-family:'Chakra Petch', sans-serif;
-     font-size: 35px;
-     margin: 5px 10px;
+    color: greenyellow;
+     text-align: center;
+     font-family:'Creepster', cursive;
+     font-size: 80px;
+     margin: 15px auto 2px auto;
      padding: 5px ;
+     
 }
 .contenido-gral-videos .encabezado .data {
     color: #ffffff;
     padding: 4px;
     margin: 2px auto 10px 10px;
-    font-size: 15px;
+    font-size: 25px;
     font-family: 'Chakra Petch', sans-serif; 
+    text-align: center;
 }
 
 
@@ -425,12 +527,27 @@ h1 {
     grid-row: 3/4;
         
 }
-.contenido-gral-videos .footer {
-    background: black;
+.contenido-gral-videos .footer{
+    background: #000000;
     grid-area: footer;
+    padding: 1px;
     opacity: 0.9;
-    width: auto;
+    
 }
+.contenido-gral-videos .footer:hover {
+    opacity: 1;
+}
+.contenido-gral-videos .footer .contacto .redes-ig a{
+    margin: 1px 4px;
+    font-size: 35px;
+    color: red;
+    
+}
+
+.contenido-gral-videos .footer .contacto .redes-ig a i:hover {
+     color: greenyellow;
+}
+
 /*Fin de menu de navegacion de VIDEOCLIPS*/
 
 /*FIN DE GRIDS-AREA EN PAGINA DE VIDEOCLIPS*/
@@ -465,8 +582,8 @@ h1 {
       
 
     }
-    .contenido-gral-videos .encabezado .menu ul li {
-        font-size: 16px;
+    .contenido-gral-videos .encabezado .menu ul li a{
+        font-size: 26px;
         line-height: 1,2;
     }
    
@@ -477,11 +594,13 @@ h1 {
     .contenido-gral-videos .encabezado .data {
         font-size: 18px;
         margin: 5px 10px;
+        text-align: center;
 
     }
     
-    .contenido-gral-videos .musicales h2 {
-        font-size: 25px;
+    .contenido-gral-videos .encabezado .musicales h2 {
+        font-size: 42px;
+        text-align: center;
     }
     .contenido-gral-videos .main{
         width: 398px;
@@ -491,7 +610,7 @@ h1 {
         grid-row: 2, 3;
     }
     .contenido-gral-videos .main .hijo h2 {
-      font-size: 18px;
+      font-size: 28px;
       margin: 2px auto;
       
     }
@@ -501,14 +620,14 @@ h1 {
     } 
 
     .contenido-gral-videos .main .nunka h2 {
-        font-size: 18px;
+        font-size: 28px;
         margin: 2px auto;
     }
 
 
    
     .contenido-gral-videos .main .tkn h2 {
-       font-size: 18px;
+       font-size: 28px;
        margin: 2px auto;
 
     }
@@ -609,12 +728,15 @@ h1 {
     color: #ffffff;
     font-family: 'Chakra Petch', sans-serif; 
     line-height: 1,6;
-    margin: 5px 10px;
+    margin: 5px auto;
     padding: 5px;
     font-size: 18px;
+    text-align: center;
 }
 .contenidogral-publi .publicidades h2 {
-    font-size: 35px;
+    font-size: 80px;
+    font-family:'Creepster', cursive;
+    color: greenyellow;
 }
 
 .infoPubli {
@@ -656,6 +778,20 @@ h1 {
     background: #000;
     opacity: 0.9;
 }
+.contenidogral-publi .footer:hover {
+     opacity: 1;
+}
+.contenidogral-publi .footer .contacto .redes-ig a{
+    margin: 1px 4px;
+    font-size: 35px;
+    color: red;
+    
+}
+
+.contenidogral-publi .footer .contacto .redes-ig a i:hover {
+     color: greenyellow;
+}
+
 
 
 
@@ -721,17 +857,26 @@ h1 {
             
         }
         .contenidogral-publi .header .menu ul li a {
-            font-size: 18px;
+            font-size: 24px;
     
         }
 
-     .contenidogral-publi .header .publicidades {
-         color: white;
+     .contenidogral-publi .header .publicidades h2{
+         color: greenyellow;
          margin: 5px auto;
          padding: 4px;
-         font-family:'Chakra Petch', sans-serif; 
-         font-size: 15px;
+         font-family:'Creepster', cursive;
+         font-size: 45px;
+         text-align: center;
      }
+     .contenidogral-publi .header .publicidades p{
+        color: white;
+        margin: 5px auto;
+        padding: 4px;
+        font-family:'Chakra Petch', sans-serif;
+        font-size: 15px;
+        text-align: center;
+    }
      .contenidogral-publi .section {
          grid-area: section;
          margin: 2px 1px;
@@ -755,37 +900,17 @@ h1 {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
  }
 
 /*FIN DE MEDIA QUERYS EN PAGINA DE PUBLICIDADES*/
 
 
-
-
 /* PAGINA DE DOCUMENTALES*/
 
 /*Inicio de menu de navegacion de DOCUMENTALES*/
+.contenidogral-docu {
+    background-image: url(../img/Background\ image.jpg);
+}
 .docu {
     color: #ffffff;
     line-height: 1,6;
@@ -798,9 +923,32 @@ h1 {
      font-family:'Cormorant Garamond', serif;
      line-height: 1,6;
      margin: 5px 10px;
-     padding: 5px 10px 12px 5px;
+     padding: 2px 5px;
 
  }
+ .contenidogral-docu .section {
+     text-align: center;
+ } 
+ .contenidogral-docu .footer {
+    grid-area: footer;
+    background: #000;
+    opacity: 0.9;
+}
+.contenidogral-docu .footer:hover {
+     opacity: 1;
+}
+.contenidogral-docu .footer .contacto .redes-ig a{
+    margin: 1px 4px;
+    font-size: 35px;
+    color: red;
+    
+}
+
+.contenidogral-docu .footer .contacto .redes-ig a i:hover {
+     color: greenyellow;
+}
+
+
  /*Fin de menu de navegacion de DOCUMENTALES*/
 
  /*Inicio de video de PATIOS*/
@@ -809,9 +957,69 @@ h1 {
    font-family: 'Chakra Petch', sans-serif;
    line-height: 1,6;
    margin: 5px 10px;
-   padding: 5px 10px 12px 5px;
+   padding: 2px auto;
  }
+ .contenidogral-docu .header .docu {
+    font-family:'Creepster', cursive;
+    font-size: 60px;
+    text-align: center;
+    color: greenyellow;
+ }
+
+ .contenidogral-docu .header .docu-info {
+    font-size: 25px;
+    font-family:'Cormorant Garamond', serif;
+    text-align: center;
+    
+}
+ .contenidogral-docu .section {
+    background: #ffffffc0; 
+    width: 760px;
+    opacity: 0.9;
+    border-radius: 18px;
+    padding: 10px;
+    font-size: 25px;
+    margin: 1px auto;
+   
+}
 /*Fin de video de PATIOS*/
+/*Inicio de MEDIA QUERYS de DOCUMENTALES*/
+@media screen and (max-width: 768px) {
+    .contenidogral-docu h1 {
+        font-size: 35px;
+    }
+    .contenidogral-docu .header .docu {
+        font-family:'Creepster', cursive;
+        font-size: 40px;
+        text-align: center;
+        color: greenyellow;
+    }
+    .contenidogral-docu .header .docu-info {
+        font-size: 18px;
+        font-family:'Cormorant Garamond', serif;
+        
+    }
+    .contenidogral-docu .section {
+       width: 398px;
+    }
+    .contenidogral-docu .section .patios {
+        font-size: 24px;
+    }
+    .contenidogral-docu .section iframe {
+        text-align: center;
+        width: 350px;
+    }
+    .contenidogral-docu .footer .redes-ig i {
+        text-decoration:none;
+        color: red;
+        margin: 2px auto;
+        padding: 2px;
+        font-size: 30px;
+        text-align: center;
+    }
+    
+}
+/*Fin de MEDIA QUERYS de DOCUMENTALES*/
 
 
 
@@ -819,11 +1027,12 @@ h1 {
 
  /*Inicio de Formulario*/
  .trabajaconnos {
-      color: #ffffff;
-      font-family: 'Chakra Petch', sans-serif;
-      line-height: 1,6;
+      color: greenyellow;
+      font-family: 'Creepster', cursive;
       margin: 5px 10px;
-      padding: 5px 10px 12px 5px;
+      padding: 4px;
+      font-size: 60px;
+      text-align: center;
  }
  
  .infodeform {
@@ -833,7 +1042,13 @@ h1 {
       margin: 5px 10px;
       padding: 5px 10px 12px 5px;
  }
-
+ .contenidogral-form .section .complet h3 {
+     color: white;
+     margin: 2px auto 2px 10px;
+     font-size: 36px;
+     font-family: 'Chakra Petch', sans-serif;
+     color: greenyellow;
+ }
  .datita {
      color: #ffffff;
      font-family: 'Chakra Petch', sans-serif;
@@ -855,8 +1070,37 @@ h1 {
      margin: 5px 10px;
      padding: 5px 10px 12px 5px;
  }
- /*Fin de formulario*/
+ .contenidogral-form .footer .contacto .redes-ig a{
+    margin: 1px 4px;
+    font-size: 35px;
+    color: red;
+    
+}
 
+.contenidogral-form .footer .contacto .redes-ig a i:hover {
+     color: greenyellow;
+}
+
+ /*Fin de formulario*/
+/*Inicio de MEDIA QUERYS en FORMULARIO*/
+@media screen and (max-width: 768px) {
+.contenidogral-form .header h1 {
+    font-size: 35px;
+}
+.contenidogral-form .section .trabajaconnos {
+    font-size: 22px;
+}
+.contenidogral-form .footer .redes-ig i {
+    text-decoration:none;
+    color: red;
+    margin: 2px auto;
+    padding: 2px;
+    font-size: 30px;
+    text-align: center;
+}
+
+}
+/*Fin de MEDIA QUERYS de FORMULARIO*/
  /* PAGINA DE MERCH*/
 
 /*Inicio de Menu de navegacion*/
@@ -872,29 +1116,26 @@ h1 {
     flex-direction: column;
     
 }
+.merchand {
+    color: greenyellow;
+    text-align: center;
+    font-weight: bold;
+    font-family:'Creepster', cursive;
+    font-size: 60px;
+    margin: 2px auto;
+    padding: 5px 10px 12px 5px;
+
+}
 .info {
      color: white;
      margin: 1px 3px 10px 2px;
+     font-size: 22px;
+     text-align: center;
 
 }
 /*Aca finaliza el estilo de menu de navegacion*/
 
-.merchand {
-    color: #ffffff;
-    text-align: left;
-    margin-left: none;
-    font-weight: bold;
-    font-family:'Chakra Petch', sans-serif;
-    font-size: 20px;
-    line-height: 1,6;
-    margin: 10px 5px;
-    padding: 5px 10px 12px 5px;
-
-}
-
-
-
-/*Inicio del  merchandising*/
+/*Inicio del  MERCHANDISING*/
 .detalles {
 
     background-color:#DC143C;
@@ -921,7 +1162,7 @@ h1 {
    font-family:'Chakra Petch', sans-serif;
    display: grid;
    grid-template-columns: repeat(6, 1fr);
-   grid-template-rows: repeat(3, 230px);
+   grid-template-rows: repeat(3, auto);
    gap: 2px;
    margin: 2px 1px;
 
@@ -949,8 +1190,60 @@ h1 {
 
 
 }
+.contenidogral-merch .footer .contacto .redes-ig a{
+    margin: 1px 4px;
+    font-size: 35px;
+    color: red;
+    
+}
 
+.contenidogral-merch .footer .contacto .redes-ig a i:hover {
+     color: greenyellow;
+}
+/*Inicio de MEDIA QUERYS en MERCH*/
+@media screen and (max-width: 768px) {
+      .contenidogral-merch h1 {
+          font-size: 32px;
+      }
+      .contenidogral-merch .menu ul li a {
+          font-size: 22px;
+      }
+    .contenidogral-merch .merchand h2 {
+        font-size: 42px;
+        color: greenyellow;
+        font-family:'Creepster', cursive;
+    }
+    .contenidogral-merch .section .detalles {
+        background-color:#DC143C;
+        /* display: grid;
+        gap: 5px;
+        grid-template-columns: repeat(6, 1fr);     */
+    }
+    .contenidogral-merch .section .titular {
+        font-size: 12px;
+    }
+    .contenidogral-merch .section .productos {
+        display: block;
+        
+    }
+    .contenidogral-merch .section .items {
+        display: block;
+        margin: 1px;
+    }
 
+    .contenidogral-merch .footer .contacto .redes-ig a{
+        margin: 1px 4px;
+        font-size: 28px;
+        color: red;
+        
+    }
+    
+    .contenidogral-merch .footer .contacto .redes-ig a i:hover {
+         color: greenyellow;
+    }
+
+}
+/*Fin de MEDIA QUERYS en MERCH*/
 
 
 
