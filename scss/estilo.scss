@@ -1,17 +1,17 @@
 .contenidogral-docu {
     header{
        .docu {
-        color: white;
+        color: #ffffff;
         margin: 5px 10px;
-        padding: 5px 10px 12px 5px;
+        padding: 5px;
         font-family: 'Creepster', cursive;
-        font-size: 60px;
+        font-size: 45px;
         text-align: center;
-        color: greenyellow;
+        color: #adff2f;
     } 
     .docu-info {
         p {
-         color: white;
+         color: #ffffff;
          font-family:'Cormorant Garamond', serif;
          margin: 5px 10px;
          padding: 2px 5px;
@@ -31,6 +31,15 @@
         padding: 10px;
         font-size: 25px;
         margin: 1px auto;
+        h2{
+            text-align: center;
+            color: #ff0000;
+            font-family:'Chakra Petch', sans-serif;
+            // font-size: 48px;
+        }
+        iframe{
+            text-align: center;
+        }
     }
     .footer {
         grid-area: footer;
@@ -46,7 +55,7 @@
                   font-size: 35px;
                   color: #ff0000;
                   i:hover{
-                      color: greenyellow;
+                      color: #adff2f;
                   }
                }
            }
@@ -60,13 +69,13 @@
         h1 {
             font-size: 35px;
         }
-    }
+   
     .header {
         .docu{
             font-family:'Creepster', cursive;
-            font-size: 40px;
+            font-size: 30px;
             text-align: center;
-            color: greenyellow;
+            color: #adff2f;
         }
         .docu-info{
             font-size: 18px;
@@ -75,8 +84,13 @@
     }
     .section{
         width: 398px;
-        .patios{
-            font-size: 24px;
+          .patios{
+            font-size: 18px;
+            margin: 1px;
+            h2{
+                font-size: 22px;
+            }
+           
         }
         iframe {
             text-align: center;
@@ -95,4 +109,5 @@
             }
         }
     }
+}
 }

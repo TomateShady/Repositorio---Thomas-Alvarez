@@ -1,15 +1,15 @@
 .contenidogral-docu header .docu {
-  color: white;
+  color: #ffffff;
   margin: 5px 10px;
-  padding: 5px 10px 12px 5px;
+  padding: 5px;
   font-family: 'Creepster', cursive;
-  font-size: 60px;
+  font-size: 45px;
   text-align: center;
-  color: greenyellow;
+  color: #adff2f;
 }
 
 .contenidogral-docu header .docu-info p {
-  color: white;
+  color: #ffffff;
   font-family: 'Cormorant Garamond', serif;
   margin: 5px 10px;
   padding: 2px 5px;
@@ -26,6 +26,16 @@
   padding: 10px;
   font-size: 25px;
   margin: 1px auto;
+}
+
+.contenidogral-docu .section h2 {
+  text-align: center;
+  color: #ff0000;
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+.contenidogral-docu .section iframe {
+  text-align: center;
 }
 
 .contenidogral-docu .footer {
@@ -45,34 +55,38 @@
 }
 
 .contenidogral-docu .footer .contacto .redes-ig a i:hover {
-  color: greenyellow;
+  color: #adff2f;
 }
 
 @media screen and (max-width: 768px) {
   .contenidogral-docu h1 {
     font-size: 35px;
   }
-  .header .docu {
+  .contenidogral-docu .header .docu {
     font-family: 'Creepster', cursive;
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
-    color: greenyellow;
+    color: #adff2f;
   }
-  .header .docu-info {
+  .contenidogral-docu .header .docu-info {
     font-size: 18px;
     font-family: 'Cormorant Garamond', serif;
   }
-  .section {
+  .contenidogral-docu .section {
     width: 398px;
   }
-  .section .patios {
-    font-size: 24px;
+  .contenidogral-docu .section .patios {
+    font-size: 18px;
+    margin: 1px;
   }
-  .section iframe {
+  .contenidogral-docu .section .patios h2 {
+    font-size: 22px;
+  }
+  .contenidogral-docu .section iframe {
     text-align: center;
     width: 350px;
   }
-  .footer .redes-ig i {
+  .contenidogral-docu .footer .redes-ig i {
     text-decoration: none;
     color: #ff0000;
     margin: 2px auto;
