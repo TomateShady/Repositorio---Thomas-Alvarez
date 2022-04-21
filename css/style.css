@@ -914,7 +914,7 @@ body {
 /* PAGINA DE DOCUMENTALES*/
 
 /*Inicio de menu de navegacion de DOCUMENTALES*/
-.contenidogral-docu {
+/* .contenidogral-docu {
     background-image: url(../img/Background\ image.jpg);
 }
 .docu {
@@ -952,13 +952,13 @@ body {
 
 .contenidogral-docu .footer .contacto .redes-ig a i:hover {
      color: greenyellow;
-}
+} */
 
 
  /*Fin de menu de navegacion de DOCUMENTALES*/
 
  /*Inicio de video de PATIOS*/
- .patios {
+ /* .patios {
    color: #DC143C;
    font-family: 'Chakra Petch', sans-serif;
    line-height: 1,6;
@@ -987,10 +987,10 @@ body {
     font-size: 25px;
     margin: 1px auto;
    
-}
+} */
 /*Fin de video de PATIOS*/
 /*Inicio de MEDIA QUERYS de DOCUMENTALES*/
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
     .contenidogral-docu h1 {
         font-size: 35px;
     }
@@ -1024,7 +1024,7 @@ body {
         text-align: center;
     }
     
-}
+} */
 /*Fin de MEDIA QUERYS de DOCUMENTALES*/
 
 
@@ -1032,7 +1032,7 @@ body {
  /* PAGINA DE TRABAJACONNOSOTROS*/
 
  /*Inicio de Formulario*/
- .trabajaconnos {
+ /* .trabajaconnos {
       color: greenyellow;
       font-family: 'Creepster', cursive;
       margin: 5px 10px;
@@ -1085,7 +1085,7 @@ body {
 
 .contenidogral-form .footer .contacto .redes-ig a i:hover {
      color: greenyellow;
-}
+} */
 
  /*Fin de formulario*/
 /*Inicio de MEDIA QUERYS en FORMULARIO*/
