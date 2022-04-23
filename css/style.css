@@ -1,1256 +1,1346 @@
 *{
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
-}
-/*INICIO GRIDS-AREA DE LA PAGINA PRINCIPAL*/
-.contenido-gral {
-   
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ /*INICIO GRIDS-AREA DE LA PAGINA PRINCIPAL*/
+ .contenido-gral {
+    
+      display: grid;
+      background-image:url(../img/postes.webp); 
+      width: 100%;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(4, auto);
+      grid-template-areas: "encabezado encabezado encabezado encabezado"
+                           "main main main main"                     
+                           "section section section section"
+                           "footer footer footer footer";
+                        
+ }
+ 
+ .contenido-gral .section {
      display: grid;
-     background-image:url(../img/Background\ image.jpg); 
-     width: 100%;
-     grid-template-columns: repeat(4, 1fr);
-     grid-template-rows: repeat(4, auto);
-     grid-template-areas: "encabezado encabezado encabezado encabezado"
-                          "main main main main"
-                          "main main main main"
-                          "footer footer footer footer";
-                       
-}
-
-/* .contenido-gral .section {
-    display: grid;
-    grid-area: section;
-    width: auto;
-    padding: 1px;
-    margin: 1px 10px; 
-    grid-column:4;
-    grid-row: 2/3;
-        
-} */
-
-.contenido-gral .encabezado {
-       background: #00000000;
-       grid-area: encabezado;
-       padding: 10px;
-       border-radius: 1px;
-       
-}
-
-.contenido-gral .main {
-  
-    grid-area: main;
-    padding: 1px;
-    border-radius: 20px;
-    margin: 1px auto;
-   
-    width: 760px;
-    text-align: center;
-    grid-column: 2/4;
-    grid-row: 2/4
-  
-}
-/* .contenido-gral .section {
-    margin: 2px 4px ;
-    padding: 4px;
-
-} */
-.contenido-gral .footer{
-    background: #000000;
-    grid-area: footer;
-    padding: 1px;
-    opacity: 0.9;
-    grid-column: 1/5;
-    grid-row: 4/5;
-    
-}
-.contenido-gral .footer:hover {
-    opacity: 1;
-}
-
-.contenido-gral .main .valentina {
-    background: rgba(255, 255, 255, 0.616);
-    grid-area: main;
-    padding: 1px;
-    border-radius: 18px;
-    opacity: 1;
-  
-}
-/*FINAL DE GRIDS-AREA EN PAGINA PRINCIPAL*/
-
-/*INICIO DE MEDIA QUERIES EN LA PAGINA PRINCIPAL*/
-@media screen and (max-width: 768px){
-
-    .contenido-gral{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(4, auto);
-        grid-template-areas: "encabezado encabezado encabezado encabezado"
-        "main main main main"
-        "section section section section"
-        "footer footer footer footer";
-    }
-
-    .contenido-gral .encabezado {
+     grid-area: section;
+     width: auto;
+     padding: 1px;
+     margin: 1px 10px; 
+     grid-column:1/2;
+     grid-row: 2/3;
+     
+         
+ } 
+ 
+ .contenido-gral .encabezado {
+        background: #00000000;
         grid-area: encabezado;
-        margin: 2px auto;
-        align-content: center;
-      
-    }
-    .contenido-gral .encabezado h1 {
-        font-size: 27px;
-        margin: 5px auto;
-       
-    }
-    
-    .contenido-gral .encabezado .info {
-        font-size: 14px;
-        margin: 5px auto;
-      
-
-    }
-
-    .contenido-gral .encabezado .menu {
-        margin: 1px auto;
-        padding: 1px;
-        line-height: 1.2;
-        text-align: center;
-        width: auto;
-        
-    }
-    .contenido-gral .encabezado .menu ul li a{
-        font-size: 25px;
-        font-style: bold;
-    }
-
-    /* .contenido-gral-videos .encabezado .menu ul {
-        font-size: 26px;
-        line-height: 1,2;
-    }
-     */
-
-    .contenido-gral .main {
-        grid-area: main;
-        margin: 2px auto;
-        width: 400px;
-    }
-    
-.contenido-gral #carouselExampleDark {
-    margin: 1px 1px;
-}
-.contenido-gral .encabezado .contdestacado p {
-    font-size: 60px;
-    color:greenyellow;
-    font-family:'Creepster', cursive;
-    margin: 1px auto;
-    padding: 1px;
-    text-align: center;
-}
-.contenido-gral .encabezado .infocontenidodest {
-    color: white;
-    margin: 2px auto;
-    font-size: 21px;
-    font-family:'Chakra Petch', sans-serif; 
-    text-align: center;
-}
-.contenido-gral .footer {
-        font-size: 15px;
-        grid-area: footer;
-        margin: 2px 1px;
-        grid-area: footer;
-        
-       
-    }
-.contenido-gral .footer .contacto {
-        text-align: center;
-        font-size: 15px;
         padding: 10px;
+        border-radius: 1px;
+        
+ }
+ 
+ .contenido-gral .main {
+   
+     grid-area: main;
+     padding: 1px;
+     border-radius: 20px;
+     margin: 1px auto;
+    
+     width: 760px;
+     text-align: center;
+     grid-column: 2/4;
+     grid-row: 2/4
+   
+ }
+ 
+ .contenido-gral .footer{
+     background: #000000;
+     grid-area: footer;
+     padding: 1px;
+     opacity: 0.9;
+     grid-column: 1/5;
+     grid-row: 4/5;
+     
+ }
+ .contenido-gral .footer:hover {
+     opacity: 1;
+ }
+ 
+ .contenido-gral .main .valentina {
+     background: rgba(255, 255, 255, 0.616);
+     grid-area: main;
+     padding: 1px;
+     border-radius: 18px;
+     opacity: 1;
+   
+ }
+ /*FINAL DE GRIDS-AREA EN PAGINA PRINCIPAL*/
+ 
+ /*INICIO DE MEDIA QUERIES EN LA PAGINA PRINCIPAL*/
+ @media screen and (max-width: 768px){
+ 
+     .contenido-gral{
+         margin: 1px;
+         display: grid;
+         grid-template-columns: repeat(4, 1fr);
+         grid-template-rows: repeat(4, auto);
+         grid-template-areas: "encabezado encabezado encabezado encabezado"
+         "main main main main"
+         "section section section section"
+         "footer footer footer footer";
+     }
+ 
+     .contenido-gral .encabezado {
+         grid-area: encabezado;
+       
+         align-content: center;
+       
+     }
+     .contenido-gral .encabezado h1 {
+         font-size: 47px;
+         margin: 5px auto;
+        
+     }
+     
+     .contenido-gral .encabezado .info {
+         font-size: 14px;
+         margin: 5px auto;
+       
+ 
+     }
+     .contenido-gral  .nav.nav-pills{
+         justify-content: center;
+         border-style:double;
+         border-color:silver;
+         font-family:'Chakra Petch', sans-serif;
+         font-weight: bold;
     }
-.contenido-gral .footer .contacto p {
-        margin: 1px auto
+    .contenido-gral ul.nav.nav-pills {
+        margin: 1px 1px;
+        padding: 1px;
+        justify-content: center;
+        font-size: 24px;
     }
-.contenido-gral .footer .redes-ig i {
-        text-decoration:none;
+    .contenido-gral .nav-pills .nav-link.active {
         color: red;
-        margin: 2px auto;
+        background: none;
         padding: 2px;
-        font-size: 30px;
-        text-align: center;
     }
-
-}
-
-/*FIN DE MEDIA QUERIES EN LA PAGINA PRINCIPAL*/
-
-/*Inicio de encabezado de PAGINA PRINCIPAL*/
-body {
-    background-color: #000000;
-
-}
-.contenido-gral h1 {
+    .contenido-gral .nav-item.dropdown .nav-link.dropdown-toggle{
+        color: red;
+        padding: 2px;
+    } 
+    .contenido-gral .nav.item  {
+        color: red;
+        padding: 2px;
+    }
+     .contenido-gral .encabezado .menu {
+         margin: 1px auto;
+         padding: 1px;
+         line-height: 1.2;
+         text-align: center;
+         width: auto;
+         
+     }
+     .contenido-gral .encabezado .menu ul li a{
+         font-size: 21px;
+     }
+ 
+     /* .contenido-gral-videos .encabezado .menu ul {
+         font-size: 26px;
+         line-height: 1,2;
+     }
+      */
+ 
+     .contenido-gral .main {
+         grid-area: main;
+         margin: 2px auto;
+         width: 400px;
+     }
+ 
+ .contenido-gral #carouselExampleDark {
+     margin: 1px 1px;
+ }
+ .contenido-gral .encabezado .contdestacado h2 {
+     font-size: 45px;
+     color:#e0cdcd;
+     font-family:'Bebas Neue', cursive;
+     margin: 1px auto;
+     padding: 1px;
+     text-align: center;
+ }
+ .contenido-gral .encabezado .infocontenidodest {
+     color: white;
+     margin: 2px auto;
+     font-size: 21px;
+     font-family:'Chakra Petch', sans-serif; 
+     text-align: center;
+ }
+ .contenido-gral .footer {
+         font-size: 15px;
+         grid-area: footer;
+         margin: 2px 1px;
+         grid-area: footer;
+         
+        
+     }
+ .contenido-gral .footer .contacto {
+         text-align: center;
+         font-size: 15px;
+         padding: 10px;
+     }
+ .contenido-gral .footer .contacto p {
+         margin: 1px auto
+     }
+ .contenido-gral .footer .redes-ig i {
+         text-decoration:none;
+         color: red;
+         margin: 2px auto;
+         padding: 2px;
+         font-size: 30px;
+         text-align: center;
+     }
+  .contenido-gral .section {
+       grid-area: section;
+  }
+ }
+ 
+ /*FIN DE MEDIA QUERIES EN LA PAGINA PRINCIPAL*/
+ 
+ /*Inicio de encabezado de PAGINA PRINCIPAL*/
+ body {
+     background-color: #000000;
+ 
+ }
+ .contenido-gral h1 {
+      color: #DCDCDC;
+      text-align: left;
+      margin: 2px ;
+      font-weight: bold;
+      font-family:'Bebas Neue', cursive;
+      font-size: 110px;
+      padding: 10px;
+      
+      
+ }
+ /*Fin de encabezado de PAGINA PRINCIPAL*/
+ /* Inicio de Menu de Navegacion de PAGINA PRINCIPAL*/
+  /* .menu {
+      background-color:#000000;
+      line-height: 1,6;
+      margin: 5px 10px;
+      padding: 10px;
+      border: 5px;
+      border-style:double;
+      border-color:silver;
+      text-align: center;
+      padding: 5px;
+      
+ 
+  }
+ .menu ul {
+     margin: 4px auto;
+ }
+ .menu ul li{
+     display: inline;
+     font-size: 25px;
      color: #ffffff;
-     text-align: left;
-     margin: 2px ;
-     font-weight: bold;
+     font-style: bold;
      font-family:'Chakra Petch', sans-serif;
-     font-size: 55px;
-     padding: 10px;
+     font-weight: bold;
+     padding: 2px;
+     margin: 1px 5px;
+     justify-content: center;
      
      
-}
-/*Fin de encabezado de PAGINA PRINCIPAL*/
-/* Inicio de Menu de Navegacion de PAGINA PRINCIPAL*/
- .menu {
-     background-color:#000000;
+ }
+ 
+ .menu ul li a {
+     text-decoration: none;
+     color: #DC143C;
+     font-size: 23px;
+     transition: height 2s;
+ }
+ 
+ .menu ul li a:hover  {
+        color: yellowgreen;
+        height: 30px;
+ } */
+ /*PRUEBA DE NUEVO MENU*/
+ .contenido-gral  .nav.nav-pills{
+      text-align: center;
+      justify-content: center;
+      font-size: 45px;
+      margin: 5px 10px;
+      padding: 10px;
+      border: 5px;
+      border-style:double;
+      border-color:#DCDCDC;
+      font-family:'Bebas Neue', cursive;
+      font-weight: bold;
+      
+ 
+ }
+ .contenido-gral .nav-pills .nav-link.active {
+     color: springgreen;
+     background: none;
+     font-family: 'Bebas Neue', cursive;
+     font-style: oblique;
+ }
+ .contenido-gral .nav-pills .nav-link.active:hover {
+     color: cyan;
+     background: none;
+ }
+ .contenido-gral .nav-item.dropdown .nav-link.dropdown-toggle{
+     color: springgreen;
+     font-style: oblique;
+     
+ } 
+ .contenido-gral .nav-item.dropdown .nav-link.dropdown-toggle:hover{
+     color: cyan;
+ } 
+ 
+ .contenido-gral .dropdown-menu {
+     background: black;
+     opacity: 1;
+     border-radius: 15px;
+ 
+     
+ }
+ .contenido-gral .dropdown-menu .dropdown-item {
+     color:palegreen;
+     font-family:'Bebas Neue', cursive;
+     font-size: 25px;
+     font-weight: bold;
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ /*Fin de Menu de Navegacion de PAGINA PRINCIPAL*/
+ /* Inicio de INFO sobre la pagina principal*/
+ .encabezado .contdestacado h2 {
+     font-size: 100px;
+     color:#e0cdcd;
+     font-style: oblique;
+     font-weight: bold;
+     font-family:'Bebas Neue', cursive;
+     margin: 1px auto;
+     padding: 1px;
+     text-align: center;
+ }
+ .contenido-gral .info {
+     font-size: 18px;
+     color: #ffffff;
+     font-family: 'Chakra Petch', sans-serif;
+     text-align: left;
+     margin: 1px 10px;
+     padding: 1px;
+ }
+ /* Fin de INFO sobre la pagina principal*/
+ 
+ /*Inicio carousel imagenes de VALENTINA e HIJO DISCOLO*/
+ 
+ #carouselExampleDark .carousel-inner {
+     width: auto;
+     display: grid;
+     margin: 10px auto;
+     grid-area: main;
+     
+ }
+ 
+ .encabezado .infocontenidodest {
+     color: white;
+     margin: 2px auto;
+     font-size: 25px;
+     font-family:'Chakra Petch', sans-serif; 
+     text-align: center;
+ }
+ 
+ #carouselExampleDark .carousel-inner .carousel-item h5 {
+    color: palegreen;
+    font-size: 60px;
+    font-family:'Bebas Neue', cursive;
+    font-style: oblique;
+    
+    
+ 
+ }
+ #carouselExampleDark .carousel-inner .carousel-item p {
+     color: greenyellow ;
+     font-size: 28px;
+     font-weight: bold;
+     margin: 1px auto;
+     font-family: 'Bebas Neue', cursive;
+  
+  }
+  /*
+ .valentina{
+     text-align: center;
      line-height: 1,6;
      margin: 5px 10px;
-     padding: 10px;
-     border: 5px;
-     border-style:double;
-     border-color:silver;
+     padding: 5px 10px 12px 5px;
+     opacity: 1;
+ 
+ }
+ 
+ .valentina h2 {
+     color: black;
      text-align: center;
-     padding: 5px;
+     font-family:'Chakra Petch', sans-serif;
+     padding: 20px;
+     font-size: 46px;
+    
+    
+ }
+ 
+ .valentina .val {
+     color: #ff0000dc;
      
-
  }
-.menu ul {
-    margin: 4px auto;
-}
-.menu ul li{
-    display: inline;
-    font-size: 25px;
-    color: #ffffff;
-    font-style: bold;
-    font-family:'Chakra Petch', sans-serif;
-    font-weight: bold;
-    padding: 2px;
-    margin: 1px 5px;
-    justify-content: center;
-    
-    
-}
-
-.menu ul li a {
-    text-decoration: none;
-    color: #DC143C;
-    font-size: 23px;
-    transition: height 2s;
-}
-
-.menu ul li a:hover  {
-       color: yellowgreen;
-       height: 30px;
-}
-
-
-/*Fin de Menu de Navegacion de PAGINA PRINCIPAL*/
-/* Inicio de INFO sobre la pagina principal*/
-
-.contenido-gral .info {
-    font-size: 18px;
-    color: #ffffff;
-    font-family: 'Chakra Petch', sans-serif;
-    text-align: left;
-    margin: 1px 10px;
-    padding: 1px;
-}
-/* Fin de INFO sobre la pagina principal*/
-
-/*Inicio carousel imagenes de VALENTINA e HIJO DISCOLO*/
-
-#carouselExampleDark .carousel-inner {
-    width: auto;
-    display: grid;
-    margin: 10px auto;
-    grid-area: main;
-    
-}
-.encabezado .contdestacado p {
-    font-size: 80px;
-    color:greenyellow;
-    font-family:'Creepster', cursive;
-    margin: 1px auto;
-    padding: 1px;
-    text-align: center;
-}
-.encabezado .infocontenidodest {
-    color: white;
-    margin: 2px auto;
-    font-size: 25px;
-    font-family:'Chakra Petch', sans-serif; 
-    text-align: center;
-}
-
-#carouselExampleDark .carousel-inner .carousel-item h5 {
-   color: greenyellow;
-   font-size: 42px;
-   font-family:'Creepster', cursive;
-   
-   
-
-}
-#carouselExampleDark .carousel-inner .carousel-item p {
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    margin: 1px auto;
  
+ .valentina img:hover {
+       transform: scale(1.05);
+       opacity: 0.9;
+       padding: 10px;
+    
  }
- /*
-.valentina{
-    text-align: center;
-    line-height: 1,6;
-    margin: 5px 10px;
-    padding: 5px 10px 12px 5px;
-    opacity: 1;
-
-}
-
-.valentina h2 {
-    color: black;
-    text-align: center;
-    font-family:'Chakra Petch', sans-serif;
-    padding: 20px;
-    font-size: 46px;
-   
-   
-}
-
-.valentina .val {
-    color: #ff0000dc;
-    
-}
-
-.valentina img:hover {
-      transform: scale(1.05);
-      opacity: 0.9;
-      padding: 10px;
-   
-}
-
-.valentina .errados {
-    color: #ff0000d7;
-}*/
-/* Fin imagenes de VALENTINA*/ 
-/*Inicio de imagenes de ARDILES*/
-#carouselExampleDark2 .carousel-inner {
-    width: auto;
-    display: grid;
-    margin: 10px auto;
-    grid-area: main;
-    
-}
-#carouselExampleDark2 .contdestacado {
-    font-size: 80px;
-    color:greenyellow;
-    font-family:'Creepster', cursive;
-    margin: 1px auto;
-    padding: 1px;
-}
-
-#carouselExampleDark2 .carousel-inner .carousel-item h5 {
-   color: greenyellow;
-   font-size: 42px;
-   font-family:'Creepster', cursive;
-   
-   
-
-}
-#carouselExampleDark2 .carousel-inner .carousel-item p {
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    margin: 1px auto;
  
+ .valentina .errados {
+     color: #ff0000d7;
+ }*/
+ /* Fin imagenes de VALENTINA*/ 
+ /*Inicio de imagenes de ARDILES*/
+ #carouselExampleDark2 .carousel-inner {
+     width: auto;
+     display: grid;
+     margin: 10px auto;
+     grid-area: main;
+     
  }
-/*Fin de imagenes de ARDILES*/
-/*Inicio de imagenes de PUKA*/
-#carouselExampleDark3 .carousel-inner {
-    width: auto;
-    display: grid;
-    margin: 10px auto;
-    grid-area: main;
-    
-}
-#carouselExampleDark3 .contdestacado {
-    font-size: 80px;
-    color:greenyellow;
-    font-family:'Creepster', cursive;
-    margin: 1px auto;
-    padding: 1px;
-}
-
-#carouselExampleDark3 .carousel-inner .carousel-item h5 {
-   color: greenyellow;
-   font-size: 42px;
-   font-family:'Creepster', cursive;
-   
-   
-
-}
-#carouselExampleDark3 .carousel-inner .carousel-item p {
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    margin: 1px auto;
- 
- }
-/*Fin de imagenes de PUKA*/
-
-.contenido-gral .section h2 {
-    color: fuchsia;
-    text-align: center;
-    font-family:'Chakra Petch', sans-serif;
-    font-weight: bold;
-
-}
-.contenido-gral .section iframe {
-    margin: 2px auto;
-}
-
-/*Inicio de links de INSTAGRAM Y YOUTUBE*/
-
-
-.contenido-gral .footer .redes-ig {
-    font-size: 33px;
-    padding: 4px;
-}
-.contenido-gral .footer .contacto .redes-ig a{
-    margin: 1px 4px;
-    font-size: 35px;
-    color: red;
-    
-}
-
-.contenido-gral .footer .contacto .redes-ig a i:hover {
-     color: greenyellow;
-}
-
-
-
-
-/* Fin de links de INSTAGRAM, YOUTUBE y FACEBOOK*/
-
-/*Inicio de info de contacto*/
-.contacto {
-    text-align: center;
-    color: #ffffff;
-    line-height: 1,6;
-    margin: 1px auto;
-    padding: 10px;
-    font-size: 18px;
-    grid-area: footer;
-
-}
-.contacto a {
-    font-family: 'Chakra Petch', sans-serif;
-    font-size: 22px;
-    font-weight: bold;
-}
-.contacto p {
-    margin: 1px auto;
-    font-family: 'Chakra Petch', sans-serif;
-}
-.contacto .codbarra {
-    font-size: 42px;
-    font-family:'Libre Barcode 39 Text', cursive;
-    padding: 1px;
-}
-/*Fin de info de contactos*/
-
-/*FIN DE PAGINA PRINCIPAL*/
-
-/* PAGINA DE VIDEOCLIPS*/
-/*Inicio de menu de navegacion de VIDEOCLIPS */
-/*INICIO DE GRIDS-AREA EN PAGINA DE VIDEOCLIPS*/
-
-.contenido-gral-videos {
-   
-    display: grid;
-    width: 100%;
-    background-image:url(../img/Background\ image.jpg);
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, auto);
-    grid-template-areas: "encabezado encabezado encabezado encabezado"
-                         "main main main main"
-                         "section section section section"
-                         "footer footer footer footer";
-                      
- }
-
-.contenido-gral-videos .encabezado {
-     background: #00000000;
-     grid-area: encabezado;
-
-}
- 
-.contenido-gral-videos .encabezado .musicales h2 {
-    color: greenyellow;
-     text-align: center;
-     font-family:'Creepster', cursive;
+ #carouselExampleDark2 .contdestacado {
      font-size: 80px;
-     margin: 15px auto 2px auto;
-     padding: 5px ;
-     
-}
-.contenido-gral-videos .encabezado .data {
-    color: #ffffff;
-    padding: 4px;
-    margin: 2px auto 10px 10px;
-    font-size: 25px;
-    font-family: 'Chakra Petch', sans-serif; 
-    text-align: center;
-}
-
-
-.contenido-gral-videos .main {
-    background: #ffffffc0; 
-    grid-area: main;
-    width: 760px;
-    opacity: 0.9;
-    grid-column: 2/4;
-    grid-row: 2/4;
-    border-radius: 18px;
-    padding: 10px;
-    font-size: 25px;
-    margin: 1px auto;
-   
-}
-.contenido-gral-videos .main .hijo {
-    opacity: 1;
-}
-
-.contenido-gral-videos .main h2 {
-    color: black;
-
-}
-.contenido-gral-videos .section {
-    display: grid;
-    grid-area: section;
-    width: auto;
-    padding: 1px;
-    margin: 1px auto; 
-    grid-column:4;
-    grid-row: 3/4;
-        
-}
-.contenido-gral-videos .footer{
-    background: #000000;
-    grid-area: footer;
-    padding: 1px;
-    opacity: 0.9;
+     color:greenyellow;
+     font-family:'Creepster', cursive;
+     margin: 1px auto;
+     padding: 1px;
+ }
+ 
+ #carouselExampleDark2 .carousel-inner .carousel-item h5 {
+    color: greenyellow;
+    font-size: 42px;
+    font-family:'Creepster', cursive;
     
-}
-.contenido-gral-videos .footer:hover {
-    opacity: 1;
-}
-.contenido-gral-videos .footer .contacto .redes-ig a{
-    margin: 1px 4px;
-    font-size: 35px;
-    color: red;
     
-}
-
-.contenido-gral-videos .footer .contacto .redes-ig a i:hover {
-     color: greenyellow;
-}
-
-/*Fin de menu de navegacion de VIDEOCLIPS*/
-
-/*FIN DE GRIDS-AREA EN PAGINA DE VIDEOCLIPS*/
-
- /*INICIO DE MEDIA QUERIES EN PAGINA DE VIDEOCLIPS*/
-@media screen and (max-width: 768px){
+ 
+ }
+ #carouselExampleDark2 .carousel-inner .carousel-item p {
+     color: white;
+     font-size: 18px;
+     font-weight: bold;
+     margin: 1px auto;
   
-    .contenido-gral-videos{
-        display: grid;
-        width: 100%;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(4, auto);
-        grid-template-areas: "encabezado encabezado encabezado encabezado"
-        "main main main main"
-        "section section section section"
-        "footer footer footer footer";
-
-    }
-
-    .contenido-gral-videos .encabezado h1 {
-       font-size: 50px;
+  }
+ /*Fin de imagenes de ARDILES*/
+ /*Inicio de imagenes de PUKA*/
+ #carouselExampleDark3 .carousel-inner {
+     width: auto;
+     display: grid;
+     margin: 10px auto;
+     grid-area: main;
+     
+ }
+ #carouselExampleDark3 .contdestacado {
+     font-size: 80px;
+     color:greenyellow;
+     font-family:'Creepster', cursive;
+     margin: 1px auto;
+     padding: 1px;
+ }
+ 
+ #carouselExampleDark3 .carousel-inner .carousel-item h5 {
+    color: greenyellow;
+    font-size: 42px;
+    font-family:'Creepster', cursive;
     
-    }
-
-    .contenido-gral-videos .encabezado .menu {
-      
-        margin: 1px auto;
-        padding: 1px;
-        font-size: 18px;
-        display: block;
-         width: auto;
-      
-
-    }
-    .contenido-gral-videos .encabezado .menu ul li a{
-        font-size: 26px;
-        line-height: 1,2;
-    }
-   
-    .contenido-gral-videos .encabezado h1{
-        font-size: 27px;
-
-    }
-    .contenido-gral-videos .encabezado .data {
-        font-size: 18px;
-        margin: 5px 10px;
-        text-align: center;
-
-    }
     
-    .contenido-gral-videos .encabezado .musicales h2 {
-        font-size: 42px;
-        text-align: center;
-    }
-    .contenido-gral-videos .main{
-        width: 398px;
-        text-align: center;
-        margin: 1px auto;
-        grid-column: 1, 4;
-        grid-row: 2, 3;
-    }
-    .contenido-gral-videos .main .hijo h2 {
-      font-size: 28px;
-      margin: 2px auto;
+ 
+ }
+ #carouselExampleDark3 .carousel-inner .carousel-item p {
+     color: white;
+     font-size: 18px;
+     font-weight: bold;
+     margin: 1px auto;
+  
+  }
+ /*Fin de imagenes de PUKA*/
+ 
+ .contenido-gral .section h2 {
+     color: fuchsia;
+     text-align: center;
+     font-family:'Chakra Petch', sans-serif;
+     font-weight: bold;
+ 
+ }
+ .contenido-gral .section iframe {
+     margin: 2px auto;
+ }
+ 
+ /*Inicio de links de INSTAGRAM Y YOUTUBE*/
+ 
+ 
+ .contenido-gral .footer .redes-ig {
+     font-size: 33px;
+     padding: 4px;
+ }
+ .contenido-gral .footer .contacto .redes-ig a{
+     margin: 1px 4px;
+     font-size: 35px;
+     color: springgreen;
+     
+ }
+ 
+ .contenido-gral .footer .contacto .redes-ig a i:hover {
+      color: greenyellow;
+ }
+ 
+ 
+ 
+ 
+ /* Fin de links de INSTAGRAM, YOUTUBE y FACEBOOK*/
+ 
+ /*Inicio de info de contacto*/
+ .contacto {
+     text-align: center;
+     color: #ffffff;
+     line-height: 1,6;
+     margin: 1px auto;
+     padding: 10px;
+     font-size: 18px;
+     grid-area: footer;
+ 
+ }
+ .contacto a {
+     font-family: 'Chakra Petch', sans-serif;
+     font-size: 22px;
+     font-weight: bold;
+ }
+ .contacto p {
+     margin: 1px auto;
+     font-family: 'Chakra Petch', sans-serif;
+ }
+ .contacto .codbarra {
+     font-size: 42px;
+     font-family:'Libre Barcode 39 Text', cursive;
+     padding: 1px;
+ }
+ /*Fin de info de contactos*/
+ 
+ /*FIN DE PAGINA PRINCIPAL*/
+ 
+ /* PAGINA DE VIDEOCLIPS*/
+ /*Inicio de menu de navegacion de VIDEOCLIPS */
+ /*INICIO DE GRIDS-AREA EN PAGINA DE VIDEOCLIPS*/
+ 
+ .contenido-gral-videos {
+    
+     display: grid;
+     width: 100%;
+     background-image:url(../img/Background\ image.jpg);
+     grid-template-columns: repeat(4, 1fr);
+     grid-template-rows: repeat(3, auto);
+     grid-template-areas: "encabezado encabezado encabezado encabezado"
+                          "main main main main"
+                          "section section section section"
+                          "footer footer footer footer";
+                       
+  }
+ 
+ .contenido-gral-videos .encabezado {
+      background: #00000000;
+      grid-area: encabezado;
+ 
+ }
+  
+ .contenido-gral-videos .encabezado .musicales h2 {
+     color: greenyellow;
+      text-align: center;
+      font-family:'Creepster', cursive;
+      font-size: 80px;
+      margin: 15px auto 2px auto;
+      padding: 5px ;
       
-    }
-     .contenido-gral-videos .main iframe {
-        width: 350px;
-        
-    } 
-
-    .contenido-gral-videos .main .nunka h2 {
-        font-size: 28px;
-        margin: 2px auto;
-    }
-
-
+ }
+ .contenido-gral-videos .encabezado .data {
+     color: #ffffff;
+     padding: 4px;
+     margin: 2px auto 10px 10px;
+     font-size: 25px;
+     font-family: 'Chakra Petch', sans-serif; 
+     text-align: center;
+ }
+ 
+ 
+ .contenido-gral-videos .main {
+     background: #ffffffc0; 
+     grid-area: main;
+     width: 760px;
+     opacity: 0.9;
+     grid-column: 2/4;
+     grid-row: 2/4;
+     border-radius: 18px;
+     padding: 10px;
+     font-size: 25px;
+     margin: 1px auto;
+    
+ }
+ .contenido-gral-videos .main .hijo {
+     opacity: 1;
+ }
+ 
+ .contenido-gral-videos .main h2 {
+     color: black;
+ 
+ }
+ .contenido-gral-videos .section {
+     display: grid;
+     grid-area: section;
+     width: auto;
+     padding: 1px;
+     margin: 1px auto; 
+     grid-column:4;
+     grid-row: 3/4;
+         
+ }
+ .contenido-gral-videos .footer{
+     background: #000000;
+     grid-area: footer;
+     padding: 1px;
+     opacity: 0.9;
+     
+ }
+ .contenido-gral-videos .footer:hover {
+     opacity: 1;
+ }
+ .contenido-gral-videos .footer .contacto .redes-ig a{
+     margin: 1px 4px;
+     font-size: 35px;
+     color: red;
+     
+ }
+ 
+ .contenido-gral-videos .footer .contacto .redes-ig a i:hover {
+      color: greenyellow;
+ }
+ 
+ /*Fin de menu de navegacion de VIDEOCLIPS*/
+ 
+ /*FIN DE GRIDS-AREA EN PAGINA DE VIDEOCLIPS*/
+ 
+  /*INICIO DE MEDIA QUERIES EN PAGINA DE VIDEOCLIPS*/
+ @media screen and (max-width: 768px){
    
-    .contenido-gral-videos .main .tkn h2 {
+     .contenido-gral-videos{
+         display: grid;
+         width: 100%;
+         grid-template-columns: repeat(4, 1fr);
+         grid-template-rows: repeat(4, auto);
+         grid-template-areas: "encabezado encabezado encabezado encabezado"
+         "main main main main"
+         "section section section section"
+         "footer footer footer footer";
+ 
+     }
+ 
+     .contenido-gral-videos .encabezado h1 {
+        font-size: 50px;
+     
+     }
+ 
+     .contenido-gral-videos .encabezado .menu {
+       
+         margin: 1px auto;
+         padding: 1px;
+         font-size: 18px;
+         display: block;
+          width: auto;
+       
+ 
+     }
+     .contenido-gral-videos .encabezado .menu ul li a{
+         font-size: 26px;
+         line-height: 1,2;
+     }
+    
+     .contenido-gral-videos .encabezado h1{
+         font-size: 27px;
+ 
+     }
+     .contenido-gral-videos .encabezado .data {
+         font-size: 18px;
+         margin: 5px 10px;
+         text-align: center;
+ 
+     }
+     
+     .contenido-gral-videos .encabezado .musicales h2 {
+         font-size: 42px;
+         text-align: center;
+     }
+     .contenido-gral-videos .main{
+         width: 398px;
+         text-align: center;
+         margin: 1px auto;
+         grid-column: 1, 4;
+         grid-row: 2, 3;
+     }
+     .contenido-gral-videos .main .hijo h2 {
        font-size: 28px;
        margin: 2px auto;
-
-    }
+       
+     }
+      .contenido-gral-videos .main iframe {
+         width: 350px;
+         
+     } 
+ 
+     .contenido-gral-videos .main .nunka h2 {
+         font-size: 28px;
+         margin: 2px auto;
+     }
+ 
+ 
     
-
-    .contenido-gral-videos .footer p {
-        font-size: 18px;
-        
-    }
-    .contenido-gral-videos .footer .codbarra {
-        font-size: 32px;
-    }
-
-
-    }
-/*FINAL DE MEDIA QUERIES EN PAGINA DE VIDEOCLIPS*/
-
-/* Inicio de hijo discolo*/
-
-.hijo {
-    color: #ffffff;
-    font-family:'Chakra Petch', sans-serif;
-    margin: 1px 1px;
-    padding: 1px;
-    text-align: center;
-    
-    
-}
-
-.hijo .errados{
-    color: #DC143C;
-    line-height: 1,6;
-      margin: 1px 2px;
-      padding: 5px;
-} 
-
-
-/*Fin de Hijo discolo*/
-
-/*Inicio de chakra x ard*/
- .nunka {
-    color: #ffffff;
-    font-family:'Chakra Petch', sans-serif;
-    line-height: 1,6;
-    margin: 5px 10px;
-    padding: 1px;
-    text-align: center;
-}
-.nunka .chakra {
-      color: #DC143C;
-      line-height: 1,6;
-      margin: 5px 2px;
-      padding: 1px;
-
-}
-/*Fin de chakra x ard*/
-
-/*Inicio de tkn x valentina*/
-
-.tkn {
-    color: #ffffff;
-    font-family:'Chakra Petch', sans-serif;
-    line-height: 1,6;
-    margin: 5px 2px;
-    padding: 1px;
-    text-align: center;
-}
-.tkn .val {
-    color: #DC143C;
-    line-height: 1,6;
-    margin: 5px 2px;
-    padding: 1px;
-}
-/*Fin de tkn x valentina*/
-
-/*FIN DE PAGINA DE VIDEOCLIPS*/
-
-/*PAGINA DE PUBLICIDADES*/
-
-/*Inicio de menu de navegacion de PUBLICIDADES*/ 
-.contenidogral-publi {
-   
-    display: grid;
-    width: 100%;
-    background-image:url(../img/Background\ image.jpg);
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, auto);
-    grid-template-areas: "encabezado encabezado encabezado encabezado"
-                         "main main main main"
-                         "section section section section"
-                         "footer footer footer footer";
-                      
- }
- .contenidogral-publi .header {
-     grid-area: encabezado;
- }
- .contenidogral-publi .header .publicidades {
-    color: #ffffff;
-    font-family: 'Chakra Petch', sans-serif; 
-    line-height: 1,6;
-    margin: 5px auto;
-    padding: 5px;
-    font-size: 18px;
-    text-align: center;
-}
-.contenidogral-publi .publicidades h2 {
-    font-size: 80px;
-    font-family:'Creepster', cursive;
-    color: greenyellow;
-}
-
-.infoPubli {
+     .contenido-gral-videos .main .tkn h2 {
+        font-size: 28px;
+        margin: 2px auto;
+ 
+     }
+     
+ 
+     .contenido-gral-videos .footer p {
+         font-size: 18px;
+         
+     }
+     .contenido-gral-videos .footer .codbarra {
+         font-size: 32px;
+     }
+ 
+ 
+     }
+ /*FINAL DE MEDIA QUERIES EN PAGINA DE VIDEOCLIPS*/
+ 
+ /* Inicio de hijo discolo*/
+ 
+ .hijo {
      color: #ffffff;
-
-}
-.contenidogral-publi .section {
-    grid-area: main;
-    width: 760px;
-    grid-column:2/4;
-    grid-row:2/4;
-    background: #ffffffc0; 
-    width: 760px;
-    opacity: 0.9;
-    border-radius: 15px;
-    margin: 1px auto;
-  
-
-}
-.contenidogral-publi .section .instaburger {
+     font-family:'Chakra Petch', sans-serif;
+     margin: 1px 1px;
+     padding: 1px;
+     text-align: center;
+     
+     
+ }
+ 
+ .hijo .errados{
+     color: #DC143C;
+     line-height: 1,6;
+       margin: 1px 2px;
+       padding: 5px;
+ } 
+ 
+ 
+ /*Fin de Hijo discolo*/
+ 
+ /*Inicio de chakra x ard*/
+  .nunka {
+     color: #ffffff;
+     font-family:'Chakra Petch', sans-serif;
+     line-height: 1,6;
+     margin: 5px 10px;
+     padding: 1px;
+     text-align: center;
+ }
+ .nunka .chakra {
+       color: #DC143C;
+       line-height: 1,6;
+       margin: 5px 2px;
+       padding: 1px;
+ 
+ }
+ /*Fin de chakra x ard*/
+ 
+ /*Inicio de tkn x valentina*/
+ 
+ .tkn {
+     color: #ffffff;
+     font-family:'Chakra Petch', sans-serif;
+     line-height: 1,6;
+     margin: 5px 2px;
+     padding: 1px;
+     text-align: center;
+ }
+ .tkn .val {
+     color: #DC143C;
+     line-height: 1,6;
+     margin: 5px 2px;
+     padding: 1px;
+ }
+ /*Fin de tkn x valentina*/
+ 
+ /*FIN DE PAGINA DE VIDEOCLIPS*/
+ 
+ /*PAGINA DE PUBLICIDADES*/
+ 
+ /*Inicio de menu de navegacion de PUBLICIDADES*/ 
+ .contenidogral-publi {
+    
+     display: grid;
+     width: 100%;
+     background-image:url(../img/Background\ image.jpg);
+     grid-template-columns: repeat(4, 1fr);
+     grid-template-rows: repeat(3, auto);
+     grid-template-areas: "encabezado encabezado encabezado encabezado"
+                          "main main main main"
+                          "section section section section"
+                          "footer footer footer footer";
+                       
+  }
+  .contenidogral-publi .header {
+      grid-area: encabezado;
+  }
+  .contenidogral-publi .header .publicidades {
+     color: #ffffff;
+     font-family: 'Chakra Petch', sans-serif; 
+     line-height: 1,6;
+     margin: 5px auto;
+     padding: 5px;
+     font-size: 18px;
+     text-align: center;
+ }
+ .contenidogral-publi .publicidades h2 {
+     font-size: 80px;
+     font-family:'Creepster', cursive;
+     color: greenyellow;
+ }
+ 
+ .infoPubli {
+      color: #ffffff;
+ 
+ }
+ .contenidogral-publi .section {
+     grid-area: main;
+     width: 760px;
+     grid-column:2/4;
+     grid-row:2/4;
+     background: #ffffffc0; 
+     width: 760px;
+     opacity: 0.9;
+     border-radius: 15px;
+     margin: 1px auto;
+   
+ 
+ }
+ .contenidogral-publi .section .instaburger {
+      margin: 1px auto;
+      text-align: center;
+      font-size: 25px;
+ }
+ 
+ .contenidogral-publi .section .receta {
      margin: 1px auto;
      text-align: center;
      font-size: 25px;
-}
-
-.contenidogral-publi .section .receta {
-    margin: 1px auto;
-    text-align: center;
-    font-size: 25px;
-}
-.contenidogral-publi .section .puka {
-    margin: 1px auto;
-    text-align: center;
-    font-size: 25px;
-}
-
-.contenidogral-publi .footer {
-    grid-area: footer;
-    background: #000;
-    opacity: 0.9;
-}
-.contenidogral-publi .footer:hover {
-     opacity: 1;
-}
-.contenidogral-publi .footer .contacto .redes-ig a{
-    margin: 1px 4px;
-    font-size: 35px;
-    color: red;
-    
-}
-
-.contenidogral-publi .footer .contacto .redes-ig a i:hover {
-     color: greenyellow;
-}
-
-
-
-
-/*Fin de menu de navegacion de PUBLICIDADES*/
-
-/*INICIO DE MAIN DE PAGINA DE PUBLICIDADES*/
-
-/*Inicio de INSTA BURGER*/
-.instaburger h2 {
-     color: #DC143C;
-     font-family:'Chakra Petch', sans-serif;
-     line-height: 1,6;
-     margin: 5px;
-     padding: 5px;
-
-}
-/*Fin de INSTA BURGER*/
-
-/*Inicio de LA RECETA DE VICENTE*/
-.receta h2 {
-     color: #DC143C;
-     font-family:'Chakra Petch', sans-serif;
-     line-height: 1,6;
-     margin: 5px 10px;
-     padding: 5px 10px 12px 5px;
-}
-/*FIN de la RECETA DE VICENTE*/
-
-/*Inicio de PUKA*/
-.puka h2 {
-     color: #DC143C;
-     font-family:'Chakra Petch', sans-serif;
-     line-height: 1,6;
-     margin: 5px 10px;
-     padding: 5px 10px 12px 5px;
-}
-/*Fin de PUKA*/
-
- /* INICIO DE MEDIA QUERYS EN PAGINA DE PUBLICIDADES*/
-
- @media screen and (max-width: 768px) {
-    
-    .contenidogral-publi{
-        display: grid;
-        width: 100%;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(4, auto);
-        grid-template-areas: "encabezado encabezado encabezado encabezado"
-                             "section section section section"
-                             "footer footer footer footer";
-
-    }
-
-         .contenidogral-publi .header {
-         grid-area: encabezado;
-         
-     }
-        .contenidogral-publi .header h1 {
-            font-size: 35px;
-        }
-        .contenidogral-publi .header .menu {
-            padding: 4px;
-            
-        }
-        .contenidogral-publi .header .menu ul li a {
-            font-size: 24px;
-    
-        }
-
-     .contenidogral-publi .header .publicidades h2{
-         color: greenyellow;
-         margin: 5px auto;
-         padding: 4px;
-         font-family:'Creepster', cursive;
-         font-size: 45px;
-         text-align: center;
-     }
-     .contenidogral-publi .header .publicidades p{
-        color: white;
-        margin: 5px auto;
-        padding: 4px;
-        font-family:'Chakra Petch', sans-serif;
-        font-size: 15px;
-        text-align: center;
-    }
-     .contenidogral-publi .section {
-         grid-area: section;
-         margin: 2px 1px;
-         padding: 4px;
-         width: 398px;
-     }
-     .contenidogral-publi .section .instaburger iframe {
-         width: 350px;
-        
-     }
-     .contenidogral-publi .section .receta iframe {
-         width: 350px;
-     }
-     .contenidogral-publi .section .puka iframe {
-         width: 350px;
-     }
-    
-     .contenidogral-publi .footer {
-         grid-area: footer;
-     }
-
-
-
  }
-
-/*FIN DE MEDIA QUERYS EN PAGINA DE PUBLICIDADES*/
-
-
-/* PAGINA DE DOCUMENTALES*/
-
-/*Inicio de menu de navegacion de DOCUMENTALES*/
-/* .contenidogral-docu {
-    background-image: url(../img/Background\ image.jpg);
-}
-.docu {
-    color: #ffffff;
-    line-height: 1,6;
-    margin: 5px 10px;
-    padding: 5px 10px 12px 5px;
-     
-}
- .docu-info {
-     color: #ffffff;
-     font-family:'Cormorant Garamond', serif;
-     line-height: 1,6;
-     margin: 5px 10px;
-     padding: 2px 5px;
-
- }
- .contenidogral-docu .section {
+ .contenidogral-publi .section .puka {
+     margin: 1px auto;
      text-align: center;
- } 
- .contenidogral-docu .footer {
-    grid-area: footer;
-    background: #000;
-    opacity: 0.9;
-}
-.contenidogral-docu .footer:hover {
-     opacity: 1;
-}
-.contenidogral-docu .footer .contacto .redes-ig a{
-    margin: 1px 4px;
-    font-size: 35px;
-    color: red;
-    
-}
-
-.contenidogral-docu .footer .contacto .redes-ig a i:hover {
-     color: greenyellow;
-} */
-
-
- /*Fin de menu de navegacion de DOCUMENTALES*/
-
- /*Inicio de video de PATIOS*/
- /* .patios {
-   color: #DC143C;
-   font-family: 'Chakra Petch', sans-serif;
-   line-height: 1,6;
-   margin: 5px 10px;
-   padding: 2px auto;
- }
- .contenidogral-docu .header .docu {
-    font-family:'Creepster', cursive;
-    font-size: 60px;
-    text-align: center;
-    color: greenyellow;
- }
-
- .contenidogral-docu .header .docu-info {
-    font-size: 25px;
-    font-family:'Cormorant Garamond', serif;
-    text-align: center;
-    
-}
- .contenidogral-docu .section {
-    background: #ffffffc0; 
-    width: 760px;
-    opacity: 0.9;
-    border-radius: 18px;
-    padding: 10px;
-    font-size: 25px;
-    margin: 1px auto;
-   
-} */
-/*Fin de video de PATIOS*/
-/*Inicio de MEDIA QUERYS de DOCUMENTALES*/
-/* @media screen and (max-width: 768px) {
-    .contenidogral-docu h1 {
-        font-size: 35px;
-    }
-    .contenidogral-docu .header .docu {
-        font-family:'Creepster', cursive;
-        font-size: 40px;
-        text-align: center;
-        color: greenyellow;
-    }
-    .contenidogral-docu .header .docu-info {
-        font-size: 18px;
-        font-family:'Cormorant Garamond', serif;
-        
-    }
-    .contenidogral-docu .section {
-       width: 398px;
-    }
-    .contenidogral-docu .section .patios {
-        font-size: 24px;
-    }
-    .contenidogral-docu .section iframe {
-        text-align: center;
-        width: 350px;
-    }
-    .contenidogral-docu .footer .redes-ig i {
-        text-decoration:none;
-        color: red;
-        margin: 2px auto;
-        padding: 2px;
-        font-size: 30px;
-        text-align: center;
-    }
-    
-} */
-/*Fin de MEDIA QUERYS de DOCUMENTALES*/
-
-
-
- /* PAGINA DE TRABAJACONNOSOTROS*/
-
- /*Inicio de Formulario*/
-  .trabajaconnos {
-      color: greenyellow;
-      font-family: 'Creepster', cursive;
-      margin: 5px 10px;
-      padding: 4px;
-      font-size: 60px;
-      text-align: center;
+     font-size: 25px;
  }
  
- .infodeform {
+ .contenidogral-publi .footer {
+     grid-area: footer;
+     background: #000;
+     opacity: 0.9;
+ }
+ .contenidogral-publi .footer:hover {
+      opacity: 1;
+ }
+ .contenidogral-publi .footer .contacto .redes-ig a{
+     margin: 1px 4px;
+     font-size: 35px;
+     color: red;
+     
+ }
+ 
+ .contenidogral-publi .footer .contacto .redes-ig a i:hover {
+      color: greenyellow;
+ }
+ 
+ 
+ 
+ 
+ /*Fin de menu de navegacion de PUBLICIDADES*/
+ 
+ /*INICIO DE MAIN DE PAGINA DE PUBLICIDADES*/
+ 
+ /*Inicio de INSTA BURGER*/
+ .instaburger h2 {
+      color: #DC143C;
+      font-family:'Chakra Petch', sans-serif;
+      line-height: 1,6;
+      margin: 5px;
+      padding: 5px;
+ 
+ }
+ /*Fin de INSTA BURGER*/
+ 
+ /*Inicio de LA RECETA DE VICENTE*/
+ .receta h2 {
+      color: #DC143C;
+      font-family:'Chakra Petch', sans-serif;
+      line-height: 1,6;
+      margin: 5px 10px;
+      padding: 5px 10px 12px 5px;
+ }
+ /*FIN de la RECETA DE VICENTE*/
+ 
+ /*Inicio de PUKA*/
+ .puka h2 {
+      color: #DC143C;
+      font-family:'Chakra Petch', sans-serif;
+      line-height: 1,6;
+      margin: 5px 10px;
+      padding: 5px 10px 12px 5px;
+ }
+ /*Fin de PUKA*/
+ 
+  /* INICIO DE MEDIA QUERYS EN PAGINA DE PUBLICIDADES*/
+ 
+  @media screen and (max-width: 768px) {
+     
+     .contenidogral-publi{
+         display: grid;
+         width: 100%;
+         grid-template-columns: repeat(4, 1fr);
+         grid-template-rows: repeat(4, auto);
+         grid-template-areas: "encabezado encabezado encabezado encabezado"
+                              "section section section section"
+                              "footer footer footer footer";
+ 
+     }
+ 
+          .contenidogral-publi .header {
+          grid-area: encabezado;
+          
+      }
+         .contenidogral-publi .header h1 {
+             font-size: 35px;
+         }
+         .contenidogral-publi .header .menu {
+             padding: 4px;
+             
+         }
+         .contenidogral-publi .header .menu ul li a {
+             font-size: 24px;
+     
+         }
+ 
+      .contenidogral-publi .header .publicidades h2{
+          color: greenyellow;
+          margin: 5px auto;
+          padding: 4px;
+          font-family:'Creepster', cursive;
+          font-size: 45px;
+          text-align: center;
+      }
+      .contenidogral-publi .header .publicidades p{
+         color: white;
+         margin: 5px auto;
+         padding: 4px;
+         font-family:'Chakra Petch', sans-serif;
+         font-size: 15px;
+         text-align: center;
+     }
+      .contenidogral-publi .section {
+          grid-area: section;
+          margin: 2px 1px;
+          padding: 4px;
+          width: 398px;
+      }
+      .contenidogral-publi .section .instaburger iframe {
+          width: 350px;
+         
+      }
+      .contenidogral-publi .section .receta iframe {
+          width: 350px;
+      }
+      .contenidogral-publi .section .puka iframe {
+          width: 350px;
+      }
+     
+      .contenidogral-publi .footer {
+          grid-area: footer;
+      }
+ 
+ 
+ 
+  }
+ 
+ /*FIN DE MEDIA QUERYS EN PAGINA DE PUBLICIDADES*/
+ 
+ 
+ /* PAGINA DE DOCUMENTALES*/
+ 
+ /*Inicio de menu de navegacion de DOCUMENTALES*/
+ .contenidogral-docu {
+     background-image: url(../img/Background\ image.jpg);
+ }
+ .docu {
+     color: #ffffff;
+     line-height: 1,6;
+     margin: 5px 10px;
+     padding: 5px 10px 12px 5px;
+      
+ }
+  .docu-info {
+      color: #ffffff;
+      font-family:'Cormorant Garamond', serif;
+      line-height: 1,6;
+      margin: 5px 10px;
+      padding: 2px 5px;
+ 
+  }
+  .contenidogral-docu .section {
+      text-align: center;
+  } 
+  .contenidogral-docu .footer {
+     grid-area: footer;
+     background: #000;
+     opacity: 0.9;
+ }
+ .contenidogral-docu .footer:hover {
+      opacity: 1;
+ }
+ .contenidogral-docu .footer .contacto .redes-ig a{
+     margin: 1px 4px;
+     font-size: 35px;
+     color: red;
+     
+ }
+ 
+ .contenidogral-docu .footer .contacto .redes-ig a i:hover {
+      color: greenyellow;
+ }
+ 
+ 
+  /*Fin de menu de navegacion de DOCUMENTALES*/
+ 
+  /* Inicio de video de PATIOS
+  .patios {
+    color: #DC143C;
+    font-family: 'Chakra Petch', sans-serif;
+    line-height: 1,6;
+    margin: 5px 10px;
+    padding: 2px auto;
+  }
+  .contenidogral-docu .header .docu {
+     font-family:'Creepster', cursive;
+     font-size: 60px;
+     text-align: center;
+     color: greenyellow;
+  }
+ 
+  .contenidogral-docu .header .docu-info {
+     font-size: 25px;
+     font-family:'Cormorant Garamond', serif;
+     text-align: center;
+     
+ }
+  .contenidogral-docu .section {
+     background: #ffffffc0; 
+     width: 760px;
+     opacity: 0.9;
+     border-radius: 18px;
+     padding: 10px;
+     font-size: 25px;
+     margin: 1px auto;
+    
+ }*/
+ /*Fin de video de PATIOS*/
+ /*Inicio de MEDIA QUERYS de DOCUMENTALES*/
+ @media screen and (max-width: 768px) {
+     .contenidogral-docu h1 {
+         font-size: 35px;
+     }
+     .contenidogral-docu .header .docu {
+         font-family:'Creepster', cursive;
+         font-size: 40px;
+         text-align: center;
+         color: greenyellow;
+     }
+     .contenidogral-docu .header .docu-info {
+         font-size: 18px;
+         font-family:'Cormorant Garamond', serif;
+         
+     }
+     .contenidogral-docu .section {
+        width: 398px;
+     }
+     .contenidogral-docu .section .patios {
+         font-size: 24px;
+     }
+     .contenidogral-docu .section iframe {
+         text-align: center;
+         width: 350px;
+     }
+     .contenidogral-docu .footer .redes-ig i {
+         text-decoration:none;
+         color: red;
+         margin: 2px auto;
+         padding: 2px;
+         font-size: 30px;
+         text-align: center;
+     }
+     
+ }
+ /*Fin de MEDIA QUERYS de DOCUMENTALES */
+ 
+ 
+ 
+  /* PAGINA DE TRABAJACONNOSOTROS*/
+ 
+  /*Inicio de Formulario*/
+  .trabajaconnos {
+       color: greenyellow;
+       font-family: 'Creepster', cursive;
+       margin: 5px 10px;
+       padding: 4px;
+       font-size: 60px;
+       text-align: center;
+  }
+  
+  .infodeform {
+       color: #ffffff;
+       font-family: 'Chakra Petch', sans-serif;
+       line-height: 1,6;
+       margin: 5px 10px;
+       padding: 5px 10px 12px 5px;
+  }
+  .contenidogral-form .section .complet h3 {
+      color: white;
+      margin: 2px auto 2px 10px;
+      font-size: 36px;
+      font-family: 'Chakra Petch', sans-serif;
+      color: greenyellow;
+  }
+  .datita {
       color: #ffffff;
       font-family: 'Chakra Petch', sans-serif;
       line-height: 1,6;
       margin: 5px 10px;
       padding: 5px 10px 12px 5px;
- }
- .contenidogral-form .section .complet h3 {
-     color: white;
-     margin: 2px auto 2px 10px;
-     font-size: 36px;
-     font-family: 'Chakra Petch', sans-serif;
-     color: greenyellow;
- }
- .datita {
-     color: #ffffff;
+  }
+  .datita-titulos {
+     color: #DC143C;
      font-family: 'Chakra Petch', sans-serif;
      line-height: 1,6;
      margin: 5px 10px;
      padding: 5px 10px 12px 5px;
+  }
+ 
+  .campos {
+      color: #ffffff;
+      line-height: 1,6;
+      margin: 5px 10px;
+      padding: 5px 10px 12px 5px;
+  }
+  .contenidogral-form .footer .contacto .redes-ig a{
+     margin: 1px 4px;
+     font-size: 35px;
+     color: red;
+     
  }
- .datita-titulos {
-    color: #DC143C;
-    font-family: 'Chakra Petch', sans-serif;
-    line-height: 1,6;
-    margin: 5px 10px;
-    padding: 5px 10px 12px 5px;
+ 
+ .contenidogral-form .footer .contacto .redes-ig a i:hover {
+      color: greenyellow;
  }
-
- .campos {
-     color: #ffffff;
-     line-height: 1,6;
-     margin: 5px 10px;
-     padding: 5px 10px 12px 5px;
+ 
+  /*Fin de formulario*/
+ /*Inicio de MEDIA QUERYS en FORMULARIO*/
+ @media screen and (max-width: 768px) {
+ .contenidogral-form .header h1 {
+     font-size: 35px;
  }
- .contenidogral-form .footer .contacto .redes-ig a{
-    margin: 1px 4px;
-    font-size: 35px;
-    color: red;
-    
-}
-
-.contenidogral-form .footer .contacto .redes-ig a i:hover {
-     color: greenyellow;
-} 
-
- /*Fin de formulario*/
-/*Inicio de MEDIA QUERYS en FORMULARIO*/
-@media screen and (max-width: 768px) {
-.contenidogral-form .header h1 {
-    font-size: 35px;
-}
-.contenidogral-form .section .trabajaconnos {
-    font-size: 22px;
-}
-.contenidogral-form .footer .redes-ig i {
-    text-decoration:none;
-    color: red;
-    margin: 2px auto;
-    padding: 2px;
-    font-size: 30px;
-    text-align: center;
-}
-
-}
-/*Fin de MEDIA QUERYS de FORMULARIO*/
- /* PAGINA DE MERCH*/
-
-/*Inicio de Menu de navegacion*/
-h1 {
-    color: white;
-    text-align: left;
-    font-weight: bold;
-    font-family:'Chakra Petch', sans-serif;
-    font-size: 50px;
-    margin: 5px 10px;
-    padding: 5px 10px 12px 5px;
-    display: flex;
-    flex-direction: column;
-    
-}
-.merchand {
-    color: greenyellow;
-    text-align: center;
-    font-weight: bold;
-    font-family:'Creepster', cursive;
-    font-size: 60px;
-    margin: 2px auto;
-    padding: 5px 10px 12px 5px;
-
-}
-.info {
-     color: white;
-     margin: 1px 3px 10px 2px;
+ .contenidogral-form .section .trabajaconnos {
      font-size: 22px;
+ }
+ .contenidogral-form .footer .redes-ig i {
+     text-decoration:none;
+     color: red;
+     margin: 2px auto;
+     padding: 2px;
+     font-size: 30px;
      text-align: center;
-
-}
-/*Aca finaliza el estilo de menu de navegacion*/
-
-/*Inicio del  MERCHANDISING*/
-.detalles {
-
-    background-color:#DC143C;
-    display: grid;
-    gap: 5px;
-    grid-template-columns: repeat(6, 1fr);
+ }
+ 
+ }
+ /*Fin de MEDIA QUERYS de FORMULARIO*/
+  /* PAGINA DE MERCH*/
+ 
+ /*Inicio de Menu de navegacion*/
+ h1 {
+     color: white;
+     text-align: left;
+     font-weight: bold;
+     font-family:'Chakra Petch', sans-serif;
+     font-size: 50px;
+     margin: 5px 10px;
+     padding: 5px 10px 12px 5px;
+     display: flex;
+     flex-direction: column;
+     
+ }
+ .merchand {
+     color: greenyellow;
+     text-align: center;
+     font-weight: bold;
+     font-family:'Creepster', cursive;
+     font-size: 60px;
+     margin: 2px auto;
+     padding: 5px 10px 12px 5px;
+ 
+ }
+ .info {
+      color: white;
+      margin: 1px 3px 10px 2px;
+      font-size: 22px;
+      text-align: center;
+ 
+ }
+ /*Aca finaliza el estilo de menu de navegacion*/
+ 
+ /*Inicio del  MERCHANDISING*/
+ .detalles {
+ 
+     background-color:#DC143C;
+     display: grid;
+     gap: 5px;
+     grid-template-columns: repeat(6, 1fr);
+    
+ 
+ }
+ .titular {
    
-
-}
-.titular {
-  
-    color: white;
+     color: white;
+     font-weight: bold;
+     font-family:'Chakra Petch', sans-serif;
+     font-size: 18px;
+     margin: 10px 5px;
+ }
+ 
+ .productos {
+    background-color: #493d3d;
+    color: black;
+    font-size: 18px;
     font-weight: bold;
     font-family:'Chakra Petch', sans-serif;
-    font-size: 18px;
-    margin: 10px 5px;
-}
-
-.productos {
-   background-color: #493d3d;
-   color: black;
-   font-size: 18px;
-   font-weight: bold;
-   font-family:'Chakra Petch', sans-serif;
-   display: grid;
-   grid-template-columns: repeat(6, 1fr);
-   grid-template-rows: repeat(3, auto);
-   gap: 2px;
-   margin: 2px 1px;
-
-}
-
-.items {
-    background: #f7e9e9;
-}    
-
-.items img {
-    width: 100%;
-    height: auto;
-}
- /*Fin del merchandising*/
-
-/*Inicio de estilo de info de contacto*/
-
-.contacto {
-    color: white;
-    line-height: 1,6;
-    margin: 1px 5px;
-    padding: 50px;
-    text-align: center;
-    
-
-
-}
-.contenidogral-merch .footer .contacto .redes-ig a{
-    margin: 1px 4px;
-    font-size: 35px;
-    color: red;
-    
-}
-
-.contenidogral-merch .footer .contacto .redes-ig a i:hover {
-     color: greenyellow;
-}
-/*Inicio de MEDIA QUERYS en MERCH*/
-@media screen and (max-width: 768px) {
-      .contenidogral-merch h1 {
-          font-size: 32px;
-      }
-      .contenidogral-merch .menu ul li a {
-          font-size: 22px;
-      }
-    .contenidogral-merch .merchand h2 {
-        font-size: 42px;
-        color: greenyellow;
-        font-family:'Creepster', cursive;
-    }
-    .contenidogral-merch .section .detalles {
-        background-color:#DC143C;
-        /* display: grid;
-        gap: 5px;
-        grid-template-columns: repeat(6, 1fr);     */
-    }
-    .contenidogral-merch .section .titular {
-        font-size: 12px;
-    }
-    .contenidogral-merch .section .productos {
-        display: block;
-        
-    }
-    .contenidogral-merch .section .items {
-        display: block;
-        margin: 1px;
-    }
-
-    .contenidogral-merch .footer .contacto .redes-ig a{
-        margin: 1px 4px;
-        font-size: 28px;
-        color: red;
-        
-    }
-    
-    .contenidogral-merch .footer .contacto .redes-ig a i:hover {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 2px;
+    margin: 2px 1px;
+ 
+ }
+ 
+ .items {
+     background: #f7e9e9;
+ }    
+ 
+ .items img {
+     width: 100%;
+     height: auto;
+ }
+  /*Fin del merchandising*/
+ 
+ /*Inicio de estilo de info de contacto*/
+ 
+ .contacto {
+     color: white;
+     line-height: 1,6;
+     margin: 1px 5px;
+     padding: 50px;
+     text-align: center;
+     
+ 
+ 
+ }
+ .contenidogral-merch .footer .contacto .redes-ig a{
+     margin: 1px 4px;
+     font-size: 35px;
+     color: red;
+     
+ }
+ 
+ .contenidogral-merch .footer .contacto .redes-ig a i:hover {
+      color: greenyellow;
+ }
+ /*Inicio de MEDIA QUERYS en MERCH*/
+ @media screen and (max-width: 768px) {
+       .contenidogral-merch h1 {
+           font-size: 32px;
+       }
+       .contenidogral-merch .menu ul li a {
+           font-size: 22px;
+       }
+     .contenidogral-merch .merchand h2 {
+         font-size: 42px;
          color: greenyellow;
-    }
-
-}
-/*Fin de MEDIA QUERYS en MERCH*/
+         font-family:'Creepster', cursive;
+     }
+     .contenidogral-merch .section .detalles {
+         background-color:#DC143C;
+         /* display: grid;
+         gap: 5px;
+         grid-template-columns: repeat(6, 1fr);     */
+     }
+     .contenidogral-merch .section .titular {
+         font-size: 12px;
+     }
+     .contenidogral-merch .section .productos {
+         display: block;
+         
+     }
+     .contenidogral-merch .section .items {
+         display: block;
+         margin: 1px;
+     }
+ 
+     .contenidogral-merch .footer .contacto .redes-ig a{
+         margin: 1px 4px;
+         font-size: 28px;
+         color: red;
+         
+     }
+     
+     .contenidogral-merch .footer .contacto .redes-ig a i:hover {
+          color: greenyellow;
+     }
+ 
+ }
+ /*Fin de MEDIA QUERYS en MERCH*/
 
 
 
