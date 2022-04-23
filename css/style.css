@@ -999,8 +999,43 @@
      height: auto;
  }
   /*Fin del merchandising*/
+ /*--------------------------------INICIO DE PAGINA DE CONTACTO-------------------*/
+ .contenidogral-form {
+    background-image:url(../img/postes.webp); 
+ }
+ .contenidogral-form h1 {
+    color: #DCDCDC;
+    text-align: left;
+    margin: 2px ;
+    font-weight: bold;
+    font-family:'Bebas Neue', cursive;
+    font-size: 110px;
+    padding: 10px;
+    
+}
+.contenidogral-form .info {
+    color: white;
+    margin: 1px 2px;
+    padding: 2px;
+}
  
- /*Inicio de estilo de info de contacto*/
+ .contenidogral-form .footer .contacto .redes-ig a{
+     margin: 1px 4px;
+     font-size: 35px;
+     color: springgreen;
+     
+ }
+ 
+ .contenidogral-form .footer .contacto .redes-ig a i:hover {
+      color: greenyellow;
+ }
+ .contenidogral-form .section .complet h3 {
+     color: cyan;
+ }
+ .contenidogral-form .section h3 {
+     color: springgreen;
+ }
+ /*-------------------------Inicio de MENU DE NAVEGACION de contacto-----------------*/
  .contenidogral-form  .nav.nav-pills{
     text-align: center;
     justify-content: center;
@@ -1047,39 +1082,7 @@
    font-size: 25px;
    font-weight: bold;
 }
- /*jafjajfafaf*/
- .contenidogral-form h1 {
-    color: #DCDCDC;
-    text-align: left;
-    margin: 2px ;
-    font-weight: bold;
-    font-family:'Bebas Neue', cursive;
-    font-size: 110px;
-    padding: 10px;
-    
-}
-.contenidogral-form .info {
-    color: white;
-    margin: 1px 2px;
-    padding: 2px;
-}
- 
- .contenidogral-form .footer .contacto .redes-ig a{
-     margin: 1px 4px;
-     font-size: 35px;
-     color: springgreen;
-     
- }
- 
- .contenidogral-form .footer .contacto .redes-ig a i:hover {
-      color: greenyellow;
- }
- .contenidogral-form .section .complet h3 {
-     color: cyan;
- }
- .contenidogral-form .section h3 {
-     color: springgreen;
- }
+ /*-----------------------FIN DE MENU DE NAVEGACION DE CONTACTO*/
  /*Inicio de MEDIA QUERYS en MERCH*/
  @media screen and (max-width: 768px) {
        .contenidogral-merch h1 {
