@@ -3,6 +3,8 @@
     padding: 0;
     box-sizing: border-box;
  }
+ /*------------------------INICIO DE PAGINA PRINCIPAL - INDEX---------------------------*/
+
  /*INICIO GRIDS-AREA DE LA PAGINA PRINCIPAL*/
  .contenido-gral {
     
@@ -57,8 +59,7 @@
      opacity: 0.9;
      grid-column: 1/5;
      grid-row: 4/5;
-     border-style:dotted;
-     border-color: #DCDCDC;
+    
      
  }
  .contenido-gral .footer:hover {
@@ -73,7 +74,7 @@
      opacity: 1;
    
  }
- /*FINAL DE GRIDS-AREA EN PAGINA PRINCIPAL*/
+ /*FINAL DE GRIDS-AREA EN PAGINA PRINCIPAL - INDEX*/
  
  /*INICIO DE MEDIA QUERIES EN LA PAGINA PRINCIPAL*/
  @media screen and (max-width: 768px){
@@ -121,16 +122,13 @@
         font-size: 24px;
     }
     .contenido-gral .nav-pills .nav-link.active {
-        color: red;
         background: none;
         padding: 2px;
     }
     .contenido-gral .nav-item.dropdown .nav-link.dropdown-toggle{
-        color: red;
         padding: 2px;
     } 
     .contenido-gral .nav.item  {
-        color: red;
         padding: 2px;
     }
      .contenido-gral .encabezado .menu {
@@ -193,7 +191,7 @@
      }
  .contenido-gral .footer .redes-ig i {
          text-decoration:none;
-         color: red;
+         color: springgreen;
          margin: 2px auto;
          padding: 2px;
          font-size: 30px;
@@ -224,7 +222,7 @@
  }
  /*Fin de encabezado de PAGINA PRINCIPAL*/
  
- /*PRUEBA DE NUEVO MENU INDEX*/
+ /*INICIO DE MENU DE NAVEGACION DE PAGINA PRINCIPAL - INDEX*/
  .contenido-gral  .nav.nav-pills{
       text-align: center;
       justify-content: center;
@@ -272,8 +270,7 @@
      font-weight: bold;
  }
  
- 
- /*Fin de Menu de Navegacion de PAGINA PRINCIPAL*/
+ /*FIN DE MENU DE NAVEGACION de PAGINA PRINCIPAL - INDEX*/
  /* Inicio de INFO sobre la pagina principal*/
  .encabezado .contdestacado h2 {
      font-size: 100px;
@@ -331,7 +328,7 @@
   
   }
   
- /*Inicio de imagenes de ARDILES*/
+
  #carouselExampleDark2 .carousel-inner {
      width: auto;
      display: grid;
@@ -362,51 +359,9 @@
      margin: 1px auto;
   
   }
- /*Fin de imagenes de ARDILES*/
- /*Inicio de imagenes de PUKA*/
- #carouselExampleDark3 .carousel-inner {
-     width: auto;
-     display: grid;
-     margin: 10px auto;
-     grid-area: main;
-     
- }
- #carouselExampleDark3 .contdestacado {
-     font-size: 80px;
-     color:greenyellow;
-     font-family:'Creepster', cursive;
-     margin: 1px auto;
-     padding: 1px;
- }
+ /*Fin de CAROUSEL DE IMAGENES de PAGINA PRINCIPAL*/
  
- #carouselExampleDark3 .carousel-inner .carousel-item h5 {
-    color: greenyellow;
-    font-size: 42px;
-    font-family:'Creepster', cursive;
-    
-    
- 
- }
- #carouselExampleDark3 .carousel-inner .carousel-item p {
-     color: white;
-     font-size: 18px;
-     font-weight: bold;
-     margin: 1px auto;
-  
-  }
- 
- .contenido-gral .section h2 {
-     color: fuchsia;
-     text-align: center;
-     font-family:'Chakra Petch', sans-serif;
-     font-weight: bold;
- 
- }
- .contenido-gral .section iframe {
-     margin: 2px auto;
- }
- 
- /*Inicio de links de INSTAGRAM Y YOUTUBE*/
+ /*Inicio de links de REDES SOCIALES para TODAS LAS PAGINAS*/
  
  
  .contenido-gral .footer .redes-ig {
@@ -424,12 +379,9 @@
       color: greenyellow;
  }
  
+ /* Fin de links de REDES SOCIALES para TODAS LAS PAGINAS*/
  
- 
- 
- /* Fin de links de INSTAGRAM, YOUTUBE y FACEBOOK*/
- 
- /*Inicio de info de contacto*/
+ /*Inicio de info de contacto APLICA A TODAS LAS PAGINAS*/
  .contacto {
      text-align: center;
      color: #ffffff;
@@ -457,10 +409,9 @@
  /*Fin de info de contactos*/
  
  /*FIN DE PAGINA PRINCIPAL*/
- 
- /* PAGINA DE VIDEOCLIPS*/
- /*Inicio de menu de navegacion de VIDEOCLIPS */
- /*INICIO DE GRIDS-AREA EN PAGINA DE VIDEOCLIPS*/
+ /*----------------------PAGINA DE VIDEOCLIPS Y PUBLICIDADES (APLICA PARA TODAS LAS PAGINAS)---------*/
+
+ /*INICIO DE GRIDS-AREA EN PAGINAS DE VIDEOCLIPS Y PUBLICIDADES*/
  
  .contenido-gral-videos {
     
@@ -565,9 +516,9 @@
       color: greenyellow;
  }
  
- /*Fin de menu de navegacion de VIDEOCLIPS*/
+ /*FIN DE GRIDS-AREA EN PAGINA DE VIDEOCLIPS Y PUBLICIDADES*/
  
-/*MENU DE NAVEGACION PAGINA DE VIDEOCLIPS*/
+/*Inicio de MENU DE NAVEGACION PAGINA DE VIDEOCLIPS Y PUBLICIDADES*/
 .contenido-gral-videos  .nav.nav-pills{
     text-align: center;
     justify-content: center;
@@ -626,363 +577,132 @@
     font-size: 50px;
 }
 
-
-
-
-
- /*FIN DE GRIDS-AREA EN PAGINA DE VIDEOCLIPS*/
+/*Fin de menu de navegacion de VIDEOCLIPS Y PBLICIDADES*/
  
-  /*INICIO DE MEDIA QUERIES EN PAGINA DE VIDEOCLIPS*/
- @media screen and (max-width: 768px){
-   
-     .contenido-gral-videos{
-         display: grid;
-         width: 100%;
-         grid-template-columns: repeat(4, 1fr);
-         grid-template-rows: repeat(4, auto);
-         grid-template-areas: "encabezado encabezado encabezado encabezado"
-         "main main main main"
-         "section section section section"
-         "footer footer footer footer";
+  /*INICIO DE MEDIA QUERIES EN PAGINA DE VIDEOCLIPS Y PUBLICIDADES*/
+  @media screen and (max-width: 768px){
  
-     }
- 
-     .contenido-gral-videos .encabezado h1 {
+    .contenido-gral-videos{
+        margin: 1px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas: "encabezado encabezado encabezado encabezado"
+        "main main main main"
+        "section section section section"
+        "footer footer footer footer";
+    }
+
+    .contenido-gral-videos .encabezado {
+        grid-area: encabezado;
+        align-content: center;
+      
+    }
+    .contenido-gral-videos .encabezado h1 {
         font-size: 50px;
-     
-     }
- 
-     .contenido-gral-videos .encabezado .menu {
+        margin: 5px auto;
        
-         margin: 1px auto;
-         padding: 1px;
-         font-size: 18px;
-         display: block;
-          width: auto;
-       
- 
-     }
-     .contenido-gral-videos .encabezado .menu ul li a{
-         font-size: 26px;
-         line-height: 1,2;
-     }
+    }
     
-     .contenido-gral-videos .encabezado h1{
-         font-size: 27px;
- 
-     }
-     .contenido-gral-videos .encabezado .data {
-         font-size: 18px;
-         margin: 5px 10px;
-         text-align: center;
- 
-     }
-     
-     .contenido-gral-videos .encabezado .musicales h2 {
-         font-size: 42px;
-         text-align: center;
-     }
-     .contenido-gral-videos .main{
-         width: 398px;
-         text-align: center;
-         margin: 1px auto;
-         grid-column: 1, 4;
-         grid-row: 2, 3;
-     }
-     .contenido-gral-videos .main .hijo h2 {
-       font-size: 28px;
-       margin: 2px auto;
-       
-     }
-      .contenido-gral-videos .main iframe {
-         width: 350px;
-         
-     } 
- 
-     .contenido-gral-videos .main .nunka h2 {
-         font-size: 28px;
-         margin: 2px auto;
-     }
- 
- 
-    
-     .contenido-gral-videos .main .tkn h2 {
-        font-size: 28px;
-        margin: 2px auto;
- 
-     }
-     
- 
-     .contenido-gral-videos .footer p {
-         font-size: 18px;
-         
-     }
-     .contenido-gral-videos .footer .codbarra {
-         font-size: 32px;
-     }
- 
- 
-     }
- /*FINAL DE MEDIA QUERIES EN PAGINA DE VIDEOCLIPS*/
- 
- /* Inicio de hijo discolo*/
- 
- /* .hijo {
-     color: #ffffff;
-     font-family:'Chakra Petch', sans-serif;
-     margin: 1px 1px;
-     padding: 1px;
-     text-align: center;
-     
-     
- }
- 
- .hijo .errados{
-     color: #DC143C;
-     line-height: 1,6;
-       margin: 1px 2px;
-       padding: 5px;
- } 
- 
- 
- /*Fin de Hijo discolo*/
- 
- /*Inicio de chakra x ard*/
-  .nunka {
-     color: #ffffff;
-     font-family:'Chakra Petch', sans-serif;
-     line-height: 1,6;
-     margin: 5px 10px;
-     padding: 1px;
-     text-align: center;
- }
- .nunka .chakra {
-       color: #DC143C;
-       line-height: 1,6;
-       margin: 5px 2px;
+    .contenido-gral-videos .encabezado .info {
+        font-size: 24px;
+        margin: 5px auto;
+      
+
+    }
+    .contenido-gral-videos  .nav.nav-pills{
+        justify-content: center;
+        border-style:double;
+        border-color:silver;
+        font-family:'Chakra Petch', sans-serif;
+        font-weight: bold;
+   }
+   .contenido-gral-videos ul.nav.nav-pills {
+       margin: 1px 1px;
        padding: 1px;
- 
+       justify-content: center;
+       font-size: 34px;
+   }
+   .contenido-gral-videos .nav-pills .nav-link.active {
+       background: none;
+       padding: 2px;
+   }
+   .contenido-gral-videos .nav-item.dropdown .nav-link.dropdown-toggle{
+       padding: 2px;
+       font-size: 34px;
+       font-family:'Bebas Neue', cursive;
+   } 
+   .contenido-gral-videos-videos .nav.item  {
+       padding: 2px;
+   }
+    .contenido-gral-videos .encabezado .menu {
+        margin: 1px auto;
+        padding: 1px;
+        line-height: 1.2;
+        text-align: center;
+        width: auto;
+        
+    }
+    .contenido-gral-videos .encabezado .menu ul li a{
+        font-size: 21px;
+    }
+
+    .contenido-gral .main {
+        grid-area: main;
+        margin: 2px auto;
+        width: 400px;
+    }
+
+.contenido-gral #carouselExampleDark {
+    margin: 1px 1px;
+}
+.contenido-gral .encabezado .contdestacado h2 {
+    font-size: 45px;
+    color:#e0cdcd;
+    font-family:'Bebas Neue', cursive;
+    margin: 1px auto;
+    padding: 1px;
+    text-align: center;
+}
+.contenido-gral .encabezado .infocontenidodest {
+    color: white;
+    margin: 2px auto;
+    font-size: 21px;
+    font-family:'Chakra Petch', sans-serif; 
+    text-align: center;
+}
+.contenido-gral .footer {
+        font-size: 15px;
+        grid-area: footer;
+        margin: 2px 1px;
+        grid-area: footer;
+        
+       
+    }
+.contenido-gral .footer .contacto {
+        text-align: center;
+        font-size: 15px;
+        padding: 10px;
+    }
+.contenido-gral .footer .contacto p {
+        margin: 1px auto
+    }
+.contenido-gral .footer .redes-ig i {
+        text-decoration:none;
+        color: springgreen;
+        margin: 2px auto;
+        padding: 2px;
+        font-size: 30px;
+        text-align: center;
+    }
+ .contenido-gral .section {
+      grid-area: section;
  }
- /*Fin de chakra x ard*/
- 
- /*Inicio de tkn x valentina*/
- 
- .tkn {
-     color: #ffffff;
-     font-family:'Chakra Petch', sans-serif;
-     line-height: 1,6;
-     margin: 5px 2px;
-     padding: 1px;
-     text-align: center;
- }
- .tkn .val {
-     color: #DC143C;
-     line-height: 1,6;
-     margin: 5px 2px;
-     padding: 1px;
- } */
- /*Fin de tkn x valentina*/
- 
- /*FIN DE PAGINA DE VIDEOCLIPS*/
- 
- /*PAGINA DE PUBLICIDADES*/
- 
- /*Inicio de menu de navegacion de PUBLICIDADES*/ 
- .contenidogral-publi {
-    
-     display: grid;
-     width: 100%;
-     background-image:url(../img/Background\ image.jpg);
-     grid-template-columns: repeat(4, 1fr);
-     grid-template-rows: repeat(3, auto);
-     grid-template-areas: "encabezado encabezado encabezado encabezado"
-                          "main main main main"
-                          "section section section section"
-                          "footer footer footer footer";
-                       
-  }
-  .contenidogral-publi .header {
-      grid-area: encabezado;
-  }
-  .contenidogral-publi .header .publicidades {
-     color: #ffffff;
-     font-family: 'Chakra Petch', sans-serif; 
-     line-height: 1,6;
-     margin: 5px auto;
-     padding: 5px;
-     font-size: 18px;
-     text-align: center;
- }
- .contenidogral-publi .publicidades h2 {
-     font-size: 80px;
-     font-family:'Creepster', cursive;
-     color: greenyellow;
- }
- 
- .infoPubli {
-      color: #ffffff;
- 
- }
- .contenidogral-publi .section {
-     grid-area: main;
-     width: 760px;
-     grid-column:2/4;
-     grid-row:2/4;
-     background: #ffffffc0; 
-     width: 760px;
-     opacity: 0.9;
-     border-radius: 15px;
-     margin: 1px auto;
-   
- 
- }
- .contenidogral-publi .section .instaburger {
-      margin: 1px auto;
-      text-align: center;
-      font-size: 25px;
- }
- 
- .contenidogral-publi .section .receta {
-     margin: 1px auto;
-     text-align: center;
-     font-size: 25px;
- }
- .contenidogral-publi .section .puka {
-     margin: 1px auto;
-     text-align: center;
-     font-size: 25px;
- }
- 
- .contenidogral-publi .footer {
-     grid-area: footer;
-     background: #000;
-     opacity: 0.9;
- }
- .contenidogral-publi .footer:hover {
-      opacity: 1;
- }
- .contenidogral-publi .footer .contacto .redes-ig a{
-     margin: 1px 4px;
-     font-size: 35px;
-     color: red;
-     
- }
- 
- .contenidogral-publi .footer .contacto .redes-ig a i:hover {
-      color: greenyellow;
- }
- 
- 
- 
- 
- /*Fin de menu de navegacion de PUBLICIDADES*/
- 
- /*INICIO DE MAIN DE PAGINA DE PUBLICIDADES*/
- 
- /*Inicio de INSTA BURGER*/
- .instaburger h2 {
-      color: #DC143C;
-      font-family:'Chakra Petch', sans-serif;
-      line-height: 1,6;
-      margin: 5px;
-      padding: 5px;
- 
- }
- /*Fin de INSTA BURGER*/
- 
- /*Inicio de LA RECETA DE VICENTE*/
- .receta h2 {
-      color: #DC143C;
-      font-family:'Chakra Petch', sans-serif;
-      line-height: 1,6;
-      margin: 5px 10px;
-      padding: 5px 10px 12px 5px;
- }
- /*FIN de la RECETA DE VICENTE*/
- 
- /*Inicio de PUKA*/
- .puka h2 {
-      color: #DC143C;
-      font-family:'Chakra Petch', sans-serif;
-      line-height: 1,6;
-      margin: 5px 10px;
-      padding: 5px 10px 12px 5px;
- }
- /*Fin de PUKA*/
- 
-  /* INICIO DE MEDIA QUERYS EN PAGINA DE PUBLICIDADES*/
- 
-  @media screen and (max-width: 768px) {
-     
-     .contenidogral-publi{
-         display: grid;
-         width: 100%;
-         grid-template-columns: repeat(4, 1fr);
-         grid-template-rows: repeat(4, auto);
-         grid-template-areas: "encabezado encabezado encabezado encabezado"
-                              "section section section section"
-                              "footer footer footer footer";
- 
-     }
- 
-          .contenidogral-publi .header {
-          grid-area: encabezado;
-          
-      }
-         .contenidogral-publi .header h1 {
-             font-size: 35px;
-         }
-         .contenidogral-publi .header .menu {
-             padding: 4px;
-             
-         }
-         .contenidogral-publi .header .menu ul li a {
-             font-size: 24px;
-     
-         }
- 
-      .contenidogral-publi .header .publicidades h2{
-          color: greenyellow;
-          margin: 5px auto;
-          padding: 4px;
-          font-family:'Creepster', cursive;
-          font-size: 45px;
-          text-align: center;
-      }
-      .contenidogral-publi .header .publicidades p{
-         color: white;
-         margin: 5px auto;
-         padding: 4px;
-         font-family:'Chakra Petch', sans-serif;
-         font-size: 15px;
-         text-align: center;
-     }
-      .contenidogral-publi .section {
-          grid-area: section;
-          margin: 2px 1px;
-          padding: 4px;
-          width: 398px;
-      }
-      .contenidogral-publi .section .instaburger iframe {
-          width: 350px;
-         
-      }
-      .contenidogral-publi .section .receta iframe {
-          width: 350px;
-      }
-      .contenidogral-publi .section .puka iframe {
-          width: 350px;
-      }
-     
-      .contenidogral-publi .footer {
-          grid-area: footer;
-      }
- 
- 
- 
-  }
- 
- /*FIN DE MEDIA QUERYS EN PAGINA DE PUBLICIDADES*/
+}
+ /*FINAL DE MEDIA QUERIES EN PAGINA DE VIDEOCLIPS Y PUBLICIDADES*/
+
+ /*-----------------------------FIN DE PAGINA DE VIDEOCLIPS Y PUBLICIDADES--------------------------------------------*/
+
  
  
  /* PAGINA DE DOCUMENTALES*/
@@ -1100,10 +820,8 @@
      
  }
  /*Fin de MEDIA QUERYS de DOCUMENTALES */
- 
- 
- 
-  /* PAGINA DE TRABAJACONNOSOTROS*/
+  
+  /* ------------------------------------PAGINA DE CONTACTO-------------------------*/
  
   /*Inicio de Formulario*/
   .trabajaconnos {
@@ -1215,7 +933,7 @@
  }
  /*Aca finaliza el estilo de menu de navegacion*/
  
- /*Inicio del  MERCHANDISING*/
+ /*---------------------------------Inicio del  MERCHANDISING---------------------------*/
  .detalles {
  
      background-color:#DC143C;
