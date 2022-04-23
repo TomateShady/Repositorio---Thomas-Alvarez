@@ -17,19 +17,7 @@
                            "footer footer footer footer";
                         
  }
- 
- .contenido-gral .section {
-     display: grid;
-     grid-area: section;
-     width: auto;
-     padding: 1px;
-     margin: 1px 10px; 
-     grid-column:1/2;
-     grid-row: 2/3;
-     
-         
- } 
- 
+  
  .contenido-gral .encabezado {
         background: #00000000;
         grid-area: encabezado;
@@ -44,14 +32,24 @@
      padding: 1px;
      border-radius: 20px;
      margin: 1px auto;
-    
+     background: none;
      width: 760px;
      text-align: center;
      grid-column: 2/4;
      grid-row: 2/4
    
  }
- 
+ .contenido-gral .section {
+    display: grid;
+    grid-area: section;
+    width: auto;
+    padding: 1px;
+    margin: 1px 10px; 
+    grid-column:1/2;
+    grid-row: 2/3;
+    
+        
+} 
  .contenido-gral .footer{
      background: #000000;
      grid-area: footer;
@@ -223,49 +221,8 @@
       
  }
  /*Fin de encabezado de PAGINA PRINCIPAL*/
- /* Inicio de Menu de Navegacion de PAGINA PRINCIPAL*/
-  /* .menu {
-      background-color:#000000;
-      line-height: 1,6;
-      margin: 5px 10px;
-      padding: 10px;
-      border: 5px;
-      border-style:double;
-      border-color:silver;
-      text-align: center;
-      padding: 5px;
-      
  
-  }
- .menu ul {
-     margin: 4px auto;
- }
- .menu ul li{
-     display: inline;
-     font-size: 25px;
-     color: #ffffff;
-     font-style: bold;
-     font-family:'Chakra Petch', sans-serif;
-     font-weight: bold;
-     padding: 2px;
-     margin: 1px 5px;
-     justify-content: center;
-     
-     
- }
- 
- .menu ul li a {
-     text-decoration: none;
-     color: #DC143C;
-     font-size: 23px;
-     transition: height 2s;
- }
- 
- .menu ul li a:hover  {
-        color: yellowgreen;
-        height: 30px;
- } */
- /*PRUEBA DE NUEVO MENU*/
+ /*PRUEBA DE NUEVO MENU INDEX*/
  .contenido-gral  .nav.nav-pills{
       text-align: center;
       justify-content: center;
@@ -314,21 +271,6 @@
  }
  
  
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
  /*Fin de Menu de Navegacion de PAGINA PRINCIPAL*/
  /* Inicio de INFO sobre la pagina principal*/
  .encabezado .contdestacado h2 {
@@ -351,7 +293,7 @@
  }
  /* Fin de INFO sobre la pagina principal*/
  
- /*Inicio carousel imagenes de VALENTINA e HIJO DISCOLO*/
+ /*Inicio carousel imagenes en Pagina Principal*/
  
  #carouselExampleDark .carousel-inner {
      width: auto;
@@ -386,42 +328,7 @@
      font-family: 'Bebas Neue', cursive;
   
   }
-  /*
- .valentina{
-     text-align: center;
-     line-height: 1,6;
-     margin: 5px 10px;
-     padding: 5px 10px 12px 5px;
-     opacity: 1;
- 
- }
- 
- .valentina h2 {
-     color: black;
-     text-align: center;
-     font-family:'Chakra Petch', sans-serif;
-     padding: 20px;
-     font-size: 46px;
-    
-    
- }
- 
- .valentina .val {
-     color: #ff0000dc;
-     
- }
- 
- .valentina img:hover {
-       transform: scale(1.05);
-       opacity: 0.9;
-       padding: 10px;
-    
- }
- 
- .valentina .errados {
-     color: #ff0000d7;
- }*/
- /* Fin imagenes de VALENTINA*/ 
+  
  /*Inicio de imagenes de ARDILES*/
  #carouselExampleDark2 .carousel-inner {
      width: auto;
@@ -485,7 +392,6 @@
      margin: 1px auto;
   
   }
- /*Fin de imagenes de PUKA*/
  
  .contenido-gral .section h2 {
      color: fuchsia;
@@ -558,9 +464,9 @@
     
      display: grid;
      width: 100%;
-     background-image:url(../img/Background\ image.jpg);
+     background-image:url(../img/postes.webp);
      grid-template-columns: repeat(4, 1fr);
-     grid-template-rows: repeat(3, auto);
+     grid-template-rows: repeat(4, auto);
      grid-template-areas: "encabezado encabezado encabezado encabezado"
                           "main main main main"
                           "section section section section"
@@ -568,6 +474,18 @@
                        
   }
  
+  .contenido-gral-videos h1{
+        color: #DCDCDC;
+        text-align: left;
+        margin: 2px ;
+        font-weight: bold;
+        font-family:'Bebas Neue', cursive;
+        font-size: 110px;
+        padding: 10px;
+        
+        
+   }
+  
  .contenido-gral-videos .encabezado {
       background: #00000000;
       grid-area: encabezado;
@@ -594,7 +512,7 @@
  
  
  .contenido-gral-videos .main {
-     background: #ffffffc0; 
+     background: none; 
      grid-area: main;
      width: 760px;
      opacity: 0.9;
@@ -637,7 +555,7 @@
  .contenido-gral-videos .footer .contacto .redes-ig a{
      margin: 1px 4px;
      font-size: 35px;
-     color: red;
+     color: springgreen;
      
  }
  
@@ -647,6 +565,69 @@
  
  /*Fin de menu de navegacion de VIDEOCLIPS*/
  
+/*MENU DE NAVEGACION PAGINA DE VIDEOCLIPS*/
+.contenido-gral-videos  .nav.nav-pills{
+    text-align: center;
+    justify-content: center;
+    font-size: 45px;
+    margin: 5px 10px;
+    padding: 10px;
+    border: 5px;
+    border-style:double;
+    border-color:#DCDCDC;
+    font-family:'Bebas Neue', cursive;
+    font-weight: bold;
+    
+
+}
+.contenido-gral-videos .nav-pills .nav-link.active {
+   color: springgreen;
+   background: none;
+   font-family: 'Bebas Neue', cursive;
+   font-style: oblique;
+}
+.contenido-gral-videos .nav-pills .nav-link.active:hover {
+   color: cyan;
+   background: none;
+}
+.contenido-gral-videos .nav-item.dropdown .nav-link.dropdown-toggle{
+   color: springgreen;
+   font-style: oblique;
+   
+} 
+.contenido-gral-videos .nav-item.dropdown .nav-link.dropdown-toggle:hover{
+   color: cyan;
+} 
+
+.contenido-gral-videos .dropdown-menu {
+   background: black;
+   opacity: 1;
+   border-radius: 15px;
+
+   
+}
+.contenido-gral-videos .dropdown-menu .dropdown-item {
+   color:palegreen;
+   font-family:'Bebas Neue', cursive;
+   font-size: 25px;
+   font-weight: bold;
+}
+
+.contenido-gral-videos .main .videoclip-ardiles iframe{
+    width: 740px;
+    height: 450px;
+}
+.contenido-gral-videos .main .videoclip-ardiles h3{
+    text-align: center;
+    font-family:'Bebas Neue', cursive;
+    color: #DCDCDC;
+    font-size: 50px;
+}
+
+
+
+
+
  /*FIN DE GRIDS-AREA EN PAGINA DE VIDEOCLIPS*/
  
   /*INICIO DE MEDIA QUERIES EN PAGINA DE VIDEOCLIPS*/
@@ -744,7 +725,7 @@
  
  /* Inicio de hijo discolo*/
  
- .hijo {
+ /* .hijo {
      color: #ffffff;
      font-family:'Chakra Petch', sans-serif;
      margin: 1px 1px;
@@ -797,7 +778,7 @@
      line-height: 1,6;
      margin: 5px 2px;
      padding: 1px;
- }
+ } */
  /*Fin de tkn x valentina*/
  
  /*FIN DE PAGINA DE VIDEOCLIPS*/
