@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.contenido-gral {
+  background-image: url(../img/postes.webp);
+  width: 100%;
+}
+
+.contenido-gral .encabezado {
+  background: #000;
+  padding: 10px;
+  border-radius: 1px;
+}
+
+.contenido-gral .main {
+  padding: 1px;
+  border-radius: 20px;
+  margin: 1px auto;
+  text-align: center;
+}
+
+.contenido-gral .section {
+  width: auto;
+  padding: 1px;
+  margin: 1px 10px;
+}
+
+.contenido-gral .section iframe {
+  margin: 2px 20px;
+}
+
+.contenido-gral .footer {
+  background: #000000;
+  padding: 1px;
+  height: auto;
+}
+
+/*Inicio de MEDIA QUERYS en PAGINA PRINCIPAL*/
+@media screen and (max-width: 768px) {
+  .contenido-gral .encabezado {
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .contenido-gral .encabezado h1 {
+    font-size: 47px;
+    margin: 5px auto;
+  }
+  .contenido-gral .encabezado .info {
+    font-size: 14px;
+    margin: 5px auto;
+  }
+  .contenido-gral .encabezado .menu {
+    margin: 1px auto;
+    padding: 1px;
+    line-height: 1.2;
+    text-align: center;
+    width: auto;
+  }
+  .contenido-gral .encabezado .menu ul li a {
+    font-size: 21px;
+  }
+  .contenido-gral .main {
+    margin: 2px auto;
+    width: 400px;
+  }
+  .contenido-gral .ul.nav.nav-pills {
+    margin: 1px 1px;
+    padding: 1px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 24px;
+  }
+  .contenido-gral .ul.nav.nav-pills .nav.nav-pills {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-style: double;
+    border-color: #c0c0c0;
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: bold;
+  }
+  .contenido-gral .ul.nav.nav-pills .nav.nav-pills .nav-link.active {
+    background: none;
+    padding: 2px;
+  }
+  .contenido-gral nav.item.dropdown .nav-link.dropdown-toggle {
+    padding: 2px;
+  }
+  .contenido-gral .nav-item {
+    padding: 2px;
+  }
+  .contenido-gral #carouselExampleDark {
+    margin: 1px 1px;
+  }
+}
+
+.contenidogral-docu header .docu {
+  color: #ffffff;
+  margin: 5px 10px;
+  padding: 5px;
+  font-family: 'Creepster', cursive;
+  font-size: 45px;
+  text-align: center;
+  color: #adff2f;
+}
+
+.contenidogral-docu header .docu-info p {
+  color: #ffffff;
+  font-family: 'Cormorant Garamond', serif;
+  margin: 5px 10px;
+  padding: 2px 5px;
+  font-size: 25px;
+  text-align: center;
+}
+
+.contenidogral-docu .section {
+  text-align: center;
+  background: #ffffffc0;
+  width: 760px;
+  opacity: 0.9;
+  border-radius: 18px;
+  padding: 10px;
+  font-size: 25px;
+  margin: 1px auto;
+}
+
+.contenidogral-docu .section h2 {
+  text-align: center;
+  color: #ff0000;
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+.contenidogral-docu .section iframe {
+  text-align: center;
+}
+
+.contenidogral-docu .footer {
+  grid-area: footer;
+  background: #000;
+  opacity: 0.9;
+}
+
+.contenidogral-docu .footer :hover {
+  opacity: 1;
+}
+
+.contenidogral-docu .footer .contacto .redes-ig a {
+  margin: 1px 4px;
+  font-size: 35px;
+  color: #ff0000;
+}
+
+.contenidogral-docu .footer .contacto .redes-ig a i:hover {
+  color: #adff2f;
+}
+
+@media screen and (max-width: 768px) {
+  .contenidogral-docu h1 {
+    font-size: 35px;
+  }
+  .contenidogral-docu .header .docu {
+    font-family: 'Creepster', cursive;
+    font-size: 30px;
+    text-align: center;
+    color: #adff2f;
+  }
+  .contenidogral-docu .header .docu-info {
+    font-size: 18px;
+    font-family: 'Cormorant Garamond', serif;
+  }
+  .contenidogral-docu .section {
+    width: 398px;
+  }
+  .contenidogral-docu .section .patios {
+    font-size: 18px;
+    margin: 1px;
+  }
+  .contenidogral-docu .section .patios h2 {
+    font-size: 22px;
+  }
+  .contenidogral-docu .section iframe {
+    text-align: center;
+    width: 350px;
+  }
+  .contenidogral-docu .footer .redes-ig i {
+    text-decoration: none;
+    color: #ff0000;
+    margin: 2px auto;
+    padding: 2px;
+    font-size: 30px;
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=estilo.css.map */

@@ -1,3 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contenido-gral {
+    background-image: url(../img/postes.webp);
+    width: 100%;
+    .encabezado {
+        background: #000;
+        padding: 10px;
+        border-radius: 1px;
+    }
+    .main {
+        padding: 1px;
+        border-radius: 20px ;
+        margin: 1px auto;
+        text-align: center;
+       
+    }
+    .section {
+        width: auto;
+        padding: 1px;
+        margin: 1px 10px;
+        iframe {
+            margin: 2px 20px;
+        }
+    }
+    .footer{
+        background: #000000;
+        padding: 1px;
+        height: auto;
+    }
+}
+/*Inicio de MEDIA QUERYS en PAGINA PRINCIPAL*/
+@media screen and (max-width: 768px){
+    .contenido-gral{
+             .encabezado {
+           align-content: center;
+           h1 {
+               font-size: 47px;
+               margin: 5px auto;
+           }
+           .info {
+               font-size: 14px;
+               margin: 5px auto;
+           }
+           .menu {
+               margin: 1px auto;
+               padding: 1px;
+               line-height: 1.2;
+               text-align: center;
+               width: auto;
+               ul li a{
+                   font-size: 21px;
+               }
+           }
+        }
+        .main {
+            margin: 2px auto;
+            width: 400px;
+        }
+        .ul.nav.nav-pills{
+            margin: 1px 1px;
+            padding: 1px;
+            justify-content: center;
+            font-size: 24px;
+            .nav.nav-pills {
+                justify-content: center;
+                border-style: double;
+                border-color: #c0c0c0;
+                font-family: 'Chakra Petch', sans-serif;
+                font-weight: bold;
+                .nav-link.active{
+                    background: none;
+                    padding: 2px;
+                }
+            }
+        }    
+        nav.item.dropdown {
+            .nav-link.dropdown-toggle{
+                padding: 2px;
+            }
+        }
+        .nav-item {
+            padding: 2px;
+        }
+        #carouselExampleDark {
+            margin: 1px 1px;
+        }
+    }
+
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .contenidogral-docu {
     header{
        .docu {

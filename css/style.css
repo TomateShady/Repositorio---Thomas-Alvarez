@@ -6,7 +6,7 @@
  /*------------------------INICIO DE PAGINA PRINCIPAL - INDEX---------------------------*/
 
  /*INICIO GRIDS-AREA DE LA PAGINA PRINCIPAL*/
-  .contenido-gral {
+  /* .contenido-gral {
       background-image:url(../img/postes.webp);  
       width: 100%;
  }
@@ -48,24 +48,20 @@
     
      height: auto;
      
- }
+ } */
 
  
 
  /*FINAL DE GRIDS-AREA EN PAGINA PRINCIPAL - INDEX*/
  
  /*INICIO DE MEDIA QUERIES EN LA PAGINA PRINCIPAL*/
- @media screen and (max-width: 768px){
+ /* @media screen and (max-width: 768px){
  
      .contenido-gral{
          margin: 1px;
          display: grid;
          grid-template-columns: repeat(4, 1fr);
          grid-template-rows: repeat(4, auto);
-         grid-template-areas: "encabezado encabezado encabezado encabezado"
-         "main main main main"
-         "section section section section"
-         "footer footer footer footer";
      }
  
      .contenido-gral .encabezado {
@@ -85,8 +81,8 @@
          margin: 5px auto;
        
  
-     }
-     .contenido-gral  .nav.nav-pills{
+     } */
+     /* .contenido-gral  .nav.nav-pills{
          justify-content: center;
          border-style:double;
          border-color:silver;
@@ -97,29 +93,29 @@
         margin: 1px 1px;
         padding: 1px;
         justify-content: center;
-        font-size: 24px;
-    }
-    .contenido-gral .nav-pills .nav-link.active {
+        font-size: 24px; 
+    }*/
+    /* .contenido-gral .nav-pills .nav-link.active {
         background: none;
         padding: 2px;
-    }
-    .contenido-gral .nav-item.dropdown .nav-link.dropdown-toggle{
+    } */
+    /* .contenido-gral .nav-item.dropdown .nav-link.dropdown-toggle{
         padding: 2px;
     } 
     .contenido-gral .nav.item  {
         padding: 2px;
-    }
-     .contenido-gral .encabezado .menu {
+    } */
+     /* .contenido-gral .encabezado .menu {
          margin: 1px auto;
          padding: 1px;
          line-height: 1.2;
          text-align: center;
          width: auto;
          
-     }
-     .contenido-gral .encabezado .menu ul li a{
+     } */
+     /* .contenido-gral .encabezado .menu ul li a{
          font-size: 21px;
-     }
+     } */
  
      /* .contenido-gral-videos .encabezado .menu ul {
          font-size: 26px;
@@ -127,15 +123,15 @@
      }
       */
  
-     .contenido-gral .main {
+     /* .contenido-gral .main {
          grid-area: main;
          margin: 2px auto;
          width: 400px;
-     }
+     } */
  
- .contenido-gral #carouselExampleDark {
+ /* .contenido-gral #carouselExampleDark {
      margin: 1px 1px;
- }
+ } */
  .contenido-gral .encabezado .contdestacado h2 {
      font-size: 45px;
      color:#e0cdcd;
@@ -178,7 +174,7 @@
   .contenido-gral .section {
        grid-area: section;
   }
- }
+ 
  
  /*FIN DE MEDIA QUERIES EN LA PAGINA PRINCIPAL*/
  
