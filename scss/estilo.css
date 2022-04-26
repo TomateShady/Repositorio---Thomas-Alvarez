@@ -5,8 +5,11 @@
           box-sizing: border-box;
 }
 
-.contenido-gral {
+body {
   background-image: url(../img/postes.webp);
+}
+
+.contenido-gral {
   width: 100%;
 }
 
@@ -16,11 +19,77 @@
   border-radius: 1px;
 }
 
+.contenido-gral .encabezado h1 {
+  color: snow;
+  text-align: left;
+  margin: 2px;
+  font-weight: bold;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 110px;
+  padding: 10px;
+  text-shadow: 3px 8px 6px darkslategray;
+  font-style: italic;
+}
+
+.contenido-gral .encabezado .contdestacado h2 {
+  font-size: 90px;
+  color: snow;
+  font-style: italic;
+  font-weight: bold;
+  font-family: 'Bebas Neue', cursive;
+  margin: 1px auto;
+  padding: 1px;
+  text-align: center;
+  text-shadow: 4px 7px 0px springgreen;
+}
+
+.contenido-gral .encabezado .nav.nav-pills {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 45px;
+  margin: 5px 10px;
+  padding: 10px;
+  border: 10px;
+  border-style: double;
+  border-color: #DCDCDC;
+  font-family: 'Bebas Neue', cursive;
+  font-weight: bold;
+}
+
+.contenido-gral .encabezado .nav.nav-pills .nav-link.active {
+  color: #00ff7f;
+  background: none;
+  font-family: 'Bebas Neue', cursive;
+  font-style: oblique;
+}
+
+.contenido-gral .encabezado .nav.nav-pills .nav-link.active .nav-link.active:hover {
+  color: #fafa78;
+  background: none;
+}
+
+.contenido-gral .encabezado .nav-item.dropdown .nav-link.dropdown-toggle {
+  color: springgreen;
+  font-style: oblique;
+}
+
+.contenido-gral .encabezado .nav-item.dropdown .nav-link.dropdown-toggle .nav-link.dropdown-toggle:hover {
+  color: #fafa78;
+}
+
 .contenido-gral .main {
   padding: 1px;
   border-radius: 20px;
   margin: 1px auto;
   text-align: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: 500px;
+      grid-template-rows: 500px;
 }
 
 .contenido-gral .section {
@@ -29,14 +98,35 @@
   margin: 1px 10px;
 }
 
-.contenido-gral .section iframe {
-  margin: 2px 20px;
-}
-
 .contenido-gral .footer {
   background: #000000;
   padding: 1px;
   height: auto;
+}
+
+.contenido-gral .contacto {
+  text-align: center;
+  color: #ffffff;
+  line-height: 1,6;
+  margin: 1px auto;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.contenido-gral .contacto a {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.contenido-gral .contacto p {
+  margin: 1px auto;
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+.contenido-gral .contacto .codbarra {
+  font-size: 42px;
+  font-family: 'Libre Barcode 39 Text', cursive;
 }
 
 /*Inicio de MEDIA QUERYS en PAGINA PRINCIPAL*/
@@ -63,9 +153,20 @@
   .contenido-gral .encabezado .menu ul li a {
     font-size: 21px;
   }
-  .contenido-gral .main {
+  .contenido-gral .encabezado .contdestacado h2 {
+    font-size: 42px;
+    color: #e0cdcd;
+    font-family: 'Bebas Neue', cursive;
+    margin: 1px auto;
+    padding: 1px;
+    text-align: center;
+  }
+  .contenido-gral .encabezado .infocontenidodest {
+    color: white;
     margin: 2px auto;
-    width: 400px;
+    font-size: 21px;
+    font-family: 'Chakra Petch', sans-serif;
+    text-align: center;
   }
   .contenido-gral .ul.nav.nav-pills {
     margin: 1px 1px;
@@ -94,8 +195,33 @@
   .contenido-gral .nav-item {
     padding: 2px;
   }
-  .contenido-gral #carouselExampleDark {
+  .main {
+    margin: 2px auto;
+    width: 400px;
+  }
+  .main #carouselExampleDark {
     margin: 1px 1px;
+    width: 418px;
+  }
+  .main .footer {
+    font-size: 15px;
+    margin: 2px 1px;
+  }
+  .main .footer .contacto {
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+  }
+  .main .footer .contacto p {
+    margin: 1px auto;
+  }
+  .main .footer .redes-ig i {
+    text-decoration: none;
+    color: springgreen;
+    margin: 2px auto;
+    padding: 2px;
+    font-size: 30px;
+    text-align: center;
   }
 }
 
