@@ -12,11 +12,6 @@
       background-color: black;
  }
 
- .contenido-gral .encabezado .musicales{
-     display: grid;
-     grid-template-columns: 200px auto auto 260px;
-     grid-row: repeat(2, 1fr);
- }
  .contenido-gral .encabezado {
         background: #00000000;
         padding: 2px;
@@ -36,8 +31,7 @@
 
 } */
  .contenido-gral .encabezado h1 {
-     grid-row: 2;
-     grid-column: 1/5;
+    
     color: snow;
     text-align: center;
     margin: 10px auto 1px auto ;
@@ -154,7 +148,6 @@
 /*-------------------------------INICIO de MAIN de PAGINA PRINCIPAL--------------------------------------*/
 .contenido-gral .main {
     display: grid;
-     /* background-image: url(../img/agujita.jpg);  */
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: 500px;
 }
@@ -302,20 +295,12 @@
     }
     .contenido-gral .encabezado .musicales {
         width: auto;
-        display: grid;
-        grid-column: repeat(2, 1fr);
-        grid-row: repeat(2, auto);
-       
     }
-    /* .contenido-gral .encabezado img {
-        width: 0px;
-    
-    } */
+  
     .contenido-gral .encabezado h1 {
         font-size: 56px;
         margin: 5px 1px;
-        grid-column: 1/5;
-        grid-row: 1;
+        display: block;
         transition: none;
         text-align: left;
     }
@@ -325,9 +310,6 @@
     }
     .contenido-gral .encabezado .musicales a {
         font-size: 12px;
-        grid-row: 1/2;
-        grid-column: 2;
-       
     }
     .contenido-gral .encabezado .info {
         font-size: 14px;
@@ -339,6 +321,8 @@
         border-color:#c0c0c0;
         font-family:'Chakra Petch', sans-serif;
         font-weight: bold;
+        box-shadow: none ;
+        
    }
    .contenido-gral ul.nav.nav-pills {
        margin: 1px 1px;
@@ -348,59 +332,48 @@
    }
    .contenido-gral .nav-pills .nav-link.active {
        background: none;
-       padding: 2px;
+       padding: 1px;
    }
    .contenido-gral .nav-item.dropdown .nav-link.dropdown-toggle{
-       padding: 2px;
+       padding: 1px;
        font-family: 'Bebas Neue', cursive;
    } 
    .contenido-gral .dropdown-menu .dropdown-item  {
-       padding: 2px;
+       padding: 1px;
        font-size: 16px;
-   }
-    .contenido-gral .encabezado .menu {
-        margin: 1px auto;
-        padding: 1px;
-        line-height: 1.2;
-        text-align: center;
-        width: auto;
-    }
-    .contenido-gral .encabezado .menu ul li a{
-        font-size: 21px;
-    }
-    .contenido-gral-videos .encabezado .menu ul {
-        font-size: 26px;
-        line-height: 1,2;
-    }
+   } 
     .contenido-gral .main {
         display: grid;
-        margin: 2px auto;
-        width: auto;
-        grid-template-columns: 420px;
+        width: 218px;
+        grid-template-columns: 400px;
         grid-template-rows:250px 200px 50px ;
     }
     .contenido-gral .main .spotify {
         grid-row: 2/3;
-        /* width: 100%;    */
+        
     }
     .contenido-gral .main .spotify iframe {
         height: 180px;
         width: 300px;
         margin: 2px auto;
     }
-    #carouselExampleDark .carousel-inner {
-        width: 380px;
+    
+    .contenido-gral #carouselExampleDark .carousel-inner {
+        width: auto;
         box-shadow: none;
-        padding: 1px;
-        /* border-radius: 1px; */
-        /* box-shadow: 0 1px 6px; color: grey; */
+        padding: 0px;
+        margin: 1px auto;
+    }
+    #carouselExampleDark .carousel-inner:hover {
+        overflow: hidden;
+        transition: 0.5s;
     }
     .carousel-indicators {
-        width: 380px;
+        width: 100px;
     }
     .contenido-gral .main .carousel-item.active  {
         width: 380px;
-        margin: 1px 1px;
+        margin: 1px 10px;
         grid-row: 1/2;
         
     }
@@ -412,9 +385,33 @@
         grid-row: 3/4;
         display: inline;        
     }
-.contenido-gral #carouselExampleDark {
-    margin: 1px 1px;
-}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .contenido-gral .encabezado .contdestacado h2 {
     font-size: 45px;
     color:#e0cdcd;
@@ -478,14 +475,16 @@
   }
  
   .contenido-gral-videos h1{
-        color: snow;
-        text-align: left;
-        margin: 2px ;
-        font-weight: bold;
-        font-family:'Bebas Neue', cursive;
-        font-size: 110px;
-        padding: 10px;
-        text-shadow: 4px 4px 0px darkslategray; 
+    color: snow;
+    text-align: center;
+    margin: 10px auto 1px auto ;
+    font-weight: bold;
+    font-family:'Bebas Neue', cursive;
+    font-size: 110px;
+    font-style: oblique;
+    padding: 1px;
+    text-shadow: 6px 3px 12px #DCDCDC; 
+    transition: 1.2s;
                   
        }  
  .contenido-gral-videos .encabezado {
@@ -564,42 +563,59 @@
     text-align: center;
     justify-content: center;
     font-size: 45px;
-    margin: 5px 10px;
+    margin: 10px 10px;
     padding: 10px;
-    border: 5px;
-    border-style:double;
+    border: 4px;
+    border-style:groove;
     border-color:#DCDCDC;
+    border-radius: 5px;
+    border-radius: 8px;
     font-family:'Bebas Neue', cursive;
     font-weight: bold;
+    box-shadow:1px 4px 10px; color: silver;
+   
+
 }
 .contenido-gral-videos .nav-pills .nav-link.active {
-   color: #00ff7f;
+   color: #00ff80;
    background: none;
    font-family: 'Bebas Neue', cursive;
    font-style: oblique;
+   text-shadow: 1px 5px 3px green;
 }
 .contenido-gral-videos .nav-pills .nav-link.active:hover {
-   color: yellow;
+   color: #fafa78;
    background: none;
+   text-shadow: 1px 4px 2px #ffff0077;
 }
 .contenido-gral-videos .nav-item.dropdown .nav-link.dropdown-toggle{
    color: #00ff7f;
    font-style: oblique;
+   text-shadow: 1px 5px 3px green;
+   
 } 
 .contenido-gral-videos .nav-item.dropdown .nav-link.dropdown-toggle:hover{
-   color: yellow;
+   color: #fafa78;
+   text-shadow: 1px 4px 2px #ffff0077;
 } 
 
 .contenido-gral-videos .dropdown-menu {
    background: #000000;
    opacity: 1;
-   border-radius: 15px;   
+   border-radius: 15px;
+   transition:0.20s;
+  
+   
 }
 .contenido-gral-videos .dropdown-menu .dropdown-item {
    color:#98fb98;
    font-family:'Bebas Neue', cursive;
    font-size: 25px;
    font-weight: bold;
+}
+
+.contenido-gral-videos .dropdown-menu .dropdown-item:hover {
+   color:#000000;
 }
 
 .contenido-gral-videos .main .videoclip-ardiles iframe{
@@ -729,17 +745,20 @@
 
  /*-----------------------------FIN DE PAGINA DE VIDEOCLIPS Y PUBLICIDADES--------------------------------------------*/
 /* ---------------------------------------------PAGINA DE MERCH------------------------------------------*/
-.contenidogral-merch h1 {
-    color: #fffafa;
-    text-align: left;
-    margin: 2px ;
-    font-weight: bold;
-    font-family:'Bebas Neue', cursive;
-    font-size: 110px;
-    padding: 10px;
-    text-shadow: 4px 4px 0px darkslategray; 
-    
-    
+.contenidogral-merch .encabezado h1 {
+    grid-row: 2;
+    grid-column: 1/5;
+   color: snow;
+   text-align: center;
+   margin: 10px auto 1px auto ;
+   font-weight: bold;
+   font-family:'Bebas Neue', cursive;
+   font-size: 110px;
+   font-style: oblique;
+   padding: 1px;
+   text-shadow: 6px 3px 12px #DCDCDC; 
+   transition: 1.2s;
+           
 }
 .contenidogral-merch .info {
     color: #ffffff;
@@ -750,40 +769,48 @@
     text-align: center;
     justify-content: center;
     font-size: 45px;
-    margin: 5px 10px;
+    margin: 10px 10px;
     padding: 10px;
-    border: 5px;
-    border-style:double;
+    border: 4px;
+    border-style:groove;
     border-color:#DCDCDC;
+    border-radius: 5px;
+    border-radius: 8px;
     font-family:'Bebas Neue', cursive;
     font-weight: bold;
-    
+    box-shadow:1px 4px 10px; color: silver;
+   
 
 }
 .contenidogral-merch .nav-pills .nav-link.active {
-   color: #00ff7f;
+   color: #00ff80;
    background: none;
    font-family: 'Bebas Neue', cursive;
    font-style: oblique;
+   text-shadow: 1px 5px 3px green;
 }
 .contenidogral-merch .nav-pills .nav-link.active:hover {
-   color: #00ffff;
+   color: #fafa78;
    background: none;
+   text-shadow: 1px 4px 2px #ffff0077;
 }
 .contenidogral-merch .nav-item.dropdown .nav-link.dropdown-toggle{
    color: #00ff7f;
    font-style: oblique;
+   text-shadow: 1px 5px 3px green;
    
 } 
 .contenidogral-merch .nav-item.dropdown .nav-link.dropdown-toggle:hover{
-   color: #00ffff;
+   color: #fafa78;
+   text-shadow: 1px 4px 2px #ffff0077;
 } 
 
 .contenidogral-merch .dropdown-menu {
    background: #000000;
    opacity: 1;
    border-radius: 15px;
-
+   transition:0.20s;
+  
    
 }
 .contenidogral-merch .dropdown-menu .dropdown-item {
@@ -792,41 +819,204 @@
    font-size: 25px;
    font-weight: bold;
 }
+
+.contenidogral-merch .dropdown-menu .dropdown-item:hover {
+   color:#000000;
+}
  /*-----------------Aca finaliza el estilo de menu de navegacion-------------------------*/
  
  /*----------------------------------Inicio del  MERCHANDISING---------------------------*/
- .detalles {
-     background-color:#98fb98;
+ .contenidogral-merch .encabezado .info {
+     margin: 20px 10px;
+     font-family: 'Bebas Neue', cursive;
+     font-size: 28px;
+     text-align: center;
+ }
+ .contenidogral-merch .section{
      display: grid;
-     gap: 5px;
-     grid-template-columns: repeat(6, 1fr);
+     grid-template-columns: repeat(3, 1fr);
+     grid-template-rows: repeat(2, 1fr);
+     
  }
- .titular {  
-     color: #000000;
-     font-weight: bold;
-     font-family:'Chakra Petch', sans-serif;
-     font-size: 18px;
-     margin: 10px 5px;
+ /*------------------------INICIO DE PRIMERA CARD----------------*/
+ .contenidogral-merch .section .card1 {
+     grid-column: 1/2;
+     grid-row: 1;
+     color: snow;
+     height: 500px;
+     font-family: 'Bebas Neue', cursive;
+     font-size: 21px;
+     border-radius: 12px;
+     margin: 5px auto;
  }
- .productos {
-    background-color: #493d3d;
-    color: #000000;
-    font-size: 18px;
-    font-weight: bold;
-    font-family:'Chakra Petch', sans-serif;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(3, auto);
-    gap: 2px;
-    margin: 2px 1px;
+ .contenidogral-merch .section .card1 img {
+     border-radius: 55px;
+     margin: 5px auto;
+     box-shadow: 1px 1px 12px 3px springgreen;
  }
- .items {
-     background: #f7e9e9;
- }    
- .items img {
-     width: 100%;
+
+ .contenidogral-merch .section .card1 .card-body {
+     border-radius: 15px;
+     background: black;
+
+ }
+ .contenidogral-merch .section .card1 a {
+     background: springgreen;
+     color: snow;
+     border: none;
+     font-size: 20px;
+ }
+ /*----------------FIN DE PRIMERA CARD---------------------*/
+ /*------------------INICIO DE SEGUNDA CARD---------------------*/
+ .contenidogral-merch .section .card2 {
+     grid-column: 2/3;
+     grid-row: 1;
+     color: snow;
+     height: 500px;
+     font-family: 'Bebas Neue', cursive;
+     font-size: 21px;
+     border-radius: 15px;
+     margin: 5px auto;
+ }
+ .contenidogral-merch .section .card2 img {
+     border-radius: 55px;
+     margin: 5px auto;
+     box-shadow: 1px 1px 12px 3px springgreen;
+ }
+
+ .contenidogral-merch .section .card2 .card-body {
+     border-radius: 15px;
+     background: black;
+
+ }
+ .contenidogral-merch .section .card2 a {
+     background: springgreen;
+     color: snow;
+     border: none;
+     font-size: 20px;
+ }
+ /*---------------------FIN DE SEGUNDA CARD-----------------------------*/
+ /*----------------INICIO DE TERCERA CARD---------------------------*/
+ .contenidogral-merch .section .card3 {
+     grid-column: 3/4;
+     grid-row: 1;
+     color: snow;
+     height: 500px;
+     font-family: 'Bebas Neue', cursive;
+     font-size: 21px;
+     border-radius: 15px;
+     margin: 10px auto;
+ }
+ .contenidogral-merch .section .card3 img {
+     border-radius: 55px;
+     margin: 5px auto;
+     box-shadow: 1px 1px 12px 3px springgreen;
+ }
+
+ .contenidogral-merch .section .card3 .card-body {
+     border-radius: 15px;
+     background: black;
+
+ }
+ .contenidogral-merch .section .card3 a {
+     background: springgreen;
+     color: snow;
+     border: none;
+     font-size: 20px;
+ }
+ /*---------------------FIN DE TERCER CARD-----------------*/
+ /*------------------------INICIO DE CUARTA CARD------------------*/
+ .contenidogral-merch .section .card4 {
+     grid-column: 1/2;
+     grid-row: 2;
+     color: snow;
      height: auto;
+     font-family: 'Bebas Neue', cursive;
+     font-size: 21px;
+     border-radius: 15px;
+     margin: 5px auto;
  }
+ .contenidogral-merch .section .card4 img {
+     border-radius: 55px;
+     margin: 5px auto;
+     box-shadow: 1px 1px 12px 3px springgreen;
+ }
+
+ .contenidogral-merch .section .card4 .card-body {
+     border-radius: 15px;
+     background: black;
+
+ }
+ .contenidogral-merch .section .card4 a {
+     background: springgreen;
+     color: snow;
+     border: none;
+     font-size: 20px;
+ }
+/*--------------------FIN DE CUARTA CARD---------------------------*/
+ /*------------------------INICIO DE QUINTA CARD------------------*/
+ .contenidogral-merch .section .card5 {
+    grid-column: 2/3;
+    grid-row: 2;
+    color: snow;
+    height: 500px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 21px;
+    border-radius: 15px;
+    margin: 5px auto;
+}
+.contenidogral-merch .section .card5 img {
+    border-radius: 55px;
+    margin: 5px auto;
+    box-shadow: 1px 1px 12px 3px springgreen;
+}
+
+.contenidogral-merch .section .card5 .card-body {
+    border-radius: 15px;
+    background: black;
+
+}
+.contenidogral-merch .section .card5 a {
+    background: springgreen;
+    color: snow;
+    border: none;
+    font-size: 20px;
+}
+/*--------------------FIN DE QUINTA CARD---------------------------*/
+ /*------------------------INICIO DE SEXTA CARD------------------*/
+ .contenidogral-merch .section .card6 {
+    grid-column: 3/4;
+    grid-row: 2;
+    color: snow;
+    height: auto;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 21px;
+    border-radius: 15px;
+    margin: 5px auto;
+}
+.contenidogral-merch .section .card6 img {
+    border-radius: 55px;
+    margin: 5px auto;
+    box-shadow: 1px 1px 12px 3px springgreen;
+}
+
+.contenidogral-merch .section .card6 .card-body {
+    border-radius: 15px;
+    background: black;
+
+}
+.contenidogral-merch .section .card6 a {
+    background: springgreen;
+    color: snow;
+    border: none;
+    font-size: 20px;
+}
+/*--------------------FIN DE SEXTA CARD---------------------------*/
+.contenidogral-merch .footer {
+    margin: 35px auto;
+  
+  
+}
  .contenidogral-merch .footer .redes-ig {
     font-size: 33px;
     padding: 4px;
@@ -842,39 +1032,56 @@
   /*--------------------------------------Fin del merchandising-------------------------------*/
  /*-------------------------------Inicio de MEDIA QUERYS en MERCH------------------------------*/
  @media screen and (max-width: 768px) {
-       .contenidogral-merch h1 {
-           font-size: 32px;
+       .contenidogral-merch .encabezado h1 {
+           font-size: 60px;
+           text-align: left;
        }
        .contenidogral-merch .menu ul li a {
            font-size: 22px;
        }
-     .contenidogral-merch .merchand h2 {
-         font-size: 42px;
-         color: #adff2f;
-         font-family:'Creepster', cursive;
+     .contenidogral-merch .encabezado .info {
+         font-size: 48px;
+         text-shadow: 1px 2px 2px silver;
      }
-     .contenidogral-merch .section .detalles {
-         background-color:#DC143C;
-         /* display: grid;
-         gap: 5px;
-         grid-template-columns: repeat(6, 1fr);     */
-     }
-     .contenidogral-merch .section .titular {
-         font-size: 12px;
-     }
-     .contenidogral-merch .section .productos {
+
+     .contenidogral-merch .section  {
          display: block;
-         
      }
-     .contenidogral-merch .section .items {
-         display: block;
-         margin: 1px;
+     .contenidogral-merch .section .card6 {
+         margin: 40px auto auto auto;
      }
+
+     .contenidogral-merch  .nav.nav-pills{
+        justify-content: center;
+        border-style:double;
+        border-color:#c0c0c0;
+        font-family:'Chakra Petch', sans-serif;
+        font-weight: bold;
+   }
+   .contenidogral-merch ul.nav.nav-pills {
+       margin: 1px 1px;
+       padding: 1px;
+       justify-content: center;
+       font-size: 24px; 
+   }
+   .contenidogral-merch .nav-pills .nav-link.active {
+       background: none;
+       padding: 2px;
+   }
+   .contenidogral-merch .nav-item.dropdown .nav-link.dropdown-toggle{
+       padding: 2px;
+       font-family: 'Bebas Neue', cursive;
+   } 
+   .contenidogral-merch .dropdown-menu .dropdown-item  {
+       padding: 2px;
+       font-size: 16px;
+   }
+     
  
      .contenidogral-merch .footer .contacto .redes-ig a{
          margin: 1px 4px;
          font-size: 28px;
-         color: #ff0000;
+         color: springgreen;
          
      }
      
