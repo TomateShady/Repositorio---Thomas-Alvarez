@@ -7,9 +7,10 @@
 
  /*------------------------Inicio de encabezado de PAGINA PRINCIPAL---------------------------------------*/
  body {
-      
+      /* background-image: url(../img/9.jpg); */
       width: auto;
       background-color: black;
+      
  }
 
  .contenido-gral .encabezado {
@@ -19,7 +20,6 @@
         padding: 1px;
         border-radius: 20px;
         margin: 1px auto;
-   
  }
 
  .contenido-gral .encabezado h1 {
@@ -32,7 +32,7 @@
     font-size: 110px;
     font-style: oblique;
     padding: 1px;
-    text-shadow: 6px 3px 12px #DCDCDC; 
+    text-shadow: 6px 3px 8px silver; 
     transition: 1.2s;
             
 }
@@ -66,9 +66,9 @@
 /*---------------------------------Fin de encabezado de PAGINA PRINCIPAL - INDEX-------------------------*/
  /*----------------------------------- Inicio de INFO sobre la pagina principal--------------------------*/ 
  .contenido-gral .info p {
-    font-size: 16px;
+    font-size: 18px;
     color: snow;
-    font-family: 'Chakra Petch', sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     text-align: left;
     margin: 1px 10px;
     padding: 1px;
@@ -80,6 +80,7 @@
  /*--------------------------INICIO DE MENU DE NAVEGACION DE PAGINA PRINCIPAL - INDEX---------------------*/
  .contenido-gral  .nav.nav-pills{
       text-align: center;
+      background: #000000;
       justify-content: center;
       font-size: 45px;
       margin: 10px 10px;
@@ -99,8 +100,8 @@
      color: #00ff80;
      background: none;
      font-family: 'Bebas Neue', cursive;
-     font-style: oblique;
      text-shadow: 1px 5px 3px green;
+     font-style: italic;
  }
  .contenido-gral .nav-pills .nav-link.active:hover {
      color: #fafa78;
@@ -109,9 +110,8 @@
  }
  .contenido-gral .nav-item.dropdown .nav-link.dropdown-toggle{
      color: #00ff7f;
-     font-style: oblique;
      text-shadow: 1px 5px 3px green;
-     
+     font-style: italic;
  } 
  .contenido-gral .nav-item.dropdown .nav-link.dropdown-toggle:hover{
      color: #fafa78;
@@ -147,6 +147,7 @@
     text-align: center;
     width: 100%;
     grid-column: 1;
+    margin: 20px auto;
     
 }
 
@@ -156,21 +157,32 @@
 
 }
 .contenido-gral .main .hache3 {
-    width: fit-content;
-    margin: 2px auto;
+    width: 100px;
+    height: 400px;
+    margin: 10px auto;
+   
+    
 }
 .contenido-gral .main .hache3 p{
-    font-size: 70px;
-    color:#ffffff;
-    font-family:'Bebas Neue', cursive;
-    text-shadow: 4px 5px 1px #00ff00;
+    font-size: 18px;
+    color:snow;
+    font-family:'Times New Roman', Times, serif;
     text-align: center;
     transform: scale(1) translate(0px, 1px);
-    transition: 1.6s;
+    transition: 1.2s;
+    text-decoration: line-through;
+    scrollbar-width: 0px;
 }
 .contenido-gral .main .hache3:hover {
-    transform: rotateY(360deg);
-    transition: 1.9s;
+    text-shadow: 1px 3px 6px springgreen;
+}
+.contenido-gral .main .hache3 span p{
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: none;
+    font-size: 18px;
+    text-decoration:line-through ;
+    color: snow;
+    margin: 10px auto;
 }
 .contenido-gral .main img {
     width: 70px;
@@ -182,7 +194,7 @@
      overflow: hidden; 
      margin: 15px auto;
      border-radius: 8px;
-     box-shadow: 0 2px 10px; color: grey;     
+     box-shadow: 1px 1px 8px snow;     
  }
  #carouselExampleDark .carousel-inner:hover {
      overflow: hidden;
@@ -217,9 +229,8 @@
  
  #carouselExampleDark .carousel-inner .carousel-item p {
      color: white ;
-     font-size: 28px;
+     font-size: 24px;
      font-weight: bold; 
-     font-style: oblique;
      margin: 1px auto;
      font-family: 'Bebas Neue', cursive;
      text-shadow: 3px 14px 10px black;
@@ -234,18 +245,23 @@
      border: snow;
      border-width: 1px 0px 0px 0px;  
      border-style:groove;
+    
  }  
+ 
  .contenido-gral .footer .redes-ig {
     font-size: 33px;
     padding: 4px;
+   
 }
 .contenido-gral .footer .contacto .redes-ig a{
     margin: 1px 4px;
     font-size: 35px;
-    color: #00ff7f;   
+    color: springgreen; 
+    
 }
 .contenido-gral .footer .contacto .redes-ig a:hover{
     color: yellow ;   
+    text-shadow: 1px 1px 2px #fafa78;
 }
 
  /*--------------------------------FIN de FOOTER de PAGINA PRINCIPAL-------------------------------------*/
@@ -262,13 +278,12 @@
  
  }
  .contacto a {
-     font-family: 'Chakra Petch', sans-serif;
      font-size: 22px;
-     font-weight: bold;
+    
  }
  .contacto p {
      margin: 1px auto;
-     font-family: 'Chakra Petch', sans-serif;
+     font-family: 'Times New Roman', Times, serif;
  }
  .contacto .codbarra {
      font-size: 42px;
@@ -366,13 +381,8 @@
         grid-row: 1/2;
         
     }
-    .contenido-gral .main .hache3{
-        text-align: center;
-    }
     .contenido-gral .main .hache3 p{
-        font-size: 28px;
-        grid-row: 3/4;
-        display: inline;        
+       display: none;      
     }
 .contenido-gral .encabezado .contdestacado h2 {
     font-size: 45px;
@@ -410,9 +420,7 @@
         font-size: 30px;
         text-align: center;
     }
- /* .contenido-gral .footer .owner .by {
-     font-size: 18px;
- } */
+
 }
 /*-------------------------------FIN DE MEDIA QUERIES EN LA PAGINA PRINCIPAL----------------------------*/
  
@@ -477,7 +485,7 @@
  .contenido-gral-videos .main {
      background: none; 
      grid-area: main;
-     width: 760px;
+     width: auto;
      opacity: 0.9;
      grid-column: 2/4;
      grid-row: 2/4;
@@ -601,21 +609,21 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(4, auto);
-        grid-template-areas: "encabezado encabezado encabezado encabezado"
-        "main main main main"
-        "section section section section"
-        "footer footer footer footer";
+      
     }
     .contenido-gral-videos .encabezado {
         grid-area: encabezado;
         align-content: center;
     }
     .contenido-gral-videos .encabezado h1 {
-        font-size: 50px;
-        margin: 5px auto;  
+        font-size: 56px;
+        margin: 5px 1px;
+        display: block;
+        transition: none;
+        text-align: left;
     }
     .contenido-gral-videos .encabezado .info {
-        font-size: 24px;
+        font-size: 14px;
         margin: 5px auto;
     }
     .contenido-gral-videos  .nav.nav-pills{
@@ -624,74 +632,79 @@
         border-color:#c0c0c0;
         font-family:'Chakra Petch', sans-serif;
         font-weight: bold;
+        box-shadow: none ;
+        
    }
    .contenido-gral-videos ul.nav.nav-pills {
        margin: 1px 1px;
        padding: 1px;
        justify-content: center;
-       font-size: 34px;
+       font-size: 24px; 
    }
    .contenido-gral-videos .nav-pills .nav-link.active {
        background: none;
-       padding: 2px;
+       padding: 1px;
    }
    .contenido-gral-videos .nav-item.dropdown .nav-link.dropdown-toggle{
-       padding: 2px;
-       font-size: 34px;
-       font-family:'Bebas Neue', cursive;
+       padding: 1px;
+       font-family: 'Bebas Neue', cursive;
    } 
-   .contenido-gral-videos-videos .nav.item  {
-       padding: 2px;
-   }
-    .contenido-gral-videos .encabezado .menu {
-        margin: 1px auto;
-        padding: 1px;
-        line-height: 1.2;
-        text-align: center;
-        width: auto;   
-    }
-    .contenido-gral-videos .encabezado .menu ul li a{
-        font-size: 21px;
-    }
-
-    .contenido-gral .main {
+   .contenido-gral-videos .dropdown-menu .dropdown-item  {
+       padding: 1px;
+       font-size: 16px;
+   } 
+   
+    .contenido-gral-videos .main {
         grid-area: main;
         margin: 2px auto;
-        width: 400px;
+        width: auto;
     }
-.contenido-gral #carouselExampleDark {
+.contenido-gral-videos #carouselExampleDark img {
     margin: 1px 1px;
+    width: 380px;
 }
-.contenido-gral .encabezado .contdestacado h2 {
-    font-size: 45px;
+.contenido-gral-videos .encabezado .contdestacado h2 {
+    font-size: 46px;
     color:#e0cdcd;
     font-family:'Bebas Neue', cursive;
     margin: 1px auto;
     padding: 1px;
     text-align: center;
 }
-.contenido-gral .encabezado .infocontenidodest {
+.contenido-gral-videos .encabezado .infocontenidodest {
     color: #ffffff;
     margin: 2px auto;
     font-size: 21px;
     font-family:'Chakra Petch', sans-serif; 
     text-align: center;
 }
-.contenido-gral .footer {
+.contenido-gral-videos .main #carouselExampleDark .carousel-inner{
+    width: 380px;
+}
+.contenido-gral-videos .main .videoclip-ardiles h3 {
+    font-size: 18px;
+}
+.contenido-gral-videos .main .videoclip-ardiles iframe {
+    width: 380px;
+    margin: 1px auto;
+}
+
+
+.contenido-gral-videos .footer {
         font-size: 15px;
         grid-area: footer;
         margin: 2px 1px;
         grid-area: footer;
     }
-.contenido-gral .footer .contacto {
+.contenido-gral-videos .footer .contacto {
         text-align: center;
         font-size: 15px;
         padding: 10px;
     }
-.contenido-gral .footer .contacto p {
+.contenido-gral-videos .footer .contacto p {
         margin: 1px auto
     }
-.contenido-gral .footer .redes-ig i {
+.contenido-gral-videos .footer .redes-ig i {
         text-decoration:none;
         color: #00ff7f;
         margin: 2px auto;
@@ -699,7 +712,7 @@
         font-size: 30px;
         text-align: center;
     }
- .contenido-gral .section {
+ .contenido-gral-videos .section {
       grid-area: section;
  }
 }
@@ -818,7 +831,14 @@
  .contenidogral-merch .section .card1 img {
      border-radius: 55px;
      margin: 5px auto;
-     box-shadow: 1px 1px 12px 3px springgreen;
+     box-shadow: 1px 1px 10px 2px palegreen;
+ }
+ .contenidogral-merch .section .card1 img:hover {
+     border-radius: 55px;
+     margin: 5px auto;
+     box-shadow: 1px 1px 10px 2px snow;
+     transform: scale(1.1);
+     transition: 1s;
  }
 
  .contenidogral-merch .section .card1 .card-body {
@@ -847,7 +867,14 @@
  .contenidogral-merch .section .card2 img {
      border-radius: 55px;
      margin: 5px auto;
-     box-shadow: 1px 1px 12px 3px springgreen;
+     box-shadow: 1px 1px 10px 2px palegreen;
+ }
+ .contenidogral-merch .section .card2 img:hover {
+     border-radius: 55px;
+     margin: 5px auto;
+     box-shadow: 1px 1px 10px 2px snow;
+     transform: scale(1.1);
+     transition: 1s;
  }
 
  .contenidogral-merch .section .card2 .card-body {
@@ -876,7 +903,14 @@
  .contenidogral-merch .section .card3 img {
      border-radius: 55px;
      margin: 5px auto;
-     box-shadow: 1px 1px 12px 3px springgreen;
+     box-shadow: 1px 1px 10px 2px palegreen;
+ }
+ .contenidogral-merch .section .card3 img:hover {
+     border-radius: 55px;
+     margin: 5px auto;
+     box-shadow: 1px 1px 10px 2px snow;
+     transform: scale(1.1);
+     transition: 1s;
  }
 
  .contenidogral-merch .section .card3 .card-body {
@@ -905,7 +939,14 @@
  .contenidogral-merch .section .card4 img {
      border-radius: 55px;
      margin: 5px auto;
-     box-shadow: 1px 1px 12px 3px springgreen;
+     box-shadow: 1px 1px 10px 2px palegreen;
+ }
+ .contenidogral-merch .section .card4 img:hover {
+     border-radius: 55px;
+     margin: 5px auto;
+     box-shadow: 1px 1px 10px 2px snow;
+     transform: scale(1.1);
+     transition: 1s;
  }
 
  .contenidogral-merch .section .card4 .card-body {
@@ -934,7 +975,14 @@
 .contenidogral-merch .section .card5 img {
     border-radius: 55px;
     margin: 5px auto;
-    box-shadow: 1px 1px 12px 3px springgreen;
+    box-shadow: 1px 1px 10px 2px palegreen;
+}
+.contenidogral-merch .section .card5 img:hover {
+    border-radius: 55px;
+    margin: 5px auto;
+    box-shadow: 1px 1px 10px 2px snow;
+     transform: scale(1.1);
+     transition: 1s;
 }
 
 .contenidogral-merch .section .card5 .card-body {
@@ -963,7 +1011,14 @@
 .contenidogral-merch .section .card6 img {
     border-radius: 55px;
     margin: 5px auto;
-    box-shadow: 1px 1px 12px 3px springgreen;
+    box-shadow: 1px 1px 10px 2px palegreen;
+}
+.contenidogral-merch .section .card6 img:hover {
+    border-radius: 55px;
+    margin: 5px auto;
+    box-shadow: 1px 1px 10px 2px snow;
+     transform: scale(1.1);
+     transition: 1s;
 }
 
 .contenidogral-merch .section .card6 .card-body {
@@ -1003,9 +1058,13 @@
            font-size: 60px;
            text-align: left;
        }
-     .contenidogral-merch .menu ul li a {
-           font-size: 22px;
-       }
+       .contenidogral-merch .encabezado h1 {
+        font-size: 56px;
+        margin: 5px 1px;
+        display: block;
+        transition: none;
+        text-align: left;
+    }
      .contenidogral-merch .encabezado .info {
          font-size: 48px;
          text-shadow: 1px 2px 2px silver;
@@ -1193,8 +1252,11 @@
  
  /*--------------------------INICIO DE MEDIA QUERYS EN CONTACTO--------------------------*/
  @media screen and (max-width: 768px) {
-    .contenidogral-form h1 {
-        font-size: 60px;
+    .contenidogral-form .encabezado h1 {
+        font-size: 56px;
+        margin: 5px 1px;
+        display: block;
+        transition: none;
         text-align: left;
     }
     .contenidogral-form  .nav.nav-pills{
