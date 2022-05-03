@@ -21,15 +21,7 @@
         margin: 1px auto;
    
  }
-/* .contenido-gral .encabezado img {
-    width: 140px;
-    margin: 10px 0px 18px 10px;
-    text-align: center;
-    transform: rotate(360deg);
-    transition: 1s;
-    grid-row: 2;
 
-} */
  .contenido-gral .encabezado h1 {
     
     color: snow;
@@ -194,7 +186,6 @@
  }
  #carouselExampleDark .carousel-inner:hover {
      overflow: hidden;
-     /* box-shadow: 1px 1px 4px 5px; color: springgreen; */
      transform: scale(1.1);
      transition: 0.5s;
  }
@@ -243,8 +234,6 @@
      border: snow;
      border-width: 1px 0px 0px 0px;  
      border-style:groove;
-     
-     box-shadow: 1px 4px 20px; color: snow;
  }  
  .contenido-gral .footer .redes-ig {
     font-size: 33px;
@@ -385,33 +374,6 @@
         grid-row: 3/4;
         display: inline;        
     }
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .contenido-gral .encabezado .contdestacado h2 {
     font-size: 45px;
     color:#e0cdcd;
@@ -827,13 +789,17 @@
  
  /*----------------------------------Inicio del  MERCHANDISING---------------------------*/
  .contenidogral-merch .encabezado .info {
-     margin: 20px 10px;
+     margin: 25px auto;
      font-family: 'Bebas Neue', cursive;
-     font-size: 28px;
+     font-size: 90px;
+     font-weight: bold;
+     font-style: italic;
      text-align: center;
+     text-shadow: 4px 7px 0px springgreen;
  }
  .contenidogral-merch .section{
      display: grid;
+     
      grid-template-columns: repeat(3, 1fr);
      grid-template-rows: repeat(2, 1fr);
      
@@ -1013,9 +979,10 @@
 }
 /*--------------------FIN DE SEXTA CARD---------------------------*/
 .contenidogral-merch .footer {
-    margin: 35px auto;
-  
-  
+    border-width: 1px 0px 0px 0px;
+    border-color: snow;
+    border-style: groove;
+    margin: 10px auto;
 }
  .contenidogral-merch .footer .redes-ig {
     font-size: 33px;
@@ -1032,11 +999,11 @@
   /*--------------------------------------Fin del merchandising-------------------------------*/
  /*-------------------------------Inicio de MEDIA QUERYS en MERCH------------------------------*/
  @media screen and (max-width: 768px) {
-       .contenidogral-merch .encabezado h1 {
+     .contenidogral-merch .encabezado h1 {
            font-size: 60px;
            text-align: left;
        }
-       .contenidogral-merch .menu ul li a {
+     .contenidogral-merch .menu ul li a {
            font-size: 22px;
        }
      .contenidogral-merch .encabezado .info {
@@ -1088,129 +1055,93 @@
      .contenidogral-merch .footer .contacto .redes-ig a i:hover {
           color: #adff2f;
      }
- 
+     .contenidogral-merch .footer{
+        border-width: 1px 0px 0px 0px;
+        border-color: white;
+        border-style:groove;
+    }
  }
  /*-----------------------------------Fin de MEDIA QUERYS en MERCH-------------------------------*/
 
  /*--------------------------------INICIO DE PAGINA DE CONTACTO-------------------*/
- /* .contenidogral-form {
-     /* background-image: url(../img/pluma.jpg); 
-     
- } */
  .contenidogral-form h1 {
-    color: #DCDCDC;
-    text-align: left;
-    margin: 2px ;
+    color: snow;
+    text-align: center;
+    margin: 10px auto 1px auto ;
     font-weight: bold;
     font-family:'Bebas Neue', cursive;
     font-size: 110px;
-    padding: 10px;
-    text-shadow: 4px 4px 0px darkslategray; 
-    
-    
+    font-style: oblique;
+    padding: 1px;
+    text-shadow: 6px 3px 12px #DCDCDC; 
+    transition: 1.2s;
 }
-.contenidogral-form .info {
-    color: #ffffff;
-    margin: 1px 2px;
-    padding: 2px;
-}
+
 .contenidogral-form  .contdestacado h2{
     font-size: 90px;
     color:#fffafa;
     font-style:italic;
     font-weight: bold;
     font-family:'Bebas Neue', cursive;
-    margin: 1px auto;
+    margin: 25px auto;
     padding: 1px;
     text-align: center;
     text-shadow: 4px 7px 0px #00ff7f; 
 }
-.contenidogral-form .section .datita-titulos h3 {
-    margin: 5px 10px ;
-    font-size: 36px;
-    font-family: 'Chakra Petch', sans-serif;
-    color: lime;
-    font-weight: bold;
-}
-.contenidogral-form .section .datita h3{
-     margin: 1px 4px;
-     font-size: 36px;
-     color: lime;
-     font-weight: bold;
-     
- }
- .datita {
-    color: #ffffff;
-    font-family: 'Chakra Petch', sans-serif;
-    line-height: 1,6;
-    margin: 4px 10px;
-    padding: 5px;
-}
-
-/* .campos {
-    color: red;
-    line-height: 1,6;
-    margin: 5px 10px;
-    padding: 5px 10px 12px 5px;
-} */
-
-
- .contenidogral-form .footer .contacto .redes-ig a i:hover {
-      color: #adff2f;
- }
- .contenidogral-form .section .complet h3 {
-     color: springgreen;
- }
- .contenidogral-form .section h3 {
-     color: #00ff7f;
- }
- /*--------------------------FIN DE cont general DE CONTACTO--------------------------------*/
- /*-------------------------Inicio de MENU DE NAVEGACION de contacto-----------------*/
- .contenidogral-form  .nav.nav-pills{
+/*-------------------------Inicio de MENU DE NAVEGACION de contacto-----------------*/
+.contenidogral-form  .nav.nav-pills{
     text-align: center;
     justify-content: center;
     font-size: 45px;
     margin: 5px 10px;
     padding: 10px;
     border: 5px;
-    border-style:double;
+    border-style:groove;
     border-color:#DCDCDC;
     font-family:'Bebas Neue', cursive;
     font-weight: bold;
+    box-shadow:1px 4px 10px; color: silver;
     
-
 }
 .contenidogral-form .nav-pills .nav-link.active {
    color: #00ff7f;
    background: none;
    font-family: 'Bebas Neue', cursive;
    font-style: oblique;
+   text-shadow: 1px 5px 3px green;
 }
 .contenidogral-form .nav-pills .nav-link.active:hover {
-   color: #00ffff;
+   color: #fafa78;
    background: none;
+   text-shadow: 1px 4px 2px #ffff0077;
 }
 .contenidogral-form .nav-item.dropdown .nav-link.dropdown-toggle{
    color: #00ff7f;
    font-style: oblique;
+   text-shadow: 1px 5px 3px green;
    
 } 
 .contenidogral-form .nav-item.dropdown .nav-link.dropdown-toggle:hover{
-   color: #00ffff;
+   color: #fafa78;
+   text-shadow: 1px 4px 2px #ffff0077;
 } 
 
 .contenidogral-form .dropdown-menu {
    background: black;
    opacity: 1;
-   border-radius: 15px;
-
-   
+   border-radius: 15px;   
 }
 .contenidogral-form .dropdown-menu .dropdown-item {
    color:#98fb98;
    font-family:'Bebas Neue', cursive;
    font-size: 25px;
    font-weight: bold;
+}
+.contenidogral-form .footer {
+    border-width: 1px 0px 0px 0px;
+    border-color: snow;
+    border-style: groove;
+    margin: 10px auto;
 }
 .contenidogral-form .footer .redes-ig {
     font-size: 33px;
@@ -1225,15 +1156,78 @@
      color: #adff2f;
 }
  /*-----------------------FIN DE MENU DE NAVEGACION DE CONTACTO-------------------------*/
+/*-------------------------INICIO DE SECTION EN PAGINA DE CONTACTO---------------------*/
+ .contenidogral-form .section {
+    text-align: left;
+}
+
+.contenidogral-form .section .form-group  {
+    color: white;
+    font-size: 24px;
+    font-family: 'Bebas Neue', cursive;
+    width: auto;
+    margin: 10px 200px;
+}
+.contenidogral-form .section button {
+    background: springgreen;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    width: auto;
+    margin: 5px 200px;
+    color: black;
+}
+
+
+
+ .contenidogral-form .footer .contacto .redes-ig a i:hover {
+      color: #adff2f;
+ }
+ .contenidogral-form .section .complet h3 {
+     color: springgreen;
+ }
+ .contenidogral-form .section h3 {
+     color: #00ff7f;
+ }
+ /*--------------------------FIN DE SECTION DE CONTACTO--------------------------------*/
+ 
  /*--------------------------INICIO DE MEDIA QUERYS EN CONTACTO--------------------------*/
  @media screen and (max-width: 768px) {
-    .contenidogral-form .header h1 {
-        font-size: 35px;
+    .contenidogral-form h1 {
+        font-size: 60px;
+        text-align: left;
     }
-    .contenidogral-form .section .trabajaconnos {
-        font-size: 22px;
+    .contenidogral-form  .nav.nav-pills{
+        justify-content: center;
+        border-style:double;
+        border-color:#c0c0c0;
+        font-family:'Chakra Petch', sans-serif;
+        font-weight: bold;
+   }
+   .contenidogral-form ul.nav.nav-pills {
+       margin: 1px 1px;
+       padding: 1px;
+       justify-content: center;
+       font-size: 24px; 
+   }
+   .contenidogral-form .nav-pills .nav-link.active {
+       background: none;
+       padding: 2px;
+   }
+   .contenidogral-form .nav-item.dropdown .nav-link.dropdown-toggle{
+       padding: 2px;
+       font-family: 'Bebas Neue', cursive;
+   } 
+   .contenidogral-form .dropdown-menu .dropdown-item  {
+       padding: 2px;
+       font-size: 16px;
+   }
+    .contenidogral-form .contdestacado h2 {
+        font-size: 50px;
+        margin: 10px auto;
     }
-    .contenidogral-form .footer .redes-ig i {
+
+     .contenidogral-form .footer .redes-ig i {
         text-decoration:none;
         color: #00ff7f;
         margin: 2px auto;
@@ -1241,8 +1235,32 @@
         font-size: 30px;
         text-align: center;
     }
-    
+
+    .contenidogral-form .section .form-group  {
+        color: white;
+        font-size: 24px;
+        font-family: 'Bebas Neue', cursive;
+        width: auto;
+        margin: 10px 50px;
     }
+    .contenidogral-form .section button {
+        background: springgreen;
+        border: none;
+        font-size: 16px;
+        font-weight: bold;
+        width: auto;
+        margin: 10px 50px;
+        color: black;
+    }
+    .contenidogral-form .footer{
+        border-width: 1px 0px 0px 0px;
+        border-color: white;
+        border-style:groove;
+    }
+
+    }
+  
+    
  /*---------------------------FIN DE MEDIA QUERYS EN CONTACTO-----------------------------*/
 
   

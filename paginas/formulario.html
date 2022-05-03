@@ -77,164 +77,31 @@
   <!-- Aca termina el menu de navegacion-->
   
      
-      <div class="contdestacado"><h2>TRABAJA CON NOSOTROS</h2>
+      <div class="contdestacado"><h2>CONTACTANOS</h2>
       </div>
   
   </header>
  <section class="section">
- <!-- <div class="complet">
-     <h3>Completa el siguiente formulario</h3>
-</div>
-
-<div class="campos">
-     <p>*campos obligatorios</p>
-</div> -->
-
-<div class="datita-titulos">
-    <!--Inicio de Formulario con DATOS PERSONALES-->
-    <h3> DATOS PERSONALES </h3>
-</div>
-
-<div class="datita">
-     <label for="Nombre">Nombre</label>
-     <input type="text" id="Nombre" placeholder="Ingrese Nombre">
-           <abbr title="required" aria-label="required">*</abbr></label>
- </div>
- 
-<div class="datita">    
-    <label for="Apellido">Apellido</label>
-    <input type="text" id="Apellido" placeholder="Ingrese Apellido">
-          <abbr title="required" aria-label="required">*</abbr></label>
-</div>
-
-<div class="datita">
-     <label for="Mail">Email</label>
-     <input type="email" id="Mail" placeholder="Ingrese su Email">
-     <abbr title="required" aria-label="required">*</abbr></label>
-</div>
-  
-<div class="datita">
-     <label for="pais">Nacionalidad</label>
-      <select name="paises" id="paises">
-      <option value="0">Seleccione el país</option>
-      <option value="1">Argentina</option>
-      <option value="2">Bolivia</option>
-      <option value="3">Brasil</option>
-      <option value="4">Chile</option>
-      <option value="5">Colombia</option>
-      <option value="6">Paraguay</option>
-      <option value="7">Perú</option>
-      <option value="8">Uruguay</option>
-    </select>
-         ><abbr title="required" aria-label="required">*</abbr></label>
-</div>
-<div class="datita">
-     <label for="DNI">DNI</label>
-     <input type="Multi" id=" DNI" placeholder="Ingrese su DNI">
-          <abbr title="required" aria-label="required">*</abbr></label>
-<!-- Acá me gustaria limitar la cantidad a 8 digitos -->
-</div>
-
-<div class="datita">
-     <label for="CUIL">CUIL</label>
-     <input type="Multi" id="CUIL" placeholder="Ingrese su CUIL ó CUIT" required>
-           <abbr title="required" aria-label="required">*</abbr></label>
-</div>
-
-<div class="datita">
-     <label for="fecha">Fecha de Nacimiento</label>
-     <input type="date" id="fecha" placeholder="Ingrese su fecha de nacimiento">
-         <abbr title="required" aria-label="required">*</abbr></label>
-</div>
-
-<div class="datita">
-    <label for="sexo">Género</label>
-    <select name="sexo" id="sexo">
-    <option value="1">Masculino</option>
-    <option value="2">Femenino</option>
-    <option value="3">No Binario</option>
-    <option value="4">Otro</option>
-</select>    
-</div>
-
-<div class="datita-titulos">
-    <!--Fin de formulario con DATOS PERSONALES-->
-    <!-- Inicio de formulario con REDES SOCIALES-->
-    <h3> REDES SOCIALES </3>
-</div>
-
-<div class="datita">
-    <label for="name">Facebook</label>
-    <input type="text" id="name" placeholder="Su URL de perfil publico" cols="30" rows="1">
-</div>
-
-<div class="datita">
-    <label for="name">Instagram</label>
-    <input type="text" id="name" placeholder="Su URL de perfil publico" cols="30" rows="1">
-</div>
-
-<div class="datita">
-     <label for="name">Twitter</label>
-     <input type="text" id="name" placeholder="Su URL de perfil publico" cols="30" rows="1">
-</div>
-
-<div class="datita">
-     <label for="name">Linkedin</label>
-     <input type="text" id="name" placeholder="Su URL de perfil publico" cols="30" rows="1">
-</div>
-
-<div class="datita">
-     <label for="name">Sitio Web</label>
-     <input type="text" id="name" placeholder="Ingrese el link de su sitio web" cols="30" rows="1">
-
-</div>
-<!-- Fin de formulario con REDES SOCIALES-->
-<div>
-     <p>*campos obligatorios</p>
-</div>
-<!--Inicio de formulario con TRABAJO Y EDUCACION-->
-     <div class="datita-titulos">   
-     <h3> TRABAJO Y EDUCACIÓN </h3>
-     </div>
-    <div class="datita">
-        <p>        ¿Estudios secundarios completos?:</p>
-
-        <input type="radio" name="estudios" value="1"> Si
-        <input type="radio" name="estudios" value="2"> No
-             <abbr title="required" aria-label="required">*</abbr></label>    
+  <form>
     
+      <div class="form-group">
+        <label for="formGroupExampleInput">Nombre</label>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ingrese su Nombre">
+      </div>
+      <div class="form-group">
+        <label for="formGroupExampleInput2">Apellido</label>
+        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Ingrese su Apellido">
+      </div>
+    <div class="form-group">
+      <label for="exampleFormControlInput1">Email</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
     </div>
-
-    <div class="datita">
-      <label for="cv">Ingrese su C.V:</label>
-      <input type="file" id="cv">
-          <abbr title="required" aria-label="required" aria-label="required">*</abbr>
+    <div class="form-group">
+      <label for="exampleFormControlTextarea1">Escriba un comentario</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
     </div>
-<!--Fin de formulario con TRABAJO Y EDUCACION-->
-
-<!-- Inicio de formulario con EXPECTATIVAS PERSONALES-->
-<div class="datita">
-    <h3> EXPECTATIVAS PERSONALES </h3>
-      <label for="Multi">Comentarios</label>
-      <textarea name="Multi" id="Multi" cols="50" rows="10"></textarea>    
-</div>
-<!--Fin de formulario con EXPECTATIVAS PERSONALES-->
-
-<!-- Inicio de formulario con TERMINOS Y CONDICIONES-->
-<div class="datita-titulos">
-    <h3> TÉRMINOS Y CONDICIONES </h3>
-</div>
-
-   <div class="datita">
-    <input type="checkbox" name="term" id="term" value="1"> He leído y acepto los términos y condiciones
-   </div>   
-    <div class="datita">
-    <input type="checkbox" name="info" id="info" value="1"> Deseo recibir mas informacion 
-   </div>
-    <div class="datita">
-     <input type="submit" value="Enviar ahora">
-     <input type="reset" value="Borrar todo">
-    </div>
+    <button class="btn btn-primary" type="submit">Enviar</button>
+  </form>
 <!--Fin de formulario con TERMINOS Y CONDICIONES-->
 </section>
 <footer class="footer">
