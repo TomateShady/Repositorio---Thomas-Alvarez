@@ -7,24 +7,20 @@
 
  /*------------------------Inicio de encabezado de PAGINA PRINCIPAL---------------------------------------*/
  body {
-      /* background-image: url(../img/9.jpg); */
       width: auto;
-      background-color: black;
-      
+      background-image: url(../img/este.jpg);
  }
+
 
  .contenido-gral .encabezado {
         background: #00000000;
         padding: 2px;
-        border-radius: 1px;
         padding: 1px;
-        border-radius: 20px;
         margin: 1px auto;
  }
 
- .contenido-gral .encabezado h1 {
-    
-    color: snow;
+ .contenido-gral .encabezado h1 { 
+    color: white;
     text-align: center;
     margin: 10px auto 1px auto ;
     font-weight: bold;
@@ -32,35 +28,9 @@
     font-size: 110px;
     font-style: oblique;
     padding: 1px;
-    text-shadow: 6px 3px 8px silver; 
+    text-shadow: 4px 3px 9px burlywood; 
     transition: 1.2s;
             
-}
-
-.contenido-gral .encabezado .musicales a {
-    color: springgreen;
-    font-family: 'Rubik Puddles', cursive;
-    text-decoration: none;
-    font-size: 20px;
-}
-.contenido-gral .encabezado .musicales a span:hover {
-    color: fuchsia;
-   
-}
-
- .contenido-gral .encabezado .contdestacado h2 {
-    font-size: 90px;
-    color:snow;
-    font-style:italic;
-    font-weight: bold;
-    font-family:'Bebas Neue', cursive;
-    margin: 1px auto;
-    padding: 1px;
-    text-align: center;
-    text-shadow: 4px 7px 0px springgreen;
-    transform:rotateX(360deg) translate(0px, 1px);
-    transition: 1.6s;
-    
 }
 
 /*---------------------------------Fin de encabezado de PAGINA PRINCIPAL - INDEX-------------------------*/
@@ -76,50 +46,49 @@
 /*-------------------------------- Fin de INFO sobre la pagina principal----------------------------------*/
 
  /*-------------------------------------Fin de encabezado de PAGINA PRINCIPAL-----------------------------*/
- 
+
  /*--------------------------INICIO DE MENU DE NAVEGACION DE PAGINA PRINCIPAL - INDEX---------------------*/
  .contenido-gral  .nav.nav-pills{
       text-align: center;
-      background: #000000;
+      background: rgba(0, 0, 0, 0.445);
       justify-content: center;
       font-size: 45px;
-      margin: 10px 10px;
+      margin: 10px 60px;
       padding: 10px;
       border: 4px;
-      border-style:groove;
-      border-color:#DCDCDC;
+      border-style:ridge;
+      border-color: burlywood;
       border-radius: 5px;
-      border-radius: 8px;
       font-family:'Bebas Neue', cursive;
       font-weight: bold;
-      box-shadow:1px 4px 10px; color: silver;
+      box-shadow: 1px 2px 6px; color: brown;
      
  
  }
  .contenido-gral .nav-pills .nav-link.active {
-     color: #00ff80;
+     color: #deb887;
      background: none;
      font-family: 'Bebas Neue', cursive;
-     text-shadow: 1px 5px 3px green;
+     text-shadow: 1px 5px 5px maroon;
      font-style: italic;
  }
  .contenido-gral .nav-pills .nav-link.active:hover {
-     color: #fafa78;
+     color: #ffff00;
      background: none;
-     text-shadow: 1px 4px 2px #ffff0077;
+     text-shadow: 1px 4px 2px goldenrod;
  }
  .contenido-gral .nav-item.dropdown .nav-link.dropdown-toggle{
-     color: #00ff7f;
-     text-shadow: 1px 5px 3px green;
+    color: burlywood;
+     text-shadow: 1px 5px 5px maroon;
      font-style: italic;
  } 
  .contenido-gral .nav-item.dropdown .nav-link.dropdown-toggle:hover{
-     color: #fafa78;
-     text-shadow: 1px 4px 2px #ffff0077;
+     color: yellow;
+     text-shadow: 1px 4px 2px goldenrod;
  } 
  
  .contenido-gral .dropdown-menu {
-     background: #000000;
+     background: #000000ef;
      opacity: 1;
      border-radius: 15px;
      transition:0.20s;
@@ -127,7 +96,7 @@
      
  }
  .contenido-gral .dropdown-menu .dropdown-item {
-     color:#98fb98;
+     color: burlywood ;
      font-family:'Bebas Neue', cursive;
      font-size: 25px;
      font-weight: bold;
@@ -141,12 +110,30 @@
 .contenido-gral .main {
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: 500px;
+    grid-template-rows: repeat(2, auto);
+} 
+.contenido-gral .main .contdestacado {
+    grid-column: 1/4;
+}
+.contenido-gral .main .contdestacado h2 {
+   font-size: 100px;
+   color:white;
+   font-style:italic;
+   font-weight: bold;
+   font-family:'Bebas Neue', cursive;
+   margin: 1px auto;
+   padding: 1px;
+   text-align: center;
+   text-shadow: 6px 3px 9px orange;
+   transform:rotateX(360deg) translate(0px, 1px);
+   transition: 1.6s;
+   
 }
 .contenido-gral .main .spotify {
     text-align: center;
     width: 100%;
-    grid-column: 1;
+    grid-column: 1/2;
+    grid-row: 2/3;
     margin: 20px auto;
     
 }
@@ -157,25 +144,23 @@
 
 }
 .contenido-gral .main .hache3 {
-    width: 100px;
-    height: 400px;
-    margin: 10px auto;
-   
-    
+    width: 200px;
+    height: 420px;
+    margin: 50px auto;
+    grid-column: 3/4;
+    grid-row: 2/3;
+  
 }
 .contenido-gral .main .hache3 p{
     font-size: 18px;
-    color:snow;
+    color:white;
     font-family:'Times New Roman', Times, serif;
     text-align: center;
     transform: scale(1) translate(0px, 1px);
     transition: 1.2s;
-    text-decoration: line-through;
     scrollbar-width: 0px;
 }
-.contenido-gral .main .hache3:hover {
-    text-shadow: 1px 3px 6px springgreen;
-}
+
 .contenido-gral .main .hache3 span p{
     font-family: 'Times New Roman', Times, serif;
     text-shadow: none;
@@ -194,13 +179,16 @@
      overflow: hidden; 
      margin: 15px auto;
      border-radius: 8px;
-     box-shadow: 1px 1px 8px snow;     
+     box-shadow: 1px 1px 8px snow;    
+     grid-column: 2/3; 
+     grid-row: 2/3;
  }
  #carouselExampleDark .carousel-inner:hover {
      overflow: hidden;
      transform: scale(1.1);
      transition: 0.5s;
  }
+ 
 .carousel-caption .d-none .d-md-block{
     width: 100%;
 }
@@ -212,14 +200,14 @@
      text-align: center;
  }
  #carouselExampleDark .carousel-inner .carousel-item h5 {
-    color: #00ff7f;
+    color: burlywood;
     font-size: 60px;
     font-family:'Bebas Neue', cursive;
     text-shadow: 3px 2px 1px black;
     font-style: italic;
  }
  #carouselExampleDark .carousel-inner .carousel-item a {
-    color: #00ff7f;
+    color: snow;
     font-size: 60px;
     font-family:'Bebas Neue', cursive;
     text-shadow: 3px 2px 1px black;
@@ -233,35 +221,42 @@
      font-weight: bold; 
      margin: 1px auto;
      font-family: 'Bebas Neue', cursive;
-     text-shadow: 3px 14px 10px black;
+     text-shadow: 3px 1px 1px black;
   }
 
 
  /*-------------------------------Fin de CAROUSEL DE IMAGENES de PAGINA PRINCIPAL-------------------------*/
 /*------------------------------------INICIO de FOOTER de PAGINA PRINCIPAL------------------------------*/
  .contenido-gral .footer{
-     background:black;
-     padding: 1px;
-     border: snow;
-     border-width: 1px 0px 0px 0px;  
-     border-style:groove;
-    
+     background:rgba(0, 0, 0, 0.596);
+     padding: 1px;    
+     border-width: 1px 0px 0px 0px;
+     border-color: grey;
+     border-style:ridge ;
+     box-shadow: 9px 8px 3px white;
  }  
  
  .contenido-gral .footer .redes-ig {
-    font-size: 33px;
-    padding: 4px;
-   
+    font-size: 38px;
+    padding: 4px;   
+    opacity: 1;
+    width: auto;
+    
 }
 .contenido-gral .footer .contacto .redes-ig a{
     margin: 1px 4px;
-    font-size: 35px;
-    color: springgreen; 
+    font-size: 38px;
+    color: orange; 
+    text-align: center;   
+    text-shadow: 1px 2px 2px orangered;
     
 }
 .contenido-gral .footer .contacto .redes-ig a:hover{
     color: yellow ;   
-    text-shadow: 1px 1px 2px #fafa78;
+    text-shadow: 1px 1px 2px goldenrod;
+    
+    
+   
 }
 
  /*--------------------------------FIN de FOOTER de PAGINA PRINCIPAL-------------------------------------*/
@@ -269,12 +264,12 @@
  /*------------------Inicio de info de contacto APLICA A TODAS LAS PAGINAS-------------------------------*/
  .contacto {
      text-align: center;
-     color: #ffffff;
+     color: rgb(236, 174, 145);
      line-height: 1,6;
      margin: 1px auto;
      padding: 10px;
      font-size: 18px;
-     grid-area: footer;
+     /* grid-area: footer; */
  
  }
  .contacto a {
@@ -289,7 +284,7 @@
      font-size: 42px;
      font-family:'Libre Barcode 39 Text', cursive;
      padding: 1px;
-     color: snow;
+     color: burlywood;
  }
  /*-----------------------------------------Fin de info de contactos------------------------------------*/
   /*---------------------------INICIO DE MEDIA QUERIES EN LA PAGINA PRINCIPAL----------------------------*/
@@ -347,19 +342,15 @@
        font-size: 16px;
    } 
     .contenido-gral .main {
-        display: grid;
-        width: 218px;
-        grid-template-columns: 400px;
-        grid-template-rows:250px 200px 50px ;
+        display:contents;
+        width: auto;
     }
-    .contenido-gral .main .spotify {
-        grid-row: 2/3;
-        
+    .contenido-gral .main .contdestacado h2{
+        font-size: 50px;
+        margin: 15px auto;
     }
     .contenido-gral .main .spotify iframe {
-        height: 180px;
-        width: 300px;
-        margin: 2px auto;
+       display: none;
     }
     
     .contenido-gral #carouselExampleDark .carousel-inner {
@@ -378,20 +369,22 @@
     .contenido-gral .main .carousel-item.active  {
         width: 380px;
         margin: 1px 10px;
-        grid-row: 1/2;
+        grid-row: 2/3;
         
     }
-    .contenido-gral .main .hache3 p{
-       display: none;      
+    .contenido-gral .main .hache3 {
+        width: auto;
+        height: fit-content;
+        margin: 10px 10px;
     }
-.contenido-gral .encabezado .contdestacado h2 {
-    font-size: 45px;
-    color:#e0cdcd;
-    font-family:'Bebas Neue', cursive;
-    margin: 1px auto;
-    padding: 1px;
-    text-align: center;
-}
+    .contenido-gral .main .hache3 p{
+       display:inline-block;      
+       margin: 1px auto;
+       font-size: 16px;
+       transition: 1.5s;
+       transform: unset;
+     
+    }
 .contenido-gral .encabezado .infocontenidodest {
     color: #ffffff;
     margin: 2px auto;
@@ -400,17 +393,20 @@
     text-align: center;
 }
 .contenido-gral .footer {
-        font-size: 15px;
+        /* font-size: 15px; */
         margin: 2px 1px;    
         box-shadow: none;
+        height: auto;
     }
 .contenido-gral .footer .contacto {
         text-align: center;
-        font-size: 15px;
+        font-size: 18px;
         padding: 10px;
+        transform: none;
+        transition: 1.5s;
     }
 .contenido-gral .footer .contacto p {
-        margin: 1px auto
+        margin: 1px auto;
     }
 .contenido-gral .footer .redes-ig i {
         text-decoration:none;
@@ -431,16 +427,14 @@
  /*--------------INICIO DE GRIDS-AREA EN PAGINAS DE VIDEOCLIPS Y PUBLICIDADES-----------------------------*/
  
  .contenido-gral-videos {
-    
-     display: grid;
      width: 100%;
      background-image:url(../img/thespacio.jpg);
-     grid-template-columns: repeat(4, 1fr);
+     /* grid-template-columns: repeat(3, 1fr);
      grid-template-rows: repeat(4, auto);
      grid-template-areas: "encabezado encabezado encabezado encabezado"
                           "main main main main"
                           "section section section section"
-                          "footer footer footer footer";
+                          "footer footer footer footer"; */
                        
   }
  
@@ -453,78 +447,96 @@
     font-size: 110px;
     font-style: oblique;
     padding: 1px;
-    text-shadow: 6px 3px 12px #DCDCDC; 
+    text-shadow: 6px 3px 12px burlywood; 
     transition: 1.2s;
                   
        }  
  .contenido-gral-videos .encabezado {
       background: #00000000;
-      grid-area: encabezado;
+    
  
  }
- .contenido-gral-videos .encabezado h2 {
-     color: snow;
-      text-align: center;
-      font-family:'Bebas Neue', cursive;
-      font-weight: bold;
-      font-style: italic;
-      font-size: 80px;
-      margin: 1px auto;
-      padding: 1px;
-      text-shadow: 4px 7px 0px springgreen; 
-      
- }
+
  .contenido-gral-videos .encabezado .info {
      color: #ffffff;
      padding: 4px;
-     margin: 2px auto 10px 10px;
-     font-size: 23px;
-     font-family: 'Chakra Petch', sans-serif; 
+     margin: 10px auto;
+     font-size: 21px;
+     font-family: 'Times New Roman', Times, serif; 
      text-align: center;
  }
  .contenido-gral-videos .main {
-     background: none; 
-     grid-area: main;
-     width: auto;
-     opacity: 0.9;
-     grid-column: 2/4;
-     grid-row: 2/4;
-     border-radius: 18px;
-     padding: 10px;
-     font-size: 25px;
-     margin: 1px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
     
  }
- .contenido-gral-videos .section {
-     display: grid;
-     grid-area: section;
-     width: auto;
-     padding: 1px;
-     margin: 1px auto; 
-     grid-column:4;
-     grid-row: 3/4;      
- }
+ .contenido-gral-videos .main .contdestacado {
+   
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.contenido-gral-videos .main .contdestacado h2{
+    color: white;
+    text-align: center;
+    font-family:'Bebas Neue', cursive;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 80px;
+    margin: 1px auto;
+    padding: 1px;
+    text-shadow: 6px 3px 9px orange; 
+}
+.contenido-gral-videos .main .videoclip-ardiles {
+    width: 100% ;
+    height: 100%;
+    margin: 5px auto;
+    text-align: center;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    
+}
+
+.contenido-gral-videos .main .videoclip-ardiles h3{
+    text-align: center;
+    font-family:'Bebas Neue', cursive;
+    color: snow;
+    font-size: 50px;
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+.contenido-gral-videos .main .videoclip-ardiles iframe{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    width: 100%;
+    height: 450px;
+}
+.contenido-gral-videos .main #carouselExampleDark {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  
+}
  .contenido-gral-videos .footer{
-     background: none;
+     background: rgba(0, 0, 0, 0.596);
      grid-area: footer;
      padding: 1px;
+     border-width: 1px 0px 0px 0px;
+     border-color: grey;
+     border-style: ridge;
      opacity: 0.9;
      margin: 2px 1px;
-     border: 1px;
-     border-color: snow;
-     border-width: 1px 0px 0px 0px;
-     border-style:groove ;
      
  }
 
  .contenido-gral-videos .footer .contacto .redes-ig a{
      margin: 1px 4px;
      font-size: 35px;
-     color: springgreen;
+     color: orange;
+     text-shadow: 1px 2px 2px orangered;
      
  }
  .contenido-gral-videos .footer .contacto .redes-ig a i:hover {
-      color: greenyellow;
+      color: yellow;
  }
  /*FIN DE GRIDS-AREA EN PAGINA DE VIDEOCLIPS Y PUBLICIDADES*/
  
@@ -533,44 +545,44 @@
     text-align: center;
     justify-content: center;
     font-size: 45px;
-    margin: 10px 10px;
+    margin: 10px 60px;
     padding: 10px;
     border: 4px;
-    border-style:groove;
-    border-color:#DCDCDC;
+    border-style:ridge;
+    border-color:burlywood;
     border-radius: 5px;
     border-radius: 8px;
     font-family:'Bebas Neue', cursive;
     font-weight: bold;
-    box-shadow:1px 4px 10px; color: silver;
+    box-shadow:1px 2px 6px; color: brown;
    
 
 }
 .contenido-gral-videos .nav-pills .nav-link.active {
-   color: #00ff80;
+   color: burlywood;
    background: none;
    font-family: 'Bebas Neue', cursive;
    font-style: oblique;
-   text-shadow: 1px 5px 3px green;
+   text-shadow: 1px 5px 3px maroon;
 }
 .contenido-gral-videos .nav-pills .nav-link.active:hover {
-   color: #fafa78;
+   color: yellow;
    background: none;
-   text-shadow: 1px 4px 2px #ffff0077;
+   text-shadow: 1px 4px 2px #daa520;
 }
 .contenido-gral-videos .nav-item.dropdown .nav-link.dropdown-toggle{
-   color: #00ff7f;
+   color: #deb887;
    font-style: oblique;
-   text-shadow: 1px 5px 3px green;
+   text-shadow: 1px 5px 3px #800000;
    
 } 
 .contenido-gral-videos .nav-item.dropdown .nav-link.dropdown-toggle:hover{
-   color: #fafa78;
-   text-shadow: 1px 4px 2px #ffff0077;
+   color: #ffff00;
+   text-shadow: 1px 4px 2px #daa520;
 } 
 
 .contenido-gral-videos .dropdown-menu {
-   background: #000000;
+   background: #000000ef;
    opacity: 1;
    border-radius: 15px;
    transition:0.20s;
@@ -578,7 +590,7 @@
    
 }
 .contenido-gral-videos .dropdown-menu .dropdown-item {
-   color:#98fb98;
+   color:burlywood;
    font-family:'Bebas Neue', cursive;
    font-size: 25px;
    font-weight: bold;
@@ -588,16 +600,7 @@
    color:#000000;
 }
 
-.contenido-gral-videos .main .videoclip-ardiles iframe{
-    width: 740px;
-    height: 450px;
-}
-.contenido-gral-videos .main .videoclip-ardiles h3{
-    text-align: center;
-    font-family:'Bebas Neue', cursive;
-    color: #DCDCDC;
-    font-size: 50px;
-}
+
 
 /*Fin de menu de navegacion de VIDEOCLIPS Y PBLICIDADES*/
  
@@ -606,9 +609,9 @@
  
     .contenido-gral-videos{
         margin: 1px;
-        display: grid;
+        /* display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(4, auto);
+        grid-template-rows: repeat(4, auto); */
       
     }
     .contenido-gral-videos .encabezado {
@@ -663,7 +666,7 @@
     margin: 1px 1px;
     width: 380px;
 }
-.contenido-gral-videos .encabezado .contdestacado h2 {
+.contenido-gral-videos .main .contdestacado h2 {
     font-size: 46px;
     color:#e0cdcd;
     font-family:'Bebas Neue', cursive;
@@ -674,7 +677,7 @@
 .contenido-gral-videos .encabezado .infocontenidodest {
     color: #ffffff;
     margin: 2px auto;
-    font-size: 21px;
+    font-size: 24px;
     font-family:'Chakra Petch', sans-serif; 
     text-align: center;
 }
@@ -685,8 +688,8 @@
     font-size: 18px;
 }
 .contenido-gral-videos .main .videoclip-ardiles iframe {
-    width: 380px;
-    margin: 1px auto;
+    width: 80%;
+    margin: 1px 40px;
 }
 
 
@@ -706,15 +709,13 @@
     }
 .contenido-gral-videos .footer .redes-ig i {
         text-decoration:none;
-        color: #00ff7f;
+        color: orange;
         margin: 2px auto;
         padding: 2px;
         font-size: 30px;
         text-align: center;
     }
- .contenido-gral-videos .section {
-      grid-area: section;
- }
+ 
 }
  /*------------------FINAL DE MEDIA QUERIES EN PAGINA DE VIDEOCLIPS Y PUBLICIDADES----------------------------*/
 
@@ -731,7 +732,7 @@
    font-size: 110px;
    font-style: oblique;
    padding: 1px;
-   text-shadow: 6px 3px 12px #DCDCDC; 
+   text-shadow: 4px 3px 9px burlywood; 
    transition: 1.2s;
            
 }
@@ -742,46 +743,46 @@
  /*----------------------------Inicio de Menu de navegacion pagina de MERCH------------------------------*/
  .contenidogral-merch  .nav.nav-pills{
     text-align: center;
+    background: rgba(0, 0, 0, 0.445);
     justify-content: center;
     font-size: 45px;
-    margin: 10px 10px;
+    margin: 10px 60px;
     padding: 10px;
     border: 4px;
-    border-style:groove;
-    border-color:#DCDCDC;
+    border-style:ridge;
+    border-color:burlywood;
     border-radius: 5px;
-    border-radius: 8px;
     font-family:'Bebas Neue', cursive;
     font-weight: bold;
-    box-shadow:1px 4px 10px; color: silver;
+    box-shadow:1px 2px 6px; color: brown;
    
 
 }
 .contenidogral-merch .nav-pills .nav-link.active {
-   color: #00ff80;
+   color: #deb887;
    background: none;
    font-family: 'Bebas Neue', cursive;
    font-style: oblique;
-   text-shadow: 1px 5px 3px green;
+   text-shadow: 1px 5px 3px maroon;
 }
 .contenidogral-merch .nav-pills .nav-link.active:hover {
-   color: #fafa78;
+   color: #ffff00;
    background: none;
-   text-shadow: 1px 4px 2px #ffff0077;
+   text-shadow: 1px 4px 2px goldenrod;
 }
 .contenidogral-merch .nav-item.dropdown .nav-link.dropdown-toggle{
-   color: #00ff7f;
+   color: burlywood;
    font-style: oblique;
-   text-shadow: 1px 5px 3px green;
+   text-shadow: 1px 5px 3px maroon;
    
 } 
 .contenidogral-merch .nav-item.dropdown .nav-link.dropdown-toggle:hover{
-   color: #fafa78;
-   text-shadow: 1px 4px 2px #ffff0077;
+   color: yellow;
+   text-shadow: 1px 4px 2px goldenrod;
 } 
 
 .contenidogral-merch .dropdown-menu {
-   background: #000000;
+   background: #000000ef;
    opacity: 1;
    border-radius: 15px;
    transition:0.20s;
@@ -789,7 +790,7 @@
    
 }
 .contenidogral-merch .dropdown-menu .dropdown-item {
-   color:#98fb98;
+   color:burlywood;
    font-family:'Bebas Neue', cursive;
    font-size: 25px;
    font-weight: bold;
@@ -802,13 +803,15 @@
  
  /*----------------------------------Inicio del  MERCHANDISING---------------------------*/
  .contenidogral-merch .encabezado .info {
-     margin: 25px auto;
+     margin: 10px auto 1px auto;
      font-family: 'Bebas Neue', cursive;
-     font-size: 90px;
+     font-size: 110px;
+     color: white;
      font-weight: bold;
-     font-style: italic;
+     font-style: oblique;
      text-align: center;
-     text-shadow: 4px 7px 0px springgreen;
+     text-shadow: 6px 3px 9px orange;
+     transition: 1.2s;
  }
  .contenidogral-merch .section{
      display: grid;
@@ -831,24 +834,24 @@
  .contenidogral-merch .section .card1 img {
      border-radius: 55px;
      margin: 5px auto;
-     box-shadow: 1px 1px 10px 2px palegreen;
+     box-shadow: 1px 1px 10px 2px grey;
  }
  .contenidogral-merch .section .card1 img:hover {
      border-radius: 55px;
      margin: 5px auto;
      box-shadow: 1px 1px 10px 2px snow;
-     transform: scale(1.1);
+     transform: scale(1.5);
      transition: 1s;
  }
 
  .contenidogral-merch .section .card1 .card-body {
      border-radius: 15px;
-     background: black;
+     background: #00000098;
 
  }
  .contenidogral-merch .section .card1 a {
-     background: springgreen;
-     color: snow;
+     background: burlywood;
+     color: black;
      border: none;
      font-size: 20px;
  }
@@ -857,7 +860,7 @@
  .contenidogral-merch .section .card2 {
      grid-column: 2/3;
      grid-row: 1;
-     color: snow;
+     color: #fffafa;
      height: 500px;
      font-family: 'Bebas Neue', cursive;
      font-size: 21px;
@@ -867,24 +870,24 @@
  .contenidogral-merch .section .card2 img {
      border-radius: 55px;
      margin: 5px auto;
-     box-shadow: 1px 1px 10px 2px palegreen;
+     box-shadow: 1px 1px 10px 2px #808080;
  }
  .contenidogral-merch .section .card2 img:hover {
      border-radius: 55px;
      margin: 5px auto;
-     box-shadow: 1px 1px 10px 2px snow;
-     transform: scale(1.1);
+     box-shadow: 1px 1px 10px 2px #fffafa;
+     transform: scale(1.5);
      transition: 1s;
  }
 
  .contenidogral-merch .section .card2 .card-body {
      border-radius: 15px;
-     background: black;
+     background: #00000098;
 
  }
  .contenidogral-merch .section .card2 a {
-     background: springgreen;
-     color: snow;
+     background: burlywood;
+     color: black;
      border: none;
      font-size: 20px;
  }
@@ -903,24 +906,24 @@
  .contenidogral-merch .section .card3 img {
      border-radius: 55px;
      margin: 5px auto;
-     box-shadow: 1px 1px 10px 2px palegreen;
+     box-shadow: 1px 1px 10px 2px #808080;
  }
  .contenidogral-merch .section .card3 img:hover {
      border-radius: 55px;
      margin: 5px auto;
      box-shadow: 1px 1px 10px 2px snow;
-     transform: scale(1.1);
+     transform: scale(1.5);
      transition: 1s;
  }
 
  .contenidogral-merch .section .card3 .card-body {
      border-radius: 15px;
-     background: black;
+     background:#00000098;
 
  }
  .contenidogral-merch .section .card3 a {
-     background: springgreen;
-     color: snow;
+     background: burlywood;
+     color: black;
      border: none;
      font-size: 20px;
  }
@@ -939,24 +942,24 @@
  .contenidogral-merch .section .card4 img {
      border-radius: 55px;
      margin: 5px auto;
-     box-shadow: 1px 1px 10px 2px palegreen;
+     box-shadow: 1px 1px 10px 2px #808080;
  }
  .contenidogral-merch .section .card4 img:hover {
      border-radius: 55px;
      margin: 5px auto;
      box-shadow: 1px 1px 10px 2px snow;
-     transform: scale(1.1);
+     transform: scale(1.5);
      transition: 1s;
  }
 
  .contenidogral-merch .section .card4 .card-body {
      border-radius: 15px;
-     background: black;
+     background: #00000098;
 
  }
  .contenidogral-merch .section .card4 a {
-     background: springgreen;
-     color: snow;
+     background: burlywood;
+     color: black;
      border: none;
      font-size: 20px;
  }
@@ -965,7 +968,7 @@
  .contenidogral-merch .section .card5 {
     grid-column: 2/3;
     grid-row: 2;
-    color: snow;
+    color: #fffafa;
     height: 500px;
     font-family: 'Bebas Neue', cursive;
     font-size: 21px;
@@ -975,24 +978,24 @@
 .contenidogral-merch .section .card5 img {
     border-radius: 55px;
     margin: 5px auto;
-    box-shadow: 1px 1px 10px 2px palegreen;
+    box-shadow: 1px 1px 10px 2px #808080;
 }
 .contenidogral-merch .section .card5 img:hover {
     border-radius: 55px;
     margin: 5px auto;
-    box-shadow: 1px 1px 10px 2px snow;
-     transform: scale(1.1);
+    box-shadow: 1px 1px 10px 2px #fffafa;
+     transform: scale(1.5);
      transition: 1s;
 }
 
 .contenidogral-merch .section .card5 .card-body {
     border-radius: 15px;
-    background: black;
+    background: #00000098;
 
 }
 .contenidogral-merch .section .card5 a {
-    background: springgreen;
-    color: snow;
+    background: burlywood;
+    color: black;
     border: none;
     font-size: 20px;
 }
@@ -1001,7 +1004,7 @@
  .contenidogral-merch .section .card6 {
     grid-column: 3/4;
     grid-row: 2;
-    color: snow;
+    color: #fffafa;
     height: auto;
     font-family: 'Bebas Neue', cursive;
     font-size: 21px;
@@ -1011,45 +1014,52 @@
 .contenidogral-merch .section .card6 img {
     border-radius: 55px;
     margin: 5px auto;
-    box-shadow: 1px 1px 10px 2px palegreen;
+    box-shadow: 1px 1px 10px 2px #808080;
 }
 .contenidogral-merch .section .card6 img:hover {
     border-radius: 55px;
     margin: 5px auto;
-    box-shadow: 1px 1px 10px 2px snow;
-     transform: scale(1.1);
+    box-shadow: 1px 1px 10px 2px #fffafa;
+     transform: scale(1.5);
      transition: 1s;
 }
 
 .contenidogral-merch .section .card6 .card-body {
     border-radius: 15px;
-    background: black;
-
+    background: #00000098;
+    
 }
 .contenidogral-merch .section .card6 a {
-    background: springgreen;
-    color: snow;
+    background: burlywood;
+    color: black;
     border: none;
     font-size: 20px;
 }
 /*--------------------FIN DE SEXTA CARD---------------------------*/
 .contenidogral-merch .footer {
+    background:rgba(0, 0, 0, 0.596);
+    padding: 1px;    
     border-width: 1px 0px 0px 0px;
-    border-color: snow;
-    border-style: groove;
-    margin: 10px auto;
+    border-color: grey;
+    border-style:ridge ;
+    box-shadow: 9px 8px 3px white;
 }
  .contenidogral-merch .footer .redes-ig {
-    font-size: 33px;
-    padding: 4px;
+    font-size: 38px;
+    padding: 4px;   
+    opacity: 1;
+    width: auto;
 }
 .contenidogral-merch .footer .contacto .redes-ig a{
     margin: 1px 4px;
-    font-size: 35px;
-    color: #00ff7f;  
+    font-size: 38px;
+    color: orange; 
+    text-align: center;   
+    text-shadow: 1px 2px 2px orangered; 
 }
 .contenidogral-merch .footer .contacto .redes-ig a i:hover {
-     color: #adff2f;
+    color: yellow ;   
+    text-shadow: 1px 1px 2px goldenrod;
 }
   /*--------------------------------------Fin del merchandising-------------------------------*/
  /*-------------------------------Inicio de MEDIA QUERYS en MERCH------------------------------*/
@@ -1078,6 +1088,7 @@
      }
 
      .contenidogral-merch  .nav.nav-pills{
+         background: none;
         justify-content: center;
         border-style:double;
         border-color:#c0c0c0;
@@ -1107,7 +1118,7 @@
      .contenidogral-merch .footer .contacto .redes-ig a{
          margin: 1px 4px;
          font-size: 28px;
-         color: springgreen;
+         color: orange;
          
      }
      
@@ -1124,7 +1135,7 @@
 
  /*--------------------------------INICIO DE PAGINA DE CONTACTO-------------------*/
  .contenidogral-form h1 {
-    color: snow;
+    color: white;
     text-align: center;
     margin: 10px auto 1px auto ;
     font-weight: bold;
@@ -1132,69 +1143,77 @@
     font-size: 110px;
     font-style: oblique;
     padding: 1px;
-    text-shadow: 6px 3px 12px #DCDCDC; 
+    text-shadow: 4px 3px 9px burlywood; 
     transition: 1.2s;
 }
 
 .contenidogral-form  .contdestacado h2{
-    font-size: 90px;
-    color:#fffafa;
-    font-style:italic;
-    font-weight: bold;
-    font-family:'Bebas Neue', cursive;
-    margin: 25px auto;
-    padding: 1px;
-    text-align: center;
-    text-shadow: 4px 7px 0px #00ff7f; 
+    font-size: 100px;
+   color:white;
+   font-style:italic;
+   font-weight: bold;
+   font-family:'Bebas Neue', cursive;
+   margin: 1px auto;
+   padding: 1px;
+   text-align: center;
+   text-shadow: 6px 3px 9px orange;
+   transform:rotateX(360deg) translate(0px, 1px);
+   transition: 1.6s;
 }
 /*-------------------------Inicio de MENU DE NAVEGACION de contacto-----------------*/
 .contenidogral-form  .nav.nav-pills{
     text-align: center;
+    background: rgba(0, 0, 0, 0.445);
     justify-content: center;
     font-size: 45px;
-    margin: 5px 10px;
+    margin: 10px 60px;
     padding: 10px;
-    border: 5px;
-    border-style:groove;
-    border-color:#DCDCDC;
+    border: 4px;
+    border-style:ridge;
+    border-color: burlywood;
+    border-radius: 5px;
     font-family:'Bebas Neue', cursive;
     font-weight: bold;
-    box-shadow:1px 4px 10px; color: silver;
+    box-shadow: 1px 2px 6px; color: brown;
     
 }
 .contenidogral-form .nav-pills .nav-link.active {
-   color: #00ff7f;
-   background: none;
-   font-family: 'Bebas Neue', cursive;
-   font-style: oblique;
-   text-shadow: 1px 5px 3px green;
+    color: #deb887;
+    background: none;
+    font-family: 'Bebas Neue', cursive;
+    text-shadow: 1px 5px 5px maroon;
+    font-style: italic;
 }
 .contenidogral-form .nav-pills .nav-link.active:hover {
-   color: #fafa78;
-   background: none;
-   text-shadow: 1px 4px 2px #ffff0077;
+    color: #ffff00;
+    background: none;
+    text-shadow: 1px 4px 2px goldenrod;
 }
 .contenidogral-form .nav-item.dropdown .nav-link.dropdown-toggle{
-   color: #00ff7f;
-   font-style: oblique;
-   text-shadow: 1px 5px 3px green;
+    color: burlywood;
+    text-shadow: 1px 5px 5px maroon;
+    font-style: italic;
    
 } 
 .contenidogral-form .nav-item.dropdown .nav-link.dropdown-toggle:hover{
-   color: #fafa78;
-   text-shadow: 1px 4px 2px #ffff0077;
+    color: yellow;
+     text-shadow: 1px 4px 2px goldenrod;
 } 
 
 .contenidogral-form .dropdown-menu {
-   background: black;
-   opacity: 1;
-   border-radius: 15px;   
+    background: #000000ef;
+    opacity: 1;
+    border-radius: 15px;
+    transition:0.20s;   
 }
 .contenidogral-form .dropdown-menu .dropdown-item {
-   color:#98fb98;
-   font-family:'Bebas Neue', cursive;
-   font-size: 25px;
-   font-weight: bold;
+    color: burlywood ;
+    font-family:'Bebas Neue', cursive;
+    font-size: 25px;
+    font-weight: bold;
+}
+.contenidogral-form .dropdown-menu .dropdown-item:hover {
+    color:#000000;
 }
 .contenidogral-form .footer {
     border-width: 1px 0px 0px 0px;
@@ -1206,11 +1225,7 @@
     font-size: 33px;
     padding: 4px;
 }
-.contenidogral-form .footer .contacto .redes-ig a{
-    margin: 1px 4px;
-    font-size: 35px;
-    color: #00ff7f;  
-}
+
 .contenidogral-form .footer .contacto .redes-ig a i:hover {
      color: #adff2f;
 }
@@ -1228,7 +1243,7 @@
     margin: 10px 200px;
 }
 .contenidogral-form .section button {
-    background: springgreen;
+    background: orange;
     border: none;
     font-size: 16px;
     font-weight: bold;
@@ -1236,15 +1251,29 @@
     margin: 5px 200px;
     color: black;
 }
-
+.contenidogral-form .footer{
+    background:rgba(0, 0, 0, 0.596);
+    padding: 1px;    
+    border-width: 1px 0px 0px 0px;
+    border-color: grey;
+    border-style:ridge ;
+    box-shadow: 9px 8px 3px white;
+}  
+.contenidogral-form .footer .contacto .redes-ig a{
+    margin: 1px 4px;
+    font-size: 38px;
+    color: orange; 
+    text-align: center;   
+    text-shadow: 1px 2px 2px orangered;
+    
+}
 
 
  .contenidogral-form .footer .contacto .redes-ig a i:hover {
-      color: #adff2f;
+    color: yellow ;   
+    text-shadow: 1px 1px 2px goldenrod;
  }
- .contenidogral-form .section .complet h3 {
-     color: springgreen;
- }
+
  .contenidogral-form .section h3 {
      color: #00ff7f;
  }
