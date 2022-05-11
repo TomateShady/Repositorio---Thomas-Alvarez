@@ -20,7 +20,7 @@
  }
 
  .contenido-gral .encabezado h1 { 
-    color: white;
+    color: snow;
     text-align: center;
     margin: 10px auto 1px auto ;
     font-weight: bold;
@@ -28,7 +28,7 @@
     font-size: 110px;
     font-style: oblique;
     padding: 1px;
-    text-shadow: 4px 3px 9px burlywood; 
+    text-shadow: 6px 3px 9px orange;
     transition: 1.2s;
             
 }
@@ -73,7 +73,7 @@
      font-style: italic;
  }
  .contenido-gral .nav-pills .nav-link.active:hover {
-     color: #ffff00;
+     color: yellow;
      background: none;
      text-shadow: 1px 4px 2px goldenrod;
  }
@@ -92,11 +92,9 @@
      opacity: 1;
      border-radius: 15px;
      transition:0.20s;
-    
-     
  }
  .contenido-gral .dropdown-menu .dropdown-item {
-     color: burlywood ;
+     color: pink;
      font-family:'Bebas Neue', cursive;
      font-size: 25px;
      font-weight: bold;
@@ -115,8 +113,9 @@
 .contenido-gral .main .contdestacado {
     grid-column: 1/4;
 }
+
 .contenido-gral .main .contdestacado h2 {
-   font-size: 100px;
+   font-size: 90px;
    color:white;
    font-style:italic;
    font-weight: bold;
@@ -124,7 +123,7 @@
    margin: 1px auto;
    padding: 1px;
    text-align: center;
-   text-shadow: 6px 3px 9px orange;
+   text-shadow: 4px 3px 9px orange;
    transform:rotateX(360deg) translate(0px, 1px);
    transition: 1.6s;
    
@@ -200,14 +199,14 @@
      text-align: center;
  }
  #carouselExampleDark .carousel-inner .carousel-item h5 {
-    color: burlywood;
+    color: orange;
     font-size: 60px;
     font-family:'Bebas Neue', cursive;
     text-shadow: 3px 2px 1px black;
     font-style: italic;
  }
  #carouselExampleDark .carousel-inner .carousel-item a {
-    color: snow;
+    color: orange;
     font-size: 60px;
     font-family:'Bebas Neue', cursive;
     text-shadow: 3px 2px 1px black;
@@ -254,9 +253,6 @@
 .contenido-gral .footer .contacto .redes-ig a:hover{
     color: yellow ;   
     text-shadow: 1px 1px 2px goldenrod;
-    
-    
-   
 }
 
  /*--------------------------------FIN de FOOTER de PAGINA PRINCIPAL-------------------------------------*/
@@ -268,9 +264,7 @@
      line-height: 1,6;
      margin: 1px auto;
      padding: 10px;
-     font-size: 18px;
-     /* grid-area: footer; */
- 
+     font-size: 18px; 
  }
  .contacto a {
      font-size: 22px;
@@ -284,7 +278,7 @@
      font-size: 42px;
      font-family:'Libre Barcode 39 Text', cursive;
      padding: 1px;
-     color: burlywood;
+     color: snow;
  }
  /*-----------------------------------------Fin de info de contactos------------------------------------*/
   /*---------------------------INICIO DE MEDIA QUERIES EN LA PAGINA PRINCIPAL----------------------------*/
@@ -393,7 +387,6 @@
     text-align: center;
 }
 .contenido-gral .footer {
-        /* font-size: 15px; */
         margin: 2px 1px;    
         box-shadow: none;
         height: auto;
@@ -410,7 +403,6 @@
     }
 .contenido-gral .footer .redes-ig i {
         text-decoration:none;
-        color: #00ff7f;
         margin: 2px auto;
         padding: 2px;
         font-size: 30px;
@@ -453,8 +445,6 @@
        }  
  .contenido-gral-videos .encabezado {
       background: #00000000;
-    
- 
  }
 
  .contenido-gral-videos .encabezado .info {
@@ -516,6 +506,37 @@
     grid-row: 2/3;
   
 }
+.contenido-gral-videos .main .hache3 {
+    color: snow;
+    grid-column: 3/4;
+    grid-row: 3/4;
+    padding: 5px;
+    text-align: center ;
+    margin: 90px auto auto auto;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    transform: scale(1) translate(0px, 1px);
+    transition: 1.2s;
+    scrollbar-width: 0px;
+}
+/* .contenido-gral-videos .main .card {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    height: 300px;
+    margin: 20px auto;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.418);
+} */
+/* .contenido-gral-videos .main .card .card-title {
+    color: white;
+}
+.contenido-gral-videos .main .card h6 {
+    color: orange;
+}
+.contenido-gral-videos .main .card .card-text {
+    color: white;
+} */
+
  .contenido-gral-videos .footer{
      background: rgba(0, 0, 0, 0.596);
      grid-area: footer;
@@ -590,7 +611,7 @@
    
 }
 .contenido-gral-videos .dropdown-menu .dropdown-item {
-   color:burlywood;
+   color:pink;
    font-family:'Bebas Neue', cursive;
    font-size: 25px;
    font-weight: bold;
@@ -608,11 +629,7 @@
   @media screen and (max-width: 768px){
  
     .contenido-gral-videos{
-        margin: 1px;
-        /* display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(4, auto); */
-      
+        margin: 1px;      
     }
     .contenido-gral-videos .encabezado {
         grid-area: encabezado;
@@ -1113,13 +1130,15 @@
        padding: 2px;
        font-size: 16px;
    }
-     
+   .contenidogral-merch .section .card2 img {
+    margin: 0px auto;
+   padding: 2px;
+   }
  
-     .contenidogral-merch .footer .contacto .redes-ig a{
+    .contenidogral-merch .footer .contacto .redes-ig a{
          margin: 1px 4px;
          font-size: 28px;
-         color: orange;
-         
+         color: orange;  
      }
      
      .contenidogral-merch .footer .contacto .redes-ig a i:hover {
@@ -1146,7 +1165,17 @@
     text-shadow: 4px 3px 9px burlywood; 
     transition: 1.2s;
 }
-
+.contenidogral-form .respuesta p {
+    color: snow;
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+   
+}
+.contenidogral-form .respuesta p a{
+    text-decoration: none;
+    color:orange;
+}
 .contenidogral-form  .contdestacado h2{
     font-size: 100px;
    color:white;
@@ -1320,7 +1349,7 @@
 
      .contenidogral-form .footer .redes-ig i {
         text-decoration:none;
-        color: #00ff7f;
+        color: orange;
         margin: 2px auto;
         padding: 2px;
         font-size: 30px;
@@ -1335,7 +1364,7 @@
         margin: 10px 50px;
     }
     .contenidogral-form .section button {
-        background: springgreen;
+        background: orange;
         border: none;
         font-size: 16px;
         font-weight: bold;
