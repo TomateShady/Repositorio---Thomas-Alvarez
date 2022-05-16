@@ -222,7 +222,9 @@
      font-family: 'Bebas Neue', cursive;
      text-shadow: 3px 1px 1px black;
   }
-
+#carouselExampleDark .carousel-indicators {
+    position: unset;
+}
 
  /*-------------------------------Fin de CAROUSEL DE IMAGENES de PAGINA PRINCIPAL-------------------------*/
 /*------------------------------------INICIO de FOOTER de PAGINA PRINCIPAL------------------------------*/
